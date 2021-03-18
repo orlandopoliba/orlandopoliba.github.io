@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+{% include head.html %}
+  <body>
+    <div class="wrapper">
+        <div class="pageContainer">
+            <div class="nameContainer">
+                <div style="cursor: pointer;" onclick="window.location='/';">
+                gianluca orlando
+                </div>
+            </div>
+            <div class="navContainer">
+                {% include navigation.html %}
+            </div>
+            <div class="mainContainer">
+                <div class="picture">
+                    <img src="/assets/images/profile.jpg"></img>
+                    {{ content }}
+                </div>
+                <div class="contacts">
+                    {% capture contacts %} {% include contacts.md %}{% endcapture %}
+                    {{ contacts | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

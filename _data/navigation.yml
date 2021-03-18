@@ -1,0 +1,6 @@
+- name: cv
+  link: /cv.html
+- name: research
+  link: /research.html
+- name: didattica
+  link: /didattica.html

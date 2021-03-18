@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+{% include head.html %}
+  <body>
+    <div class="wrapper">
+        <div class="pageContainer">
+            <div class="nameContainer">
+                <div style="cursor: pointer;" onclick="window.location='/';">
+                    gianluca orlando
+                    </div>
+            </div>
+            <div class="navContainer">
+                {% include navigation.html %}
+            </div>
+            <div class="defaultContainer">
+            {{ content }}
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

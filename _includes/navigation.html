@@ -1,0 +1,8 @@
+<div id="menuButton" class="navElement-menu" style="cursor: pointer;" onclick="menu();">
+    menu
+</div>
+{% for item in site.data.navigation %}
+    <div style="cursor: pointer;" onclick="window.location='{{ item.link }}';" {% if page.url == item.link %}class="navElement current"{% else %}class="navElement"{% endif %}>
+        {{ item.name }}
+    </div>
+{% endfor %}
