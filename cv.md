@@ -13,7 +13,7 @@ title: orlando | cv
 ## previous positions
 
 - oct 2016–sep 2017: [TUM University Foundation Fellow (TUFF)](https://www.tum.de/en/research/postdocs/tum-global-postdoc-fellowship/), Technische Universität München, Germany.
-- oct 2017–mar 2018: Post-doc in the project B08 of [SFB Transregio 109](discretization.de), Technische Universität München, Germany.
+- oct 2017–mar 2018: Post-doc in the project B08 of [SFB Transregio 109](https://www.discretization.de), Technische Universität München, Germany.
 - apr 2018–nov 2019: [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship). Host: Technische Universität München, Germany.
 - dec 2019–dec 2020: [Marie Sklodowska-Curie Actions](https://ec.europa.eu/research/mariecurieactions/node_en) Fellow (Horizon 2020). Host: Technische Universität München, Germany.
 
