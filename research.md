@@ -12,6 +12,9 @@ title: orlando | research
 
 My current research is funded by the [Research for Innovation (REFIN)](https://www.refin.regione.puglia.it/pages/index) project of Regione Puglia No. D3DB80C1.
 
+$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
+
+
 ## publications
 
 All the preprint versions of my publications are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) or [arXiv](https://arxiv.org/a/orlando_g_1.html) profiles.

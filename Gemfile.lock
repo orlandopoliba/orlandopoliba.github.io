@@ -262,8 +262,8 @@ PLATFORMS
   universal-darwin-19
 
 DEPENDENCIES
-  github-pages (~> 212)
-  jekyll (~> 3.9.0)
+  github-pages
+  jekyll
   jekyll-katex
   jekyll-sitemap
 

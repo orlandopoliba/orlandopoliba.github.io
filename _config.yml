@@ -8,6 +8,11 @@ baseurl: ''
 url: 'https://orlandopoliba.github.io/'
 github_username: orlandopoliba
 
+markdown: kramdown
+
+# kramdown:
+#   math_engine: katex
+
 plugins:
   - jekyll-katex
   - jekyll-sitemap

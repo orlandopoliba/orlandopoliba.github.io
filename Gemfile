@@ -6,9 +6,11 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "jekyll", "~> 3.9.0"
+gem "jekyll"
 
-gem "github-pages", "~> 212"
+gem "github-pages"
+
+# gem "kramdown-math-katex"
 
 group :jekyll_plugins do
     gem 'jekyll-katex'
