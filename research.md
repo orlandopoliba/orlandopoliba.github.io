@@ -13,6 +13,10 @@ My current research is funded by the [Research for Innovation (REFIN)](https://w
 - Applications to Fracture Mechanics and Materials Science
 - Variational analysis of discrete spin systems
 
+<<<<<<< HEAD
+=======
+My current research is funded by the [Research for Innovation (REFIN)](https://www.refin.regione.puglia.it/pages/index) project of Regione Puglia No. D3DB80C1.
+>>>>>>> main
 
 ## publications
 
