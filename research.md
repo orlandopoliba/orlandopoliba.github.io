@@ -3,16 +3,15 @@ layout: default
 title: orlando | research
 ---
 
+
+My current research is funded by the [Research for Innovation (REFIN)](https://www.refin.regione.puglia.it/pages/index) project of Regione Puglia No. D3DB80C1.
+
 ## research interests
 
 - Calculus of Variations
 - $$\Gamma$$-convergence and semicontinuity problems
 - Applications to Fracture Mechanics and Materials Science
 - Variational analysis of discrete spin systems
-
-My current research is funded by the [Research for Innovation (REFIN)](https://www.refin.regione.puglia.it/pages/index) project of Regione Puglia No. D3DB80C1.
-
-$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
 
 ## publications
