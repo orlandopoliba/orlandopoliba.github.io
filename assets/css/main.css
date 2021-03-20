@@ -285,8 +285,8 @@ br {
         display: grid;
         grid-template-columns: 100%;
         grid-template-areas: 
-        "about"
-        "picture";
+        "picture"
+        "about";
         background-color: rgb(247, 247, 247);
     }
 
