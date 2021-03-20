@@ -293,7 +293,7 @@ br {
         .picture {
             grid-area: picture;
             padding: 7vw;
-            font-size: 14px;
+            font-size: 18px;
         }
 
             .picture img {
