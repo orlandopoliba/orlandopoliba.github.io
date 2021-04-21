@@ -15,4 +15,4 @@ gem "github-pages"
 group :jekyll_plugins do
     gem 'jekyll-katex'
     gem 'jekyll-sitemap'
-  end
+end
