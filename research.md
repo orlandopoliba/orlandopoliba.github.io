@@ -26,8 +26,8 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 6. R. Alessi, V. Crismale, G. Orlando. Fatigue effects in elastic materials with variational damage models: A vanishing viscosity approach. *J. Nonlinear Sci.* **29** (2019), 1041–1094
 7. M. Cicalese, M. Forster, G. Orlando. Variational Analysis of a Two-Dimensional Frustrated Spin System: Emergence and Rigidity of Chirality Transitions. *SIAM J. Math. Anal.* **51** (2019), 4848–4893
 8. V. Crismale, G. Orlando. A lower semicontinuity result for linearised elasto-plasticity coupled with damage in $$W^{1,\gamma}$$, $$\gamma > 1$$. *Mathematics in Engineering* **2** (2020), 101–118
-9. A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: chirality transitions at the surface scaling. Calculus of Variations and Partial Differential Equations **60** (2021), Article no. 149
-10. M. Cicalese, G. Orlando, M. Ruf. Coarse graining and large-N behavior of the d-dimensional N-clock model. *Interfaces Free Bound.*, to appear
+9. A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: chirality transitions at the surface scaling. *Calculus of Variations and Partial Differential Equations* **60** (2021), Article no. 149
+10. M. Cicalese, G. Orlando, M. Ruf. Coarse graining and large-N behavior of the d-dimensional N-clock model. *Interfaces Free Bound.* **23** (2021), 323–351
 11. M. Cicalese, G. Orlando, M. Ruf. Emergence of concentration effects in the variational analysis of the N-clock model. *Comm. Pure Appl. Math.*, to appear
 12.  A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: topological singularities. *Indiana Univ. Mat. J.*, to appear
 
@@ -37,6 +37,7 @@ All the preprints are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) 
 
 1. M. Cicalese, G. Orlando, M. Ruf. The N-clock model: Variational analysis for fast and slow divergence rates of N. *Preprint* (2021)
 
+2. M. Cicalese, M. Forster, G. Orlando. Variational analysis of the $$J_1$$-$$J_2$$-$$J_3$$ model: a non-linear lattice version of the Aviles-Giga functional. *Preprint* (2021)
 
 ## collaborators
 
