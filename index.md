@@ -10,3 +10,5 @@ Fixed-&shy;term As&shy;sis&shy;tant Pro&shy;fes&shy;sor (RTDA - Ri&shy;cer&shy;c
 [cvgmt](http://cvgmt.sns.it/person/1531/) \| 
 [arXiv](https://arxiv.org/a/orlando_g_1.html) \| 
 [scholar](https://scholar.google.com/citations?user=RMCfsT0AAAAJ&hl=en&oi=ao)
+
+<!-- reload 1 -->
