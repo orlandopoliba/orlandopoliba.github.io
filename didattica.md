@@ -2,7 +2,7 @@
 layout: default
 title: orlando | didattica
 ---
-
+ 
 ## corsi
 
 - [Calcolo delle Probabilità e Statistica \| laurea triennale Ing. Gestionale]({% link pages/corsi/CalcProbStat_IngGest.md %}) 
