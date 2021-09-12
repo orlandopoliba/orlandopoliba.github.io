@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/cv.html</loc>
+<loc>https://orlandopoliba.github.io//cv.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/didattica.html</loc>
+<loc>https://orlandopoliba.github.io//didattica.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://orlandopoliba.github.io//</loc>
 </url>
 <url>
-<loc>http://localhost:4000/pages/corsi/CalcProbStat_IngGest/info_CalcProbStat_IngGest.html</loc>
+<loc>https://orlandopoliba.github.io//pages/corsi/CalcProbStat_IngGest/info_CalcProbStat_IngGest.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/research.html</loc>
+<loc>https://orlandopoliba.github.io//research.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/pages/corsi/CalcProbStat_IngGest/materiale/tabelleVA.pdf</loc>
+<loc>https://orlandopoliba.github.io//pages/corsi/CalcProbStat_IngGest/materiale/tabelleVA.pdf</loc>
 <lastmod>2021-09-09T14:20:05+02:00</lastmod>
 </url>
 </urlset>
