@@ -11,7 +11,7 @@ title: orlando | didattica
 
 #### avvisi
 
-Sono disponibili gli **esiti** dell'appello del **13 settembre 2021**.
+Sono disponibili gli **esiti** dell'appello del **13 settembre 2021** su Esse3.
 
 Il prossimo appello d'esame sarà il **27 settembre 2021**.  
 
