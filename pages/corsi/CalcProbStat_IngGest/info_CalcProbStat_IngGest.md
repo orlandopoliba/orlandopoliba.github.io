@@ -11,7 +11,9 @@ title: orlando | didattica
 
 #### avvisi
 
-Il prossimo appello d'esame sarà il **13 settembre 2021**. Le iscrizioni all'appello su Esse3 sono chiuse.
+Sono disponibili gli **esiti** dell'appello del **13 settembre 2021**.
+
+Il prossimo appello d'esame sarà il **27 settembre 2021**.  
 
 L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf).
 
@@ -33,6 +35,6 @@ Oltre agli esercizi, dei quesiti teorici facoltativi permetteranno di aumentare 
 È consentito l'uso di una calcolatrice e delle tavole numeriche per la variabile aleatoria normale standard, per la variabile chi quadro e per la variabile t-Student scaricabili [qui](materiale/tabelleVA.pdf).
 
 #### calendario appelli \| a.a. 2020/2021
-- 13 settembre 2021 (VI appello)
+- 13 settembre 2021 (VI appello) \| [traccia](tracce/210913_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210913_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 - 27 settembre 2021 (VII appello)
 - ? novembre 2021 (VIII appello)
