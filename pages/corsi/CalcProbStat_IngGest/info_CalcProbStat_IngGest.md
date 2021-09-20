@@ -13,7 +13,7 @@ title: orlando | didattica
 
 Sono disponibili gli **esiti** dell'appello del **13 settembre 2021** su Esse3.
 
-Il prossimo appello d'esame sarà il **27 settembre 2021**.  
+Il prossimo appello d'esame sarà il **27 settembre 2021**.  La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*.
 
 L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf).
 
