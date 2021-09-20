@@ -2,7 +2,7 @@
 ### info & contacts
 
 #### office hours for students 
-Monday, 14:00-18:00
+Monday, 15:00-18:00
 
 [Microsoft Teams link](https://politecnicobari.sharepoint.com/sites/RicevimentoStudenti/Lists/Link%20Ricevimento/DispForm.aspx?ID=196&e=zB5zkq)
 
