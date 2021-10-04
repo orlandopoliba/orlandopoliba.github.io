@@ -5,7 +5,7 @@ title: orlando | didattica
  
 ## corsi
 
-- [Calcolo delle Probabilità e Statistica \| laurea triennale Ing. Gestionale]({% link pages/corsi/CalcProbStat_IngGest/info_CalcProbStat_IngGest.md %}) 
+- [Probabilità e Statistica \| laurea triennale Ing. Gestionale]({% link pages/corsi/ProbStat_IngGest/info_ProbStat_IngGest.md %}) 
 
 
 ## ricevimento
