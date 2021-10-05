@@ -18,7 +18,7 @@ show.addEventListener("click", function(event) {
 _
 
 #### room
-_
+29
 
 #### address
 [Dipartimento di Meccanica, Matematica e Management](https://www.dmmm.poliba.it/index.php/it/)
