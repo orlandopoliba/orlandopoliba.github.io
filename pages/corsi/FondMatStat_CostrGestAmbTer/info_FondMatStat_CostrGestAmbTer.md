@@ -9,6 +9,18 @@ title: orlando | didattica
 
 --- 
 
+#### orari delle lezioni
+
+orario settimanale: 
+- martedì 10:30--13:30
+- mercoledì 10:30--13:30
+- venerdì 10:30--13:30
+
+le pause dalle lezioni previste sono: 
+- dal 15 al 19 novembre 2021
+- 8 dicembre 2021
+- dal 24 dicembre 2021 al 6 gennaio 2022
+
 #### programma del corso
 
 Insiemi. Numeri naturali e principio di induzione, numeri interi, numeri razionali, numeri reali e proprietà di completezza. Massimi, minimi, estremo inferiore e superiore. Funzioni reali di variabile reale. Operazioni con le funzioni reali. Funzioni monotone, funzioni pari o dispari, funzioni periodiche. Le funzioni elementari dell’Analisi Matematica. Successioni di numeri reali. Limite di una successione. Definizione di limite di una funzione reale di variabile reale, teorema di unicità del limite. Operazioni sui limiti. Teorema della permanenza del segno, teoremi di confronto. Funzioni continue e proprietà. Teorema di permanenza del segno per funzioni continue. Teorema di Bolzano o degli zeri ed applicazioni. Il Teorema di Weierstrass. Il Teorema dei valori intermedi. Continuità delle funzioni elementari. Definizione di derivata. Teorema di Fermat. I Teoremi di Rolle, Cauchy e Lagrange. I Teoremi di de L’Hopital. Criteri di monotonia per funzioni derivabili. Concavità, convessità, flessi. Criteri di convessità. Asintoti di una funzione. Studio del grafico di una funzione reale. Formule di Taylor. Primitive di una funzione e proprietà. Integrale di Riemann. Integrabilità delle funzioni monotone e delle funzioni continue. Media integrale e teorema del valor medio. Teorema fondamentale del calcolo integrale. 
