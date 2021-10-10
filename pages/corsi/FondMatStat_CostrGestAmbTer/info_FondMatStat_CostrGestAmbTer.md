@@ -33,5 +33,5 @@ Testi consigliati:
 
 - R. A. Adams, *Calcolo Differenziale 1*, Zanichelli, quinta edizione
 - S. M. Ross, *Probabilità e statistica per l’ingegneria e le scienze*, Apogeo, terza edizione
-- S. Lang, Algebra Lineare, Boringhieri, Torino
+- S. Lang, *Algebra Lineare*, Boringhieri, Torino
 - L. Robbiano, *Algebra lineare: per tutti*. Springer Science & Business Media.
