@@ -13,7 +13,7 @@ title: orlando | didattica
 
 <!--- Sono disponibili gli **esiti** dell'appello del **27 settembre 2021** su Esse3. -->
 
-Il prossimo appello d'esame sarà tra il **15** e il **19 novembre 2021** (da fissare). <!--- La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*. L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf). L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3. -->
+Il prossimo appello d'esame sarà il **19 novembre 2021**. È possibile prenotarsi all'appello su Esse3 è dal *1 novembre 2021* al *12 novembre 2021*. L'esame si svolgerà in presenza in **Aula 1**. <!--- La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*. L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf). L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3. -->
 
 #### modalità d'esame 
 
@@ -27,9 +27,9 @@ Ogni esercizio ha un numero di punti assegnato e si raggiunge il punteggio massi
 
 Oltre agli esercizi, dei quesiti teorici facoltativi permetteranno di aumentare il voto se svolti correttamente.
 
-È consentito l'uso di una calcolatrice e delle tavole numeriche per la variabile aleatoria normale standard, per la variabile chi quadro e per la variabile t-Student scaricabili [qui](materiale/tabelleVA.pdf).
+Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole numeriche per la variabile aleatoria normale standard, per la variabile chi quadro e per la variabile t-Student scaricabili [qui](materiale/tabelleVA.pdf).
 
 #### calendario appelli \| a.a. 2020/2021
 - 13 settembre 2021 (VI appello) \| [traccia](tracce/210913_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210913_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 - 27 settembre 2021 (VII appello) \| [traccia](tracce/210927_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210927_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
-- ? novembre 2021 (VIII appello) 
+- 19 novembre 2021 (VIII appello) 
