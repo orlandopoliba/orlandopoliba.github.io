@@ -27,7 +27,7 @@ Insiemi. Numeri naturali e principio di induzione, numeri interi, numeri raziona
 
 Sistemi lineari. Matrici e loro operazioni. Vettori e dipendenza lineare. Basi di vettori. Metodo di eliminazione di Gauss per la risoluzione di sistemi lineari. Teorema di Rouché-Capelli. Sottospazi vettoriali e sottospazi affini dello spazio euclideo. Determinante. Teorema di Binet. Teorema di Cramer. Matrici invertibili e inversa di una matrice.
 
-Raccolta dati e rappresentazione dei dati. Frequenza, frequenza relativa, classi di frequenze, moda. Tabella di frequenza, grafico a linea, ogiva, istogramma, diagramma a torta. Media aritmetica, media geometrica, media armonica. Mediane, quantili, quartili, percentili, box-plot. Indici di dispersione: campo di variazione, scarto interquartile, varianza, deviazione standard. Collezioni di dati approssimativamente normali e regola empirica. Coppie di variabili statistiche, diagramma di dispersione (scatterplot), correlazione lineare, covarianza, coefficiente di correlazione, retta di regressione.
+Raccolta dati e rappresentazione dei dati. Frequenza, frequenza relativa, classi di frequenze, moda. Tabella di frequenza, grafico a barre, ogiva, istogramma, diagramma a torta. Media. Mediane, quantili, quartili, percentili, box-plot. Indici di dispersione: campo di variazione, scarto interquartile, varianza, deviazione standard, coefficiente di variazione. Collezioni di dati approssimativamente normali e regola empirica. Coppie di variabili statistiche, diagramma di dispersione (scatterplot), correlazione lineare, covarianza, coefficiente di correlazione, retta di regressione.
  
 Testi consigliati: 
 
