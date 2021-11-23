@@ -29,6 +29,17 @@ Oltre agli esercizi, dei quesiti teorici facoltativi permetteranno di aumentare 
 
 Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole numeriche per la variabile aleatoria normale standard, per la variabile chi quadro e per la variabile t-Student scaricabili [qui](materiale/tabelleVA.pdf).
 
+#### calendario appelli \| a.a. 2021/2022
+
+- 25 gennaio 2022 (solo "Calcolo e Probabilità e Statistica" [2959])
+- 21 febbraio 2022 (solo "Calcolo e Probabilità e Statistica" [2959])
+- 22 aprile 2022 (solo "Calcolo e Probabilità e Statistica" [2959])
+- 20 giugno 2022
+- 18 luglio 2022
+- 06 settembre 2022
+- 20 settembre 2022
+- 14 novembre 2022
+
 #### calendario appelli \| a.a. 2020/2021
 - 13 settembre 2021 (VI appello) \| [traccia](tracce/210913_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210913_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 - 27 settembre 2021 (VII appello) \| [traccia](tracce/210927_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210927_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
