@@ -9,6 +9,17 @@ title: orlando | didattica
 
 --- 
 
+#### calendario appelli a.a. 2021/2022
+
+- 26 gennaio 2022
+- 22 febbraio 2022
+- 21 aprile 2022
+- 21 giugno 2022
+- 19 luglio 2022
+- 07 settembre 2022
+- 21 settembre 2022
+- 15 novembre 2022
+
 #### orari delle lezioni
 
 orario settimanale: 
@@ -23,7 +34,7 @@ le pause dalle lezioni previste sono:
 
 #### programma del corso
 
-Insiemi. Numeri naturali e principio di induzione, numeri interi, numeri razionali, numeri reali e proprietà di completezza. Massimi, minimi, estremo inferiore e superiore. Funzioni reali di variabile reale. Operazioni con le funzioni reali. Funzioni monotone, funzioni pari o dispari, funzioni periodiche. Le funzioni elementari dell’Analisi Matematica. Successioni di numeri reali. Limite di una successione. Definizione di limite di una funzione reale di variabile reale, teorema di unicità del limite. Operazioni sui limiti. Teorema della permanenza del segno, teoremi di confronto. Funzioni continue e proprietà. Teorema di permanenza del segno per funzioni continue. Teorema di Bolzano o degli zeri ed applicazioni. Il Teorema di Weierstrass. Il Teorema dei valori intermedi. Continuità delle funzioni elementari. Definizione di derivata. Teorema di Fermat. I Teoremi di Rolle, Cauchy e Lagrange. I Teoremi di de L’Hopital. Criteri di monotonia per funzioni derivabili. Concavità, convessità, flessi. Criteri di convessità. Asintoti di una funzione. Studio del grafico di una funzione reale. Formule di Taylor. Primitive di una funzione e proprietà. Integrale di Riemann. Integrabilità delle funzioni monotone e delle funzioni continue. Media integrale e teorema del valor medio. Teorema fondamentale del calcolo integrale. 
+Insiemi. Numeri naturali e principio di induzione, numeri interi, numeri razionali, numeri reali e proprietà di completezza. Massimi, minimi, estremo inferiore e superiore. Funzioni reali di variabile reale. Operazioni con le funzioni reali. Funzioni monotone, funzioni pari o dispari, funzioni periodiche. Le funzioni elementari dell’Analisi Matematica. Successioni di numeri reali. Limite di una successione. Definizione di limite di una funzione reale di variabile reale, teorema di unicità del limite. Operazioni sui limiti. Teorema della permanenza del segno, teoremi di confronto. Funzioni continue e proprietà. Teorema di permanenza del segno per funzioni continue. Teorema di Bolzano o degli zeri ed applicazioni. Il Teorema di Weierstrass. Il Teorema dei valori intermedi. Continuità delle funzioni elementari. Definizione di derivata. Teorema di Fermat. I Teoremi di Rolle, Cauchy e Lagrange. I Teoremi di de L’Hopital. Criteri di monotonia per funzioni derivabili. Concavità, convessità, flessi. Criteri di convessità. Asintoti di una funzione. Studio del grafico di una funzione reale. Primitive di una funzione e proprietà. Integrale di Riemann. Integrabilità delle funzioni monotone e delle funzioni continue. Media integrale e teorema del valor medio. Teorema fondamentale del calcolo integrale. 
 
 Sistemi lineari. Matrici e loro operazioni. Vettori e dipendenza lineare. Basi di vettori. Metodo di eliminazione di Gauss per la risoluzione di sistemi lineari. Teorema di Rouché-Capelli. Sottospazi vettoriali e sottospazi affini dello spazio euclideo. Determinante. Teorema di Binet. Teorema di Cramer. Matrici invertibili e inversa di una matrice.
 
