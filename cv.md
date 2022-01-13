@@ -27,7 +27,8 @@ title: orlando | cv
 
 - *Hauptseminar* for master students about *Singular Integrals and Differentiability Properties of Functions*, Technische Universität München, Germany. 26h, first semester 2018/2019 (with Prof. Cicalese).
 -  Ph.D. course *An Introduction to the Theory of Currents*. Università degli Studi di Roma *Tor Vergata*. 20h, first semester 2019/2020.
-
+- Pre-course of Mathematics for Engineering Students, Politecnico di Bari, Italy. 10h, first semester 2021/2022.
+- Course *Fondamenti di Matematica e Statistica* for the Bachelor Degree in *Costruzioni e Gestione Ambientale e Territoriale*. DICATECh, Politecnico di Bari. 90h, first semester 2021/2022.
 
 ## language skills 
 
