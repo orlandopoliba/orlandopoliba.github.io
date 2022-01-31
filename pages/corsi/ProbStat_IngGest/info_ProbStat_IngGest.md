@@ -13,7 +13,7 @@ title: orlando | didattica
 
 <!-- Sono disponibili gli **esiti** dell'appello del **19 novembre 2021** su Esse3. -->
 
-Il prossimo appello d'esame sarà il **25 gennaio 2022**. È possibile prenotarsi all'appello su Esse3 dal *10 gennaio 2022* al *20 gennaio 2022*. L'esame si svolgerà in modalità online alle ore **10:00**. <!--- La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*. L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf). L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3. -->
+Il prossimo appello d'esame sarà il **21 febbraio 2022**. <!--È possibile prenotarsi all'appello su Esse3 dal *10 gennaio 2022* al *20 gennaio 2022*. L'esame si svolgerà in modalità online alle ore **10:00**. La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*. L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf). L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3. -->
 
 #### modalità d'esame 
 
@@ -31,7 +31,7 @@ Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole 
 
 #### calendario appelli \| a.a. 2021/2022
 
-- 25 gennaio 2022 (solo "Calcolo e Probabilità e Statistica" [2959])
+- 25 gennaio 2022  \| [traccia](tracce/220125_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/220125_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 - 21 febbraio 2022 (solo "Calcolo e Probabilità e Statistica" [2959])
 - 22 aprile 2022 (solo "Calcolo e Probabilità e Statistica" [2959])
 - 20 giugno 2022
