@@ -38,7 +38,7 @@ L'esame consiste in una **prova scritta**. La durata della prova è 120 minuti (
 
 La prova scritta è costituita da **4 esercizi** (tutti da svolgere) e da **quesiti teorici**. Il voto massimo raggiungibile con i soli esercizi (senza rispondere ai quesiti teorici) è 28. Il punteggio di ogni esercizio sarà indicato sulla traccia (potrebbe variare di 1 punto in base alla difficoltà, oscillando intorno ai 7 punti). Per il 30L si devono svolgere correttamente i quesiti teorici.
 
-Gli argomenti degli esercizi spazieranno tutto il programma (probabilità in spazi discreti e continui, variabili aleatorie e vettori aleatori discreti e continui, statistica descrittiva, statistica inferenziale, ecc.) e saranno simili agli esercizi risolti durante le lezioni del corso. Per un confronto si possono consultare le tracce d'esame del corso di "Calcolo e Probabilità e Statistica" tenuto negli scorsi anni (si veda il sito del docente) e il materiale condiviso sul canale Team durante il corso.
+Gli argomenti degli esercizi spazieranno tutto il programma (probabilità in spazi discreti e continui, variabili aleatorie e vettori aleatori discreti e continui, statistica descrittiva, statistica inferenziale, ecc.) e saranno simili agli esercizi risolti durante le lezioni del corso. Per un confronto si possono consultare le tracce d'esame del corso di "Calcolo e Probabilità e Statistica" degli scorsi anni e il materiale condiviso sul canale Team durante il corso.
 
 Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavole numeriche per le distribuzioni normale standard, chi-quadro e t-Student scaricabili scaricabili [qui](materiale/tabelleVA.pdf).
 
