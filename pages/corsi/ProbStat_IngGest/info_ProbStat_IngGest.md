@@ -30,6 +30,7 @@ Elementi di statistica inferenziale. Campione casuale. Variabili aleatorie dipen
 - Note del corso (fornite lezione per lezione)
 - S. Ross, *Probabilità e Statistica per l'Ingegneria e le Scienze*, Apogeo (copre gli argomenti del corso e contiene un discreto numero di esercizi)
 - F. Caravenna, P. Dai Pra, *Probabilità. Un'introduzione attraverso modelli e applicazioni*, Springer (per uno studio più approfondito della teoria, esempi interessanti)
+- M.R. Spiegel, J. Schiller, R. Alu Srinivasan, *Probability and Statistics*. Fourth Edition. McGraw Hill. (tanti esercizi)
 - F. Mosteller, *Fifty Challenging Problems in Probability with solutions*, Dover Publications, Inc. (esercizi difficili)
 
 #### modalità d'esame
