@@ -14,7 +14,7 @@ title: orlando | didattica
 
 <!-- Sono disponibili gli **esiti** dell'appello del **19 novembre 2021** su Esse3. -->
 
-Il prossimo appello d'esame sarà il **26 gennaio 2022**. È possibile prenotarsi all'appello su Esse3 dal *12 gennaio 2022* al *23 gennaio 2022*. L'esame si svolgerà in modalità online alle ore **10:00**. <!--- La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*. L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf). L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3. -->
+Il prossimo appello d'esame sarà il **21 aprile 2022**. <!--- La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*. L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf). L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3. -->
 
 
 ---
@@ -29,18 +29,6 @@ Il prossimo appello d'esame sarà il **26 gennaio 2022**. È possibile prenotars
 - 07 settembre 2022
 - 21 settembre 2022
 - 15 novembre 2022
-
-#### orari delle lezioni
-
-orario settimanale: 
-- martedì 10:30--13:30
-- mercoledì 10:30--13:30
-- venerdì 10:30--13:30
-
-le pause dalle lezioni previste sono: 
-- dal 15 al 19 novembre 2021
-- 8 dicembre 2021
-- dal 24 dicembre 2021 al 6 gennaio 2022
 
 #### programma del corso
 
