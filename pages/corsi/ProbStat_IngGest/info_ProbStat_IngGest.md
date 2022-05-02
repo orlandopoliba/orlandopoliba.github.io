@@ -83,5 +83,5 @@ Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole 
 - 19 novembre 2021 (solo "Calcolo e Probabilità e Statistica" [2959])  \| [traccia](tracce/211119_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/211119_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 - 25 gennaio 2022 (solo "Calcolo e Probabilità e Statistica" [2959]) \| [traccia](tracce/220125_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/220125_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 - 21 febbraio 2022 (solo "Calcolo e Probabilità e Statistica" [2959]) [traccia](tracce/220221_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/220221_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
-- 22 aprile 2022 (solo "Calcolo e Probabilità e Statistica" [2959]) [traccia](tracce/220422_Traccia_CalcProbStat_IngGest_aa2021.pdf)
+- 22 aprile 2022 (solo "Calcolo e Probabilità e Statistica" [2959]) [traccia](tracce/220422_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/220422_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 
