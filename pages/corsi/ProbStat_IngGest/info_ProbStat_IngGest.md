@@ -70,7 +70,7 @@ Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole 
 
 #### prossimi appelli
 
-- 20 giugno 2022
+- 20 giugno 2022 \| [traccia](tracce/220620_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220620_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 18 luglio 2022
 - 06 settembre 2022
 - 20 settembre 2022
