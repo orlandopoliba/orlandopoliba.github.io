@@ -24,7 +24,7 @@ Elementi di statistica descrittiva. Popolazioni, campioni, variabili e dati. Fre
 
 Elementi di probabilità. Spazi di probabilità. Metodi di enumerazione: permutazioni, combinazioni e disposizioni. Probabilità condizionata. Il teorema della probabilità totale. Teorema di Bayes. Eventi indipendenti. Variabili aleatorie e vettori aleatori. Variabili aleatorie discrete e funzioni di densità di probabilità: legge di Bernoulli, legge binomiale,  legge geometrica, legge ipergeometrica, legge di Poisson. Vettori aleatori discreti: funzioni di densità di probabilità congiunta e marginali. Valore atteso di variabili aleatorie discrete. Variabili aleatorie e vettori aleatori assolutamente continui e densità. Distribuzioni: uniforme, normale, esponenziale, Gamma, chi-quadro. Valore atteso di variabili aleatorie assolutamente continue. Varianza e deviazione standard. Disuguaglianze di Markov e di Chebyshev. Covarianza. Legge dei grandi numeri. Teorema del limite centrale.
 
-Elementi di statistica inferenziale. Campione casuale. Variabili aleatorie dipendenti da un parametro. Stimatori e stime. Stimatori corretto. Media campionaria, varianza campionaria, deviazione standard campionaria. Stimatori di massima verosimiglianza. Intervalli di confidenza. Test di ipotesi.
+Elementi di statistica inferenziale. Campione casuale. Variabili aleatorie dipendenti da un parametro. Stimatori e stime. Stimatori corretto. Media campionaria, varianza campionaria, deviazione standard campionaria. Intervalli di confidenza. Test di ipotesi.
 
 #### testi consigliati
 - Note del corso (fornite lezione per lezione)
@@ -39,7 +39,7 @@ L'esame consiste in una **prova scritta**. La durata della prova è 120 minuti (
 
 La prova scritta è costituita da **4 esercizi** (tutti da svolgere) e da **quesiti teorici**. Il voto massimo raggiungibile con i soli esercizi (senza rispondere ai quesiti teorici) è 28. Il punteggio di ogni esercizio sarà indicato sulla traccia (potrebbe variare di 1 punto in base alla difficoltà, oscillando intorno ai 7 punti). Per il 30L si devono svolgere correttamente i quesiti teorici.
 
-Gli argomenti degli esercizi spazieranno tutto il programma (probabilità in spazi discreti e continui, variabili aleatorie e vettori aleatori discreti e continui, statistica descrittiva, statistica inferenziale, ecc.) e saranno simili agli esercizi risolti durante le lezioni del corso. Per un confronto si possono consultare le tracce d'esame del corso di "Calcolo e Probabilità e Statistica" degli scorsi anni e il materiale condiviso sul canale Team durante il corso.
+Gli argomenti degli esercizi spazieranno tutto il programma (probabilità in spazi discreti e continui, variabili aleatorie e vettori aleatori discreti e continui, statistica descrittiva, statistica inferenziale, ecc.) e saranno simili agli esercizi risolti durante le lezioni del corso. Per un confronto si possono consultare le tracce d'esame degli scorsi appelli e il materiale condiviso sul canale Team durante il corso.
 
 Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavole numeriche per le distribuzioni normale standard, chi-quadro e t-Student scaricabili scaricabili [qui](materiale/tabelleVA.pdf).
 
@@ -54,7 +54,9 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### modalità d'esame 
 
-**N.B.: Modalità dell'appello del 22 aprile 2022 di "Calcolo e Probabilità e Statistica" [2959]. A partire dal 20 giugno 2022 la modalità si uniformerà a quella del nuovo corso di Probabilità e Statistica [3231].**
+Come per l'esame di Probabilità e Statistica [3231].
+
+<!-- **N.B.: Modalità dell'appello del 22 aprile 2022 di "Calcolo e Probabilità e Statistica" [2959]. A partire dal 20 giugno 2022 la modalità si uniformerà a quella del nuovo corso di Probabilità e Statistica [3231].**
 
 L'esame consiste in una prova scritta. 
 
@@ -66,7 +68,7 @@ Ogni esercizio ha un numero di punti assegnato e si raggiunge il punteggio massi
 
 Oltre agli esercizi, dei quesiti teorici facoltativi permetteranno di aumentare il voto se svolti correttamente.
 
-Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole numeriche per la variabile aleatoria normale standard, per la variabile chi quadro e per la variabile t-Student scaricabili [qui](materiale/tabelleVA.pdf).
+Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole numeriche per la variabile aleatoria normale standard, per la variabile chi quadro e per la variabile t-Student scaricabili [qui](materiale/tabelleVA.pdf). -->
 
 #### prossimi appelli
 
