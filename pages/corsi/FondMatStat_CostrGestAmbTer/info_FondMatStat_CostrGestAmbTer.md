@@ -26,7 +26,7 @@ Il prossimo appello d'esame sarà il **22 aprile 2022**. L'esame si svolgerà in
 - 22 aprile 2022
 - 20 giugno 2022
 - 18 luglio 2022
-- 06 settembre 2022
+- 07 settembre 2022
 - 20 settembre 2022
 - 14 novembre 2022
 
