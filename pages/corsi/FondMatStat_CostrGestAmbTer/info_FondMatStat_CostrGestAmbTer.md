@@ -9,10 +9,11 @@ title: orlando | didattica
 
 --- 
 
+<!--  
 #### avvisi
 
 
-<!-- Sono disponibili gli **esiti** dell'appello del **19 novembre 2021** su Esse3. -->
+Sono disponibili gli **esiti** dell'appello del **19 novembre 2021** su Esse3. 
 
 Il prossimo appello d'esame sarà il **22 aprile 2022**. L'esame si svolgerà in presenza. L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3.  <!--- La scadenza per le registrazioni all'appello su Esse3 è il *24 settembre 2021*. L'esame si svolgerà in presenza come indicato sulle [linee guida del Politecnico di Bari](https://www.poliba.it/sites/default/files/linee_guida_per_lo_svolgimento_degli_esami_di_profitto_dal_1_settembre_2021.pdf). L'aula in cui si svolgerà l'esame e l'orario sono indicati su Esse3. -->
 
