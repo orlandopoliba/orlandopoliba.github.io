@@ -28,7 +28,7 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 8. V. Crismale, G. Orlando. A lower semicontinuity result for linearised elasto-plasticity coupled with damage in $$W^{1,\gamma}$$, $$\gamma > 1$$. *Mathematics in Engineering* **2** (2020), 101–118
 9. A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: chirality transitions at the surface scaling. *Calculus of Variations and Partial Differential Equations* **60** (2021), Article no. 149
 10. M. Cicalese, G. Orlando, M. Ruf. Coarse graining and large-N behavior of the d-dimensional N-clock model. *Interfaces Free Bound.* **23** (2021), 323–351
-11. M. Cicalese, G. Orlando, M. Ruf. Emergence of concentration effects in the variational analysis of the N-clock model. *Comm. Pure Appl. Math.*, to appear
+11. M. Cicalese, G. Orlando, M. Ruf. Emergence of concentration effects in the variational analysis of the N-clock model. *Comm. Pure Appl. Math.* **75** (2022), 2279-2342.
 12.  A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: topological singularities. *Indiana Univ. Mat. J.*, to appear
 13. M. Cicalese, G. Orlando, M. Ruf. A classical $$S^2$$-spin system with discrete out-of-plane anisotropy: variational analysis at surface and vortex scalings. *Nonlinear Analysis* (2022), Available online. doi: 10.1016/j.na.2022.112929
 14.  M. Cicalese, G. Orlando, M. Ruf. The N-clock model: Variational analysis for fast and slow divergence rates of N. *Arch. Ration. Mech. Anal.*, to appear
