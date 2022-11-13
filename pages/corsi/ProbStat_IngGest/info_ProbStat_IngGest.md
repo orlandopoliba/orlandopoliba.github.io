@@ -11,10 +11,10 @@ title: orlando | didattica
 
 ### Probabilità e Statistica [3231] (a partire da a.a. 2021/2022) 
 
-#### orario delle lezioni
+<!-- #### orario delle lezioni
 
 - martedì 14:00-16:30
-- mercoledì 14:00-16:30
+- mercoledì 14:00-16:30 -->
 
 #### contenuti del corso (sintetico)
 
@@ -28,8 +28,8 @@ Elementi di statistica inferenziale. Campione casuale. Variabili aleatorie dipen
 
 #### testi consigliati
 - Note del corso (fornite lezione per lezione)
-- S. Ross, *Probabilità e Statistica per l'Ingegneria e le Scienze*, Apogeo (copre gli argomenti del corso e contiene un discreto numero di esercizi)
 - F. Caravenna, P. Dai Pra, *Probabilità. Un'introduzione attraverso modelli e applicazioni*, Springer (per uno studio più approfondito della teoria, esempi interessanti)
+- S. Ross, *Probabilità e Statistica per l'Ingegneria e le Scienze*, Apogeo (copre gli argomenti del corso e contiene un discreto numero di esercizi)
 - M.R. Spiegel, J. Schiller, R. Alu Srinivasan, *Probability and Statistics*. Fourth Edition. McGraw Hill. (tanti esercizi)
 - F. Mosteller, *Fifty Challenging Problems in Probability with solutions*, Dover Publications, Inc. (esercizi difficili)
 
@@ -70,15 +70,26 @@ Oltre agli esercizi, dei quesiti teorici facoltativi permetteranno di aumentare 
 
 Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole numeriche per la variabile aleatoria normale standard, per la variabile chi quadro e per la variabile t-Student scaricabili [qui](materiale/tabelleVA.pdf). -->
 
-#### prossimi appelli
+#### appelli futuri
+
+- gennaio 2023 (da definire)
+- febbraio 2023 (da definire)
+- aprile 2023 (da definire)
+- giugno 2023 (da definire)
+- luglio 2023 (da definire)
+- settembre 2023 - I (da definire)
+- settembre 2023 - II (da definire)
+- novembre 2023 (da definire)
+
+#### appelli passati (Probabilità e Statistica [3231])
 
 - 20 giugno 2022 \| [traccia](tracce/220620_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220620_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 18 luglio 2022 \| [traccia 1](tracce/220718_Traccia_ProbStat_IngGest_aa2122-turno_1.pdf) \| [soluzione 1](tracce/220718_Soluzione_ProbStat_IngGest_aa2122-turno_1.pdf) \| [traccia 2](tracce/220718_Traccia_ProbStat_IngGest_aa2122-turno_2.pdf) \| [soluzione 2](tracce/220718_Soluzione_ProbStat_IngGest_aa2122-turno_2.pdf)
 - 07 settembre 2022 \| [traccia](tracce/220907_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220907_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 20 settembre 2022 \| [traccia](tracce/220920_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220920_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- novembre 2022 (tra il 7 e l'11, da definire)
+- 11 novembre 2022 \| [traccia](tracce/221111_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/221111_Soluzione_ProbStat_IngGest_aa2122.pdf)
 
-#### appelli passati
+#### appelli passati (Calcolo e Probabilità e Statistica [2959])
 
 - 13 settembre 2021 (solo "Calcolo e Probabilità e Statistica" [2959]) \| [traccia](tracce/210913_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210913_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
 - 27 settembre 2021 (solo "Calcolo e Probabilità e Statistica" [2959]) \| [traccia](tracce/210927_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210927_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
