@@ -72,14 +72,14 @@ Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole 
 
 #### appelli futuri
 
-- gennaio 2023 (da definire)
-- febbraio 2023 (da definire)
-- aprile 2023 (da definire)
-- giugno 2023 (da definire)
-- luglio 2023 (da definire)
-- settembre 2023 - I (da definire)
-- settembre 2023 - II (da definire)
-- novembre 2023 (da definire)
+- 26 gennaio 2023
+- 9 febbraio 2023
+- 3 aprile 2023
+- 26 giugno 2023
+- 20 luglio 2023
+- 5 settembre 2023
+- 19 settembre 2023
+- 6 novembre 2023 (provvisoria)
 
 #### appelli passati (Probabilità e Statistica [3231])
 
