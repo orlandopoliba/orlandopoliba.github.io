@@ -72,7 +72,6 @@ Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole 
 
 #### appelli futuri
 
-- 26 gennaio 2023
 - 9 febbraio 2023
 - 3 aprile 2023
 - 26 giugno 2023
@@ -88,6 +87,7 @@ Durante la prova scritta è consentito l'uso di una calcolatrice e delle tavole 
 - 07 settembre 2022 \| [traccia](tracce/220907_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220907_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 20 settembre 2022 \| [traccia](tracce/220920_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220920_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 11 novembre 2022 \| [traccia](tracce/221111_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/221111_Soluzione_ProbStat_IngGest_aa2122.pdf)
+- 26 gennaio 2023 \| [traccia](tracce/230126_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230126_Soluzione_ProbStat_IngGest_aa2122.pdf)
 
 #### appelli passati (Calcolo e Probabilità e Statistica [2959])
 
