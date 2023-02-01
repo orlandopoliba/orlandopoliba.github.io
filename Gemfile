@@ -16,3 +16,4 @@ group :jekyll_plugins do
     gem 'jekyll-katex'
     gem 'jekyll-sitemap'
 end
+gem "webrick", "~> 1.8"
