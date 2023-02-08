@@ -11,4 +11,5 @@ Fixed-&shy;term As&shy;sis&shy;tant Pro&shy;fes&shy;sor (RTDA - Ri&shy;cer&shy;c
 [arXiv](https://arxiv.org/a/orlando_g_1.html) \| 
 [scholar](https://scholar.google.com/citations?user=RMCfsT0AAAAJ&hl=en&oi=ao)
 
-<!-- building instructions: npm run deploy; bundle exec jekyll build (oppure: bundle exec jekyll serve --livereload= -->
+<!-- building instructions: bundle exec jekyll build (oppure: bundle exec jekyll serve --livereload= -->
+<!-- npm run deploy; is this needed to update the page? I don't think so.>
