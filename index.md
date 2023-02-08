@@ -12,4 +12,4 @@ Fixed-&shy;term As&shy;sis&shy;tant Pro&shy;fes&shy;sor (RTDA - Ri&shy;cer&shy;c
 [scholar](https://scholar.google.com/citations?user=RMCfsT0AAAAJ&hl=en&oi=ao)
 
 <!-- building instructions: bundle exec jekyll build (oppure: bundle exec jekyll serve --livereload= -->
-<!-- npm run deploy; is this needed to update the page? I don't think so.>
+<!-- npm run deploy; is this needed to update the page? I don't think so.-->
