@@ -13,9 +13,9 @@ title: orlando | didattica
 
 #### orario delle lezioni
 
-- lunedì 11:30-12:30 in modalità virtuale tramite riunione Teams
-- mercoledì 15:30-17:30 in presenza in Aula B
-- giovedì 13:30-15:30 in presenza in Aula P
+- lunedì 10:30-11:30 in modalità virtuale tramite riunione Teams
+- martedì 13:30-15:30 in presenza in Aula G 
+- mercoledì 17:30-19:30 in presenza in Aula C 
 
 #### contenuti del corso (sintetico)
 
