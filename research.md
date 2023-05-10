@@ -34,7 +34,7 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 13. M. Cicalese, G. Orlando, M. Ruf. A classical $$S^2$$-spin system with discrete out-of-plane anisotropy: variational analysis at surface and vortex scalings. _Nonlinear Analysis_ (2022), Article no. 112929.
 14. M. Cicalese, G. Orlando, M. Ruf. The N-clock model: Variational analysis for fast and slow divergence rates of N. _Arch. Ration. Mech. Anal._ **245** (2022), 1135–1196.
 15. M. Cicalese, M. Forster, G. Orlando. Variational analysis of the $$J_1$$-$$J_2$$-$$J_3$$ model: a non-linear lattice version of the Aviles-Giga functional. _Arch. Ration. Mech. Anal._ **245** (2022), 1059–1133.
-16. G. Orlando. Mean-field optimal control in a multi-agent interaction model for prevention of maritime crime. _Preprint_ (2022).
+16. G. Orlando. Mean-field optimal control in a multi-agent interaction model for prevention of maritime crime. _Adv Cont Discr Mod_ **2023**, 24 (2023).
 
 ## preprints
 
