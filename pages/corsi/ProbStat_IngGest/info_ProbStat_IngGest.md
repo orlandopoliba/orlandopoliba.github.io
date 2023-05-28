@@ -62,7 +62,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - 26 gennaio 2023 \| [traccia](tracce/230126_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230126_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 9 febbraio 2023 \| [traccia](tracce/230209_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230209_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 3 aprile 2023 \| [traccia](tracce/230403_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230403_Soluzione_ProbStat_IngGest_aa2122.pdf)
-
+- 25 maggio 2023 (solo per fuoricorso) \| [traccia](tracce/230525_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230525_Soluzione_ProbStat_IngGest_aa2122.pdf)
 
 <!-- #### appelli passati (Calcolo e Probabilità e Statistica [2959])
 
