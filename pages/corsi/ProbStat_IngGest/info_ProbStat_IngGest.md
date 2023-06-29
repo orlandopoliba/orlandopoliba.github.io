@@ -11,12 +11,6 @@ title: orlando | didattica
 
 ### Probabilità e Statistica [3231] (a partire da a.a. 2021/2022) 
 
-#### orario delle lezioni
-
-- lunedì 10:30-11:30 in modalità virtuale tramite riunione Teams
-- martedì 13:30-15:30 in presenza in Aula G 
-- mercoledì 13:30-15:30 in presenza in Aula C 
-
 #### contenuti del corso (sintetico)
 
 N.B.: Per una lista dettagliata degli argomenti si veda il registro stilato lezione per lezione durante lo svolgimento del corso.
@@ -46,7 +40,6 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### appelli futuri
 
-- 26 giugno 2023
 - 20 luglio 2023
 - 5 settembre 2023
 - 19 settembre 2023
@@ -63,6 +56,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - 9 febbraio 2023 \| [traccia](tracce/230209_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230209_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 3 aprile 2023 \| [traccia](tracce/230403_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230403_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 25 maggio 2023 (solo per fuoricorso) \| [traccia](tracce/230525_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230525_Soluzione_ProbStat_IngGest_aa2122.pdf)
+- 26 giugno 2023 \| [traccia 1](tracce/230626_Traccia_ProbStat_IngGest_aa2223-turno_1.pdf) \| [soluzione 1](tracce/230626_Soluzione_ProbStat_IngGest_aa2223-turno_1.pdf) \| [traccia 1](tracce/230626_Traccia_ProbStat_IngGest_aa2223-turno_2.pdf) \| [soluzione 1](tracce/230626_Soluzione_ProbStat_IngGest_aa2223-turno_2.pdf)
 
 <!-- #### appelli passati (Calcolo e Probabilità e Statistica [2959])
 
