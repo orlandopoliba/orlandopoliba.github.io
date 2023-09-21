@@ -10,7 +10,7 @@ show.addEventListener("click", function(event) {
 }, {once: true});</script>
 
 #### phone number
-N/A
+3651
 
 #### room
 12
