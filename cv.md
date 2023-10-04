@@ -10,12 +10,14 @@ title: orlando | cv
 - 2011–2013: M.Sc. in Mathematics. Università degli studi di Trieste, Italia (joint curriculum with SISSA). Advisors: Prof. Gianni Dal Maso and Dott.ssa Rodica Toader. Thesis: *Laplace equation in cracked domains: relations between energy of solutions and crack length*.
 - 2013–2016: Ph.D. in Mathematical Analysis, Modelling and Applications. SISSA, Trieste, Italia. Relatori: Prof. Gianni Dal Maso and Prof.ssa Rodica Toader. Thesis: *Some results on cohesive energies: approximation, lower semicontinuity and quasistatic evolution*. 
 
+
 ## previous positions
 
 - oct 2016–sep 2017: [TUM University Foundation Fellow (TUFF)](https://www.tum.de/en/research/postdocs/tum-global-postdoc-fellowship/), Technische Universität München, Germany.
 - oct 2017–mar 2018: Post-doc in the project B08 of [SFB Transregio 109](https://www.discretization.de), Technische Universität München, Germany.
 - apr 2018–nov 2019: [Humboldt Research Fellowship](https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship). Host: Technische Universität München, Germany.
 - dec 2019–dec 2020: [Marie Sklodowska-Curie Actions](https://ec.europa.eu/research/mariecurieactions/node_en) Fellow (Horizon 2020). Host: Technische Universität München, Germany.
+- dec 2020-sep 2023: Fixed-term Assistant Professor (RTD-A - Ricercatore a tempo determinato di tipo B) in Mathematical Analysis at the [Department of Mechanics, Mathematics & Management](https://www.dmmm.poliba.it/index.php/it/) of [Politecnico di Bari](https://www.poliba.it/) - funded by the Research for Innovation (REFIN) project of Regione Puglia No. D3DB80C1.
 
 ## prizes & awards
 
