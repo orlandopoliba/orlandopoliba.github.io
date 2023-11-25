@@ -30,7 +30,7 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 9. A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: chirality transitions at the surface scaling. _Calculus of Variations and Partial Differential Equations_ **60** (2021), Article no. 149
 10. M. Cicalese, G. Orlando, M. Ruf. Coarse graining and large-N behavior of the d-dimensional N-clock model. _Interfaces Free Bound._ **23** (2021), 323–351
 11. M. Cicalese, G. Orlando, M. Ruf. Emergence of concentration effects in the variational analysis of the N-clock model. _Comm. Pure Appl. Math._ **75** (2022), 2279-2342.
-12.  A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: topological singularities. _Indiana Univ. Mat. J._, to appear
+12.  A. Bach, M. Cicalese, L. Kreutz, G. Orlando. The antiferromagnetic XY model on the triangular lattice: topological singularities. _Indiana Univ. Mat. J._ **71** (2022), 2411-2475.
 13. M. Cicalese, G. Orlando, M. Ruf. A classical $$S^2$$-spin system with discrete out-of-plane anisotropy: variational analysis at surface and vortex scalings. _Nonlinear Analysis_ (2022), Article no. 112929.
 14. M. Cicalese, G. Orlando, M. Ruf. The N-clock model: Variational analysis for fast and slow divergence rates of N. _Arch. Ration. Mech. Anal._ **245** (2022), 1135–1196.
 15. M. Cicalese, M. Forster, G. Orlando. Variational analysis of the $$J_1$$-$$J_2$$-$$J_3$$ model: a non-linear lattice version of the Aviles-Giga functional. _Arch. Ration. Mech. Anal._ **245** (2022), 1059–1133.
@@ -38,9 +38,12 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 
 ## preprints
 
+1. G.M. Coclite, N. De Nitti, F. Maddalena, G. Orlando, E. Zuazua. Exponential convergence to steady-states for trajectories of a damped dynamical system modelling adhesive strings. [https://arxiv.org/abs/2311.05295](https://arxiv.org/abs/2311.05295).
+
+
 All the preprints are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) or [arXiv](https://arxiv.org/a/orlando_g_1.html) profiles.
 
 
 ## collaborators
 
-[Gianni Dal Maso](https://people.sissa.it/~dalmaso/), [Rodica Toader](https://people.uniud.it/page/rodica.toader), [Vito Crismale](http://www.vitocrismale.info/index.html), [Giuliano Lazzaroni](https://web.math.unifi.it/users/lazzaroni/), [Roberto Alessi](https://robertoalessi.weebly.com/), [Marco Cicalese](https://www-m7.ma.tum.de/bin/view/Analysis/MarcoCicalese), [Matthias Ruf](https://people.epfl.ch/matthias.ruf/?lang=en), [Marwin Forster](https://www-m7.ma.tum.de/bin/view/Analysis/MarwinForster), [Annika Bach](https://www-m7.ma.tum.de/bin/view/Analysis/AnnikaBach), [Leonard Kreutz](https://www.uni-muenster.de/AMM/en/Friedrich/mitarbeiter/kreutz.html)
+[Roberto Alessi](https://robertoalessi.weebly.com/), [Annika Bach](https://www-m7.ma.tum.de/bin/view/Analysis/AnnikaBach), [Marco Cicalese](https://www-m7.ma.tum.de/bin/view/Analysis/MarcoCicalese), [Giuseppe Maria Coclite](https://sites.google.com/site/coclitegm/), [Vito Crismale](http://www.vitocrismale.info/index.html), [Gianni Dal Maso](https://people.sissa.it/~dalmaso/), [Nicola De Nitti](https://nicodenitti.com/), [Marwin Forster](https://www-m7.ma.tum.de/bin/view/Analysis/MarwinForster),  [Leonard Kreutz](https://www.uni-muenster.de/AMM/en/Friedrich/mitarbeiter/kreutz.html), [Giuliano Lazzaroni](https://web.math.unifi.it/users/lazzaroni/), [Francesco Maddalena](https://www.dmmm.poliba.it/index.php/it/profile/213-fmadda), [Matthias Ruf](https://people.epfl.ch/matthias.ruf/?lang=en), [Rodica Toader](https://people.uniud.it/page/rodica.toader), [Enrique Zuazua](https://dcn.nat.fau.eu/enrique-zuazua/).

@@ -70,6 +70,7 @@ Lo scopo finale del progetto è quello di fornire risultati predittivi nel cont
 1. G. Orlando. Mean-field optimal control in a multi-agent interaction model for prevention of maritime crime. _Preprint_ (2022).
 2. M. Cicalese, M. Forster, G. Orlando. Variational analysis of the $$J_1$$-$$J_2$$-$$J_3$$ model: a non-linear lattice version of the Aviles-Giga functional. _Arch. Ration. Mech. Anal._ **245** (2022), 1059–1133.
 3. M. Cicalese, G. Orlando, M. Ruf. A classical $$S^2$$-spin system with discrete out-of-plane anisotropy: variational analysis at surface and vortex scalings. _Nonlinear Analysis_ (2022), Article no. 112929.
+4. G.M. Coclite, N. De Nitti, F. Maddalena, G. Orlando, E. Zuazua. Exponential convergence to steady-states for trajectories of a damped dynamical system modelling adhesive strings. [https://arxiv.org/abs/2311.05295](https://arxiv.org/abs/2311.05295).
 
 ### Locandina 
 
