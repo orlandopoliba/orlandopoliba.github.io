@@ -22,10 +22,11 @@ Elementi di probabilità. Spazi di probabilità. Metodi di enumerazione: permuta
 Elementi di statistica inferenziale. Campione casuale. Variabili aleatorie dipendenti da un parametro. Stimatori e stime. Stimatori corretti. Media campionaria, varianza campionaria, deviazione standard campionaria. Stimatori di massima verosimiglianza. Intervalli di confidenza. Test di ipotesi.
 
 #### testi consigliati
-- F. Caravenna, P. Dai Pra, *Probabilità. Un'introduzione attraverso modelli e applicazioni*, Springer (per uno studio più approfondito della teoria, esempi interessanti)
+- F. Caravenna, P. Dai Pra, *Probabilità. Un'introduzione attraverso modelli e applicazioni*, Springer (la parte di teoria segue principalmente questo testo)
 - S. Ross, *Probabilità e Statistica per l'Ingegneria e le Scienze*, Apogeo (copre gli argomenti del corso e contiene un discreto numero di esercizi)
-- M.R. Spiegel, J. Schiller, R. Alu Srinivasan, *Probability and Statistics*. Fourth Edition. McGraw Hill. (tanti esercizi)
-- F. Mosteller, *Fifty Challenging Problems in Probability with solutions*, Dover Publications, Inc. (esercizi difficili)
+- D. Montgomery, G.C. Runger, N.F. Hubele. *Statistica per l'ingegneria*, EGEA (copre gli argomenti del corso, un po' meno in dettaglio la parte di probabilità, più in dettaglio la parte di statistica inferenziale. La versione inglese è più completa)
+- M.R. Spiegel, J. Schiller, R. Alu Srinivasan, *Probability and Statistics*. Fourth Edition. McGraw Hill. (tanti esercizi di base sulle variabili aleatorie)
+- F. Mosteller, *Fifty Challenging Problems in Probability with solutions*, Dover Publications, Inc. (esercizi difficili di probabilità di base, solo per i più interessati)
 
 #### modalità d'esame
 
@@ -51,6 +52,10 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### appelli passati
 
+- a.a. 2021/2022 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2021-2022.pdf)
+- a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023.pdf)
+
+<!--
 - 20 giugno 2022 \| [traccia](tracce/220620_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220620_Soluzione_ProbStat_IngGest_aa2122.pdf)
 - 18 luglio 2022 \| [traccia 1](tracce/220718_Traccia_ProbStat_IngGest_aa2122-turno_1.pdf) \| [soluzione 1](tracce/220718_Soluzione_ProbStat_IngGest_aa2122-turno_1.pdf) \| [traccia 2](tracce/220718_Traccia_ProbStat_IngGest_aa2122-turno_2.pdf) \| [soluzione 2](tracce/220718_Soluzione_ProbStat_IngGest_aa2122-turno_2.pdf)
 - 07 settembre 2022 \| [traccia](tracce/220907_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220907_Soluzione_ProbStat_IngGest_aa2122.pdf)
@@ -65,7 +70,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - 5 settembre 2023 \| [traccia](tracce/230905_Traccia_ProbStat_IngGest_aa2223.pdf) \| [soluzione](tracce/230905_Soluzione_ProbStat_IngGest_aa2223.pdf)
 - 19 settembre 2023 \| [traccia](tracce/230919_Traccia_ProbStat_IngGest_aa2223.pdf) \| [soluzione](tracce/230919_Soluzione_ProbStat_IngGest_aa2223.pdf)
 - 6 novembre 2023 \| [traccia](tracce/231106_Traccia_ProbStat_IngGest_aa2223.pdf) \| [soluzione](tracce/231106_Soluzione_ProbStat_IngGest_aa2223.pdf)
-
+-->
 
 <!-- #### appelli passati (Calcolo e Probabilità e Statistica [2959])
 
