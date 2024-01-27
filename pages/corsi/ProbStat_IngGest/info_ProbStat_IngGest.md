@@ -51,8 +51,8 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### appelli passati
 
-- a.a. 2021/2022 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2021-2022.pdf)
-- a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023.pdf)
+- a.a. 2021/2022 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2021-2022-240103.pdf)
+- a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023-240127.pdf)
 
 <!--
 - 20 giugno 2022 \| [traccia](tracce/220620_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220620_Soluzione_ProbStat_IngGest_aa2122.pdf)
