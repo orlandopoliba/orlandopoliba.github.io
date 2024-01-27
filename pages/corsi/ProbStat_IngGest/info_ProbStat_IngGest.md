@@ -41,7 +41,6 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### appelli futuri
 
-- 23 gennaio 2024
 - 06 febbraio 2024 
 - 16 aprile 2024 
 - 17 giugno 2024 
