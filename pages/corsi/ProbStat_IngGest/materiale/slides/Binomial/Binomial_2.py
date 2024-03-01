@@ -1,7 +1,8 @@
 import numpy as np
 from manim import *
-import random
+from math import comb
 from manim_slides import Slide
+ 
  
 class Binomial_2(Slide):
   def construct(self):
@@ -66,7 +67,6 @@ class Binomial_2(Slide):
       portions = np.array(data).astype(float)
       total = portions.sum()
       n = len(portions)-1
-      h = 8/n
       if total == 0:
         portions[:] = 0
       else:
@@ -75,10 +75,10 @@ class Binomial_2(Slide):
       bars = VGroup()
 
       for x, prop in enumerate(portions):
-        p1 = VectorizedPoint().move_to(histogram[0].c2p(x+h/8, 0))
-        p2 = VectorizedPoint().move_to(histogram[0].c2p(x-h/8 + 1, 0))
-        p3 = VectorizedPoint().move_to(histogram[0].c2p(x-h/8 + 1, prop))
-        p4 = VectorizedPoint().move_to(histogram[0].c2p(x+h/8, prop))
+        p1 = VectorizedPoint().move_to(histogram[0].c2p(x+1/8, 0))
+        p2 = VectorizedPoint().move_to(histogram[0].c2p(x-1/8 + 1, 0))
+        p3 = VectorizedPoint().move_to(histogram[0].c2p(x-1/8 + 1, prop))
+        p4 = VectorizedPoint().move_to(histogram[0].c2p(x+1/8, prop))
         points = VGroup(p1, p2, p3, p4)
         bar = Rectangle().replace(points, stretch=True)
         bar.set_style(
@@ -89,6 +89,25 @@ class Binomial_2(Slide):
         bars.add(bar)
       return bars
     
+    def get_theoretical_bars(p,n):
+      theoretical_portions = np.array([ comb(n,k) * p**k * (1-p)**(n-k) for k in range(0,n+1) ])
+      
+      theoretical_bars = VGroup()
+      for x, prop in enumerate(theoretical_portions):
+        p1 = VectorizedPoint().move_to(histogram[0].c2p(x+1/8, 0))
+        p2 = VectorizedPoint().move_to(histogram[0].c2p(x-1/8 + 1, 0))
+        p3 = VectorizedPoint().move_to(histogram[0].c2p(x-1/8 + 1, prop))
+        p4 = VectorizedPoint().move_to(histogram[0].c2p(x+1/8, prop))
+        points = VGroup(p1, p2, p3, p4)
+        bar = Rectangle().replace(points, stretch=True)
+        bar.set_style(
+          fill_color=[YELLOW_A],
+          fill_opacity=0.4,
+          stroke_color=[YELLOW_A],
+          stroke_opacity=0.4
+        )
+        theoretical_bars.add(bar)
+      return theoretical_bars
     
     p = 0.2
     n = 10
@@ -98,7 +117,9 @@ class Binomial_2(Slide):
     histogram = get_histogram(possible_outcomes=n+1)
     row = get_random_row(p, n)
     bars = get_bars(histogram=histogram, data=data)
-
+    theoretical_bars = get_theoretical_bars(p,n)
+    theoretical_bars.set_z_index(bars.z_index + 1)
+    
     text = VGroup()
     success_probability = Tex(f"Probabilità di successo: {p}").scale(0.6)
     text.add(success_probability)
@@ -120,7 +141,7 @@ class Binomial_2(Slide):
       arrow.next_to(bars[count], UP, buff=0.1) 
       experiment_counter.become(Tex(f"{i+1}").scale(0.6).next_to(text_experiment_counter, RIGHT))
 
-    self.add(title, histogram, row, bars, text, experiment_counter, arrow)
+    self.add(title, histogram, row, bars, theoretical_bars, text, experiment_counter, arrow)
 
     group = VGroup(row, bars, arrow, experiment_counter)
     for i in range(0,20):
