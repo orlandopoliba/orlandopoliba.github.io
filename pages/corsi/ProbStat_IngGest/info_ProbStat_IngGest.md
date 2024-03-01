@@ -41,7 +41,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### appelli futuri
 
-- 16 aprile 2024 
+- 16 aprile 2024 (solo per a.a. 2022/2023)
 - 17 giugno 2024 
 - 15 luglio 2024
 - 03 settembre 2024 
@@ -53,29 +53,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - a.a. 2021/2022 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2021-2022-240103.pdf)
 - a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023-240207.pdf)
 
-<!--
-- 20 giugno 2022 \| [traccia](tracce/220620_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220620_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 18 luglio 2022 \| [traccia 1](tracce/220718_Traccia_ProbStat_IngGest_aa2122-turno_1.pdf) \| [soluzione 1](tracce/220718_Soluzione_ProbStat_IngGest_aa2122-turno_1.pdf) \| [traccia 2](tracce/220718_Traccia_ProbStat_IngGest_aa2122-turno_2.pdf) \| [soluzione 2](tracce/220718_Soluzione_ProbStat_IngGest_aa2122-turno_2.pdf)
-- 07 settembre 2022 \| [traccia](tracce/220907_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220907_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 20 settembre 2022 \| [traccia](tracce/220920_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/220920_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 11 novembre 2022 \| [traccia](tracce/221111_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/221111_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 26 gennaio 2023 \| [traccia](tracce/230126_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230126_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 9 febbraio 2023 \| [traccia](tracce/230209_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230209_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 3 aprile 2023 \| [traccia](tracce/230403_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230403_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 25 maggio 2023 (solo per fuoricorso) \| [traccia](tracce/230525_Traccia_ProbStat_IngGest_aa2122.pdf) \| [soluzione](tracce/230525_Soluzione_ProbStat_IngGest_aa2122.pdf)
-- 26 giugno 2023 \| [traccia 1](tracce/230626_Traccia_ProbStat_IngGest_aa2223-turno_1.pdf) \| [soluzione 1](tracce/230626_Soluzione_ProbStat_IngGest_aa2223-turno_1.pdf) \| [traccia 2](tracce/230626_Traccia_ProbStat_IngGest_aa2223-turno_2.pdf) \| [soluzione 2](tracce/230626_Soluzione_ProbStat_IngGest_aa2223-turno_2.pdf)
-- 20 luglio 2023 \| [traccia 1](tracce/230720_Traccia_ProbStat_IngGest_aa2223-turno_1.pdf) \| [soluzione 1](tracce/230720_Soluzione_ProbStat_IngGest_aa2223-turno_1.pdf) \| [traccia 2](tracce/230720_Traccia_ProbStat_IngGest_aa2223-turno_2.pdf) \| [soluzione 2](tracce/230720_Soluzione_ProbStat_IngGest_aa2223-turno_2.pdf)
-- 5 settembre 2023 \| [traccia](tracce/230905_Traccia_ProbStat_IngGest_aa2223.pdf) \| [soluzione](tracce/230905_Soluzione_ProbStat_IngGest_aa2223.pdf)
-- 19 settembre 2023 \| [traccia](tracce/230919_Traccia_ProbStat_IngGest_aa2223.pdf) \| [soluzione](tracce/230919_Soluzione_ProbStat_IngGest_aa2223.pdf)
-- 6 novembre 2023 \| [traccia](tracce/231106_Traccia_ProbStat_IngGest_aa2223.pdf) \| [soluzione](tracce/231106_Soluzione_ProbStat_IngGest_aa2223.pdf)
--->
+#### simulazioni 
 
-<!-- #### appelli passati (Calcolo e Probabilità e Statistica [2959])
-
-- 13 settembre 2021 (solo "Calcolo e Probabilità e Statistica" [2959]) \| [traccia](tracce/210913_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210913_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
-- 27 settembre 2021 (solo "Calcolo e Probabilità e Statistica" [2959]) \| [traccia](tracce/210927_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/210927_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
-- 19 novembre 2021 (solo "Calcolo e Probabilità e Statistica" [2959])  \| [traccia](tracce/211119_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/211119_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
-- 25 gennaio 2022 (solo "Calcolo e Probabilità e Statistica" [2959]) \| [traccia](tracce/220125_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/220125_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
-- 21 febbraio 2022 (solo "Calcolo e Probabilità e Statistica" [2959]) [traccia](tracce/220221_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/220221_Soluzione_CalcProbStat_IngGest_aa2021.pdf)
-- 22 aprile 2022 (solo "Calcolo e Probabilità e Statistica" [2959]) [traccia](tracce/220422_Traccia_CalcProbStat_IngGest_aa2021.pdf) \| [soluzione](tracce/220422_Soluzione_CalcProbStat_IngGest_aa2021.pdf) -->
-
+- legge di Bernoulli \| [slide](materiale/slides/Bernoulli/Bernoulli.html) \| [sorgente](materiale/slides/Bernoulli/Bernoulli.py) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
+- legge binomiale \| [slide](materiale/slides/Binomial/Binomial.html) \| [sorgente](materiale/slides/Binomial/Binomial.py) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))

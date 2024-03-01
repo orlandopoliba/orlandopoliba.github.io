@@ -1,0 +1,29 @@
+{
+  "slides": [
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "file": "slides/files/Bernoulli_2/fd9743054b98372854f87bbe9ca8cbbf7e2bd53c005c376ec5d8fde8b74f3a5e.mp4",
+      "rev_file": "slides/files/Bernoulli_2/fd9743054b98372854f87bbe9ca8cbbf7e2bd53c005c376ec5d8fde8b74f3a5e_reversed.mp4"
+    },
+    {
+      "loop": false,
+      "auto_next": false,
+      "playback_rate": 1.0,
+      "reversed_playback_rate": 1.0,
+      "notes": "",
+      "dedent_notes": true,
+      "file": "slides/files/Bernoulli_2/e44cd6c4c43723ab88dcb1beda03e7d99634ddcffd3b8280e648a54baac32198.mp4",
+      "rev_file": "slides/files/Bernoulli_2/e44cd6c4c43723ab88dcb1beda03e7d99634ddcffd3b8280e648a54baac32198_reversed.mp4"
+    }
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "background_color": "black"
+}
