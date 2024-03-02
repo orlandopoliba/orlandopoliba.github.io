@@ -57,4 +57,4 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 - legge di Bernoulli \| [slide](materiale/slides/Bernoulli/Bernoulli.html) \| [sorgente](materiale/slides/Bernoulli/Bernoulli.py) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
 - legge binomiale \| [slide](materiale/slides/Binomial/Binomial.html) \| [sorgente](materiale/slides/Binomial/Binomial.py) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
-- legge di Poisson \| [slide](materiale/slides/Poisson/Poisson.html)
+- legge di Poisson \| [slide](materiale/slides/Poisson/Poisson.html) \| [sorgente](materiale/slides/Poisson/Poisson.py)
