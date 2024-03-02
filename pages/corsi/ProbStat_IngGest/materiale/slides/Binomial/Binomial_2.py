@@ -3,7 +3,6 @@ from manim import *
 from math import comb
 from manim_slides import Slide
  
- 
 class Binomial_2(Slide):
   def construct(self):
     
@@ -41,11 +40,13 @@ class Binomial_2(Slide):
       result.add(ax, x_nums, y_nums)
       result.to_edge(DL, buff=0.6)
       return result
+    
+    def generate_random_results(p,n,N):
+      return np.random.binomial(1,p,(N,n))
       
-    def get_random_row(p, n):  # s is the probability of success
-      values = np.random.binomial(1,p,n)
+    def get_row(result): 
       nums = VGroup()
-      for x, value in enumerate(values):
+      for x, value in enumerate(result):
         num = Integer(value)
         num.set(height=0.25)
         num.move_to(x * RIGHT)
@@ -67,6 +68,7 @@ class Binomial_2(Slide):
       portions = np.array(data).astype(float)
       total = portions.sum()
       n = len(portions)-1
+      h = 8/n
       if total == 0:
         portions[:] = 0
       else:
@@ -75,10 +77,10 @@ class Binomial_2(Slide):
       bars = VGroup()
 
       for x, prop in enumerate(portions):
-        p1 = VectorizedPoint().move_to(histogram[0].c2p(x+1/8, 0))
-        p2 = VectorizedPoint().move_to(histogram[0].c2p(x-1/8 + 1, 0))
-        p3 = VectorizedPoint().move_to(histogram[0].c2p(x-1/8 + 1, prop))
-        p4 = VectorizedPoint().move_to(histogram[0].c2p(x+1/8, prop))
+        p1 = VectorizedPoint().move_to(histogram[0].c2p(x+h/8, 0))
+        p2 = VectorizedPoint().move_to(histogram[0].c2p(x-h/8 + 1, 0))
+        p3 = VectorizedPoint().move_to(histogram[0].c2p(x-h/8 + 1, prop))
+        p4 = VectorizedPoint().move_to(histogram[0].c2p(x+h/8, prop))
         points = VGroup(p1, p2, p3, p4)
         bar = Rectangle().replace(points, stretch=True)
         bar.set_style(
@@ -111,15 +113,20 @@ class Binomial_2(Slide):
     
     p = 0.2
     n = 10
+    N = 400
     
-    np.random.seed(42)
-    data = np.zeros(n+1)  # Possible outcomes as an array
+    np.random.seed(43)
+    results = generate_random_results(p,n,N)
+    data = np.zeros((N,n+1))
+    for i in range(N):
+      for j in range(n+1):
+        data[i,j] = np.sum(results[0:i+1,:].sum(axis=1) == j)
     histogram = get_histogram(possible_outcomes=n+1)
-    row = get_random_row(p, n)
-    bars = get_bars(histogram=histogram, data=data)
+    row = get_row(results[0])
+    bars = get_bars(histogram=histogram, data=data[0])
     theoretical_bars = get_theoretical_bars(p,n)
     theoretical_bars.set_z_index(bars.z_index + 1)
-    
+
     text = VGroup()
     success_probability = Tex(f"Probabilità di successo: {p}").scale(0.6)
     text.add(success_probability)
@@ -130,25 +137,27 @@ class Binomial_2(Slide):
     text.arrange(DOWN, center=False, aligned_edge=LEFT)  
     text.to_edge(RIGHT, buff=0.8)
     experiment_counter = Tex(f"{0}").scale(0.6).next_to(text_experiment_counter, RIGHT)
-    
+
+     
     arrow = Line(ORIGIN, DOWN * 0.8).add_tip().set_color(TEAL)
 
-    def update(dummy,new_row,i):
+    def update(dummy,new_row,new_data,i):
       row.become(new_row)
       count = sum([m.positive for m in new_row.nums])
-      data[count] += 1
-      bars.become(get_bars(histogram=histogram, data=data))
+      bars.become(get_bars(histogram=histogram, data=new_data))
       arrow.next_to(bars[count], UP, buff=0.1) 
       experiment_counter.become(Tex(f"{i+1}").scale(0.6).next_to(text_experiment_counter, RIGHT))
 
     self.add(title, histogram, row, bars, theoretical_bars, text, experiment_counter, arrow)
 
     group = VGroup(row, bars, arrow, experiment_counter)
-    for i in range(0,20):
-      new_row = get_random_row(p,n)
-      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,i)), run_time=0.1) 
+    for i in range(0,10):
+      new_row = get_row(results[i])
+      new_data = data[i]
+      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,new_data,i)), run_time=0.1) 
       self.wait(0.5)
     self.next_slide()
     for i in range(20,400):
-      new_row = get_random_row(p,n)
-      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,i)), run_time=0.001) 
+      new_row = get_row(results[i])
+      new_data = data[i]
+      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,new_data,i)), run_time=0.001) 
