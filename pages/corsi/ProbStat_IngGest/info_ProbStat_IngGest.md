@@ -61,11 +61,4 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### notebook interattivi
 
-- [legge binomiale](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fbinomial.ipynb)
-- [legge di Poisson](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fpoisson.ipynb)
-- [legge geometrica](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fgeometric.ipynb)
-- [legge normale](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fnormal.ipynb)
-- [legge esponenziale](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fexponential.ipynb)
-- [legge Gamma](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fgamma.ipynb)
-- [legge chi-quadro](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fchi-squared.ipynb)
-- [legge t-Student](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Ft-Student.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/HEAD) link alla sessione online per aprire i notebook interattivi. Attendere qualche secondo per l'apertura di JupyterLab, entrare nella cartella `notebook` e scegliere il file in formato `.ipynb` con cui si vuole interagire.
