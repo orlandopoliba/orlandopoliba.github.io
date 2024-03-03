@@ -40,11 +40,13 @@ class Binomial(Slide):
       result.add(ax, x_nums, y_nums)
       result.to_edge(DL, buff=0.6)
       return result
+    
+    def generate_random_results(p,n,N):
+      return np.random.binomial(1,p,(N,n))
       
-    def get_random_row(p, n):  # s is the probability of success
-      values = np.random.binomial(1,p,n)
+    def get_row(result): 
       nums = VGroup()
-      for x, value in enumerate(values):
+      for x, value in enumerate(result):
         num = Integer(value)
         num.set(height=0.25)
         num.move_to(x * RIGHT)
@@ -92,12 +94,17 @@ class Binomial(Slide):
     
     p = 0.5
     n = 4
+    N = 400
     
     np.random.seed(42)
-    data = np.zeros(n+1)  # Possible outcomes as an array
+    results = generate_random_results(p,n,N)
+    data = np.zeros((N,n+1))
+    for i in range(N):
+      for j in range(n+1):
+        data[i,j] = np.sum(results[0:i+1,:].sum(axis=1) == j)
     histogram = get_histogram(possible_outcomes=n+1)
-    row = get_random_row(p, n)
-    bars = get_bars(histogram=histogram, data=data)
+    row = get_row(results[0])
+    bars = get_bars(histogram=histogram, data=data[0])
 
     text = VGroup()
     success_probability = Tex(f"Probabilità di successo: {p}").scale(0.6)
@@ -109,14 +116,14 @@ class Binomial(Slide):
     text.arrange(DOWN, center=False, aligned_edge=LEFT)  
     text.to_edge(RIGHT, buff=0.8)
     experiment_counter = Tex(f"{0}").scale(0.6).next_to(text_experiment_counter, RIGHT)
-    
+
+     
     arrow = Line(ORIGIN, DOWN * 0.8).add_tip().set_color(TEAL)
 
-    def update(dummy,new_row,i):
+    def update(dummy,new_row,new_data,i):
       row.become(new_row)
       count = sum([m.positive for m in new_row.nums])
-      data[count] += 1
-      bars.become(get_bars(histogram=histogram, data=data))
+      bars.become(get_bars(histogram=histogram, data=new_data))
       arrow.next_to(bars[count], UP, buff=0.1) 
       experiment_counter.become(Tex(f"{i+1}").scale(0.6).next_to(text_experiment_counter, RIGHT))
 
@@ -124,15 +131,18 @@ class Binomial(Slide):
 
     group = VGroup(row, bars, arrow, experiment_counter)
     for i in range(10):
-      new_row = get_random_row(p,n)
-      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,i)), run_time=0.1) 
+      new_row = get_row(results[i])
+      new_data = data[i]
+      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,new_data,i)), run_time=0.1) 
       self.next_slide()
     self.next_slide()
     for i in range(10,20):
-      new_row = get_random_row(p,n)
-      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,i)), run_time=0.1) 
+      new_row = get_row(results[i])
+      new_data = data[i]
+      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,new_data,i)), run_time=0.1) 
       self.wait(0.5)
     self.next_slide()
     for i in range(20,400):
-      new_row = get_random_row(p,n)
-      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,i)), run_time=0.001) 
+      new_row = get_row(results[i])
+      new_data = data[i]
+      self.play(UpdateFromFunc(group, lambda m: update(m,new_row,new_data,i)), run_time=0.001) 
