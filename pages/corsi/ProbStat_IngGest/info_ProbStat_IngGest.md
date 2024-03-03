@@ -61,8 +61,8 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### notebook interattivi
 
-- [legge binomiale](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/ba466fdd13479ea4a01b3d90411e4157f8295f0c?urlpath=lab%2Ftree%2Fnotebook%2Fbinomial.ipynb)
-- [legge di Poisson](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/ba466fdd13479ea4a01b3d90411e4157f8295f0c?urlpath=lab%2Ftree%2Fnotebook%2Fpoisson.ipynb)
+- [legge binomiale](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fbinomial.ipynb)
+- [legge di Poisson](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fpoisson.ipynb)
 - [legge geometrica](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fgeometric.ipynb)
 - [legge normale](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fnormal.ipynb)
 - [legge esponenziale](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/b0e0ba6ecafce1518bf1111d8913864487657031?urlpath=lab%2Ftree%2Fnotebook%2Fexponential.ipynb)
