@@ -55,11 +55,12 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### simulazioni 
 
-- legge di Bernoulli \| [slide](materiale/slides/Bernoulli/Bernoulli.html) \| [sorgente](materiale/slides/Bernoulli/Bernoulli.py) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
-- legge binomiale \| [slide](materiale/slides/Binomial/Binomial.html) \| [sorgente](materiale/slides/Binomial/Binomial.py) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
-- legge di Poisson \| [slide](materiale/slides/Poisson/Poisson.html) \| [sorgente](materiale/slides/Poisson/Poisson.py)
-- legge geometrica \| [slide](materiale/slides/Geometric/Geometric.html) \| [sorgente](materiale/slides/Geometric/Geometric.py)
-- legge dei grandi numeri \| [slide](materiale/slides/LLN/LLN.html) \| [sorgente](materiale/slides/LLN/LLN.py)
+- legge di Bernoulli \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Bernoulli/Bernoulli.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Bernoulli) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
+- legge binomiale \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Binomial/Binomial.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Binomial) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
+- legge di Poisson \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Poisson/Poisson.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Poisson)
+- legge geometrica \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Geometric/Geometric.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Geometric)
+- funzione di densità di probabilità \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Density/Density.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Density)
+- legge dei grandi numeri \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/LLN/LLN.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/LLN)
 
 #### notebook interattivi
 
