@@ -61,6 +61,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - legge geometrica \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Geometric/Geometric.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Geometric)
 - funzione di densità di probabilità \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Density/Density.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Density)
 - legge dei grandi numeri \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/LLN/LLN.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/LLN)
+- legge di una media campionaria \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/CLT/CLT.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/CLT)
 
 #### notebook interattivi
 
