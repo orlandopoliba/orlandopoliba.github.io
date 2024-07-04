@@ -42,10 +42,6 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 
 All the preprints are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) or [arXiv](https://arxiv.org/a/orlando_g_1.html) profiles.
 
-## cv
-
-My full CV is available [here](curriculum-orlando.pdf).
-
 ## collaborators
 
 [Roberto Alessi](https://robertoalessi.weebly.com/), [Annika Bach](https://www-m7.ma.tum.de/bin/view/Analysis/AnnikaBach), [Marco Cicalese](https://www-m7.ma.tum.de/bin/view/Analysis/MarcoCicalese), [Giuseppe Maria Coclite](https://sites.google.com/site/coclitegm/), [Vito Crismale](http://www.vitocrismale.info/index.html), [Gianni Dal Maso](https://people.sissa.it/~dalmaso/), [Nicola De Nitti](https://nicodenitti.com/), [Marwin Forster](https://www-m7.ma.tum.de/bin/view/Analysis/MarwinForster),  [Leonard Kreutz](https://www.uni-muenster.de/AMM/en/Friedrich/mitarbeiter/kreutz.html), [Giuliano Lazzaroni](https://web.math.unifi.it/users/lazzaroni/), [Francesco Maddalena](https://www.dmmm.poliba.it/index.php/it/profile/213-fmadda), [Matthias Ruf](https://people.epfl.ch/matthias.ruf/?lang=en), [Rodica Toader](https://people.uniud.it/page/rodica.toader), [Enrique Zuazua](https://dcn.nat.fau.eu/enrique-zuazua/).
