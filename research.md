@@ -33,14 +33,18 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 14. M. Cicalese, G. Orlando, M. Ruf. The N-clock model: Variational analysis for fast and slow divergence rates of N. _Arch. Ration. Mech. Anal._ **245** (2022), 1135–1196.
 15. M. Cicalese, M. Forster, G. Orlando. Variational analysis of the $$J_1$$-$$J_2$$-$$J_3$$ model: a non-linear lattice version of the Aviles-Giga functional. _Arch. Ration. Mech. Anal._ **245** (2022), 1059–1133.
 16. G. Orlando. Mean-field optimal control in a multi-agent interaction model for prevention of maritime crime. _Adv Cont Discr Mod_ **2023**, 24 (2023).
+17. G.M. Coclite, N. De Nitti, F. Maddalena, G. Orlando, E. Zuazua. Exponential convergence to steady-states for trajectories of a damped dynamical system modelling adhesive strings. _Math. Models Methods Appl. Sci._ **34** (2024), 1445-1482.
 
-## preprints
+<!-- ## preprints -->
 
-1. G.M. Coclite, N. De Nitti, F. Maddalena, G. Orlando, E. Zuazua. Exponential convergence to steady-states for trajectories of a damped dynamical system modelling adhesive strings. [https://arxiv.org/abs/2311.05295](https://arxiv.org/abs/2311.05295).
+
 
 
 All the preprints are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) or [arXiv](https://arxiv.org/a/orlando_g_1.html) profiles.
 
+## cv
+
+My full CV is available [here](curriculum-orlando.pdf).
 
 ## collaborators
 
