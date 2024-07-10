@@ -35,9 +35,9 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 16. G. Orlando. Mean-field optimal control in a multi-agent interaction model for prevention of maritime crime. _Adv Cont Discr Mod_ **2023**, 24 (2023).
 17. G.M. Coclite, N. De Nitti, F. Maddalena, G. Orlando, E. Zuazua. Exponential convergence to steady-states for trajectories of a damped dynamical system modelling adhesive strings. _Math. Models Methods Appl. Sci._ **34** (2024), 1445-1482.
 
-<!-- ## preprints -->
+## preprints
 
-
+1. A. Bach, M. Cicalese, A. Garroni, G. Orlando. Stacking faults in the limit of a discrete model for partial edge dislocations. _Preprint_ (2024).
 
 
 All the preprints are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) or [arXiv](https://arxiv.org/a/orlando_g_1.html) profiles.
