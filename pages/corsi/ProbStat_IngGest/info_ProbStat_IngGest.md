@@ -41,7 +41,6 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### appelli futuri
 
-- 15 luglio 2024
 - 03 settembre 2024 
 - 17 settembre 2024
 - 05 novembre 2024
@@ -50,7 +49,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 - a.a. 2021/2022 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2021-2022-240704.pdf)
 - a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023-240207.pdf)
-- a.a 2023/2024 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2023-2024-240704.pdf)
+- a.a 2023/2024 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2023-2024-240719.pdf)
 
 #### simulazioni 
 
