@@ -38,7 +38,7 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 ## preprints
 
 1. A. Bach, M. Cicalese, A. Garroni, G. Orlando. Stacking faults in the limit of a discrete model for partial edge dislocations. _Preprint_ (2024).
-2. G.M. Coclite, S. Dipierro, F. Maddalena, \underline{G.\ Orlando}, E. Valdinoci. Comparison between solutions to the linear peridynamics model and solutions to the classical wave equation. _Preprint_ (2024).
+2. G.M. Coclite, S. Dipierro, F. Maddalena, G. Orlando, E. Valdinoci. Comparison between solutions to the linear peridynamics model and solutions to the classical wave equation. _Preprint_ (2024).
 
 
 All the preprints are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) or [arXiv](https://arxiv.org/a/orlando_g_1.html) profiles.
