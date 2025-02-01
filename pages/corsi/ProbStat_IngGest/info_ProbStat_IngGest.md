@@ -67,3 +67,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 #### notebook interattivi
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/HEAD) link alla sessione online per aprire i notebook interattivi. Attendere qualche secondo per l'apertura di JupyterLab, entrare nella cartella `notebook` e scegliere il file in formato `.ipynb` con cui si vuole interagire.
+
+#### gioco
+
+- [Monty Hall Problem](https://orlandopoliba.github.io/pages/games/monty_hall/monty_hall.html) 

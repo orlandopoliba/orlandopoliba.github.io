@@ -7,7 +7,7 @@ title: orlando | didattica
 
 - [Probabilità e Statistica \| laurea triennale Ing. Gestionale]({% link pages/corsi/ProbStat_IngGest/info_ProbStat_IngGest.md %}) 
 <!-- - [Fondamenti di Matematica e Statistica \| corso di studi in Costruzioni e Gestione Ambientale e Territoriale]({% link pages/corsi/FondMatStat_CostrGestAmbTer/info_FondMatStat_CostrGestAmbTer.md %})  -->
-
+- [Mathematical Methods in Deep Learning \| ScuDo]({% link pages/corsi/MMinDL_ScuDo/info_MMinDL_ScuDo.md %})
 
 ## ricevimento
 
