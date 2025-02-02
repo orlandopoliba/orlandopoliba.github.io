@@ -73,7 +73,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - [legge esponenziale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/exponential.html)
 - [legge Gamma](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/gamma.html)
 - [legge normale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/normal.html)
-- [legge chi-quadro](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/chi_squared.html)
+- [legge chi-quadro](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/chi-squared.html)
 - [legge t-Student](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/t-student.html)
 
 #### giochi
