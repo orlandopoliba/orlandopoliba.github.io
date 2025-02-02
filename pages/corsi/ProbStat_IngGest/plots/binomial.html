@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distribuzione Binomiale Interattiva</title>
+  <!-- Carica React, ReactDOM e Babel da CDN -->
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <!-- Carica Chart.js da CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Configurazione di MathJax per rendere le formule LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        displayAlign: 'center' // This makes sure that display math is centered.
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .slider-container {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .slider-container label {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .slider-container input[type="range"] {
+      flex: 2;
+    }
+    canvas {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Spiegazione iniziale in italiano -->
+    <h1>Legge binomiale</h1>
+    <p>
+      Ricordiamo che se <em>$X \sim \mathrm{B}(n, p)$</em> allora 
+      $$
+      \mathbb{P}(\{X = k\}) = \binom{n}{k} p^k (1-p)^{n-k} \, \text{ per } k = 0, 1, \ldots, n. 
+      $$
+      Di seguito è possibile visualizzare la distribuzione binomiale tramite un diagramma a barre, 
+      modificando i parametri $n$ (numero di prove) e $p$ (probabilità di successo).
+    </p>
+
+    <!-- Contenitore per la nostra applicazione React -->
+    <div id="root"></div>
+  </div>
+
+  <!-- Codice React scritto in JSX e compilato da Babel -->
+  <script type="text/babel">
+    // Funzione per calcolare il coefficiente binomiale
+    function comb(n, k) {
+      if (k < 0 || k > n) return 0;
+      if (k === 0 || k === n) return 1;
+      let res = 1;
+      for (let i = 1; i <= k; i++) {
+        res = res * (n - i + 1) / i;
+      }
+      return res;
+    }
+
+    // Componente principale per visualizzare il grafico interattivo
+    function BinomialChart() {
+      // Impostiamo lo stato iniziale per n e p
+      const [n, setN] = React.useState(1);
+      const [p, setP] = React.useState(0.5);
+      // Riferimento al canvas per Chart.js
+      const chartRef = React.useRef(null);
+      const chartInstanceRef = React.useRef(null);
+      
+      // Funzione per calcolare i dati della distribuzione binomiale
+      const calculateData = () => {
+        // Creiamo gli array per le etichette (k) e le probabilità
+        const labels = [];
+        const data = [];
+        // Calcoliamo per k da 0 a n
+        for (let k = 0; k <= n; k++) {
+          labels.push(k);
+          // Calcoliamo P(X=k)
+          const prob = comb(n, k) * Math.pow(p, k) * Math.pow(1-p, n-k);
+          data.push(prob);
+        }
+        return { labels, data };
+      };
+
+      // Inizializza o aggiorna il grafico ogni volta che n o p cambia
+      React.useEffect(() => {
+        const ctx = chartRef.current.getContext('2d');
+        const { labels, data } = calculateData();
+        
+        // Se il grafico esiste già, aggiorniamo i dati
+        if (chartInstanceRef.current) {
+          chartInstanceRef.current.data.labels = labels;
+          chartInstanceRef.current.data.datasets[0].data = data;
+          chartInstanceRef.current.update();
+        } else {
+          // Altrimenti, creiamo il grafico
+          chartInstanceRef.current = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: labels,
+              datasets: [{
+                label: 'P({X=k})',
+                data: data,
+                backgroundColor: 'rgba(0, 128, 128, 1)',
+                borderColor: 'rgba(0, 128, 128, 1)',
+                borderWidth: 1,
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  max: 1,
+                  ticks: {
+                    // Imposta un formato in percentuale, se desiderato
+                    callback: function(value) { return value.toFixed(2); }
+                  }
+                }
+              },
+              plugins: {
+                title: {
+                  display: true,
+                  text: 'Distribuzione binomiale'
+                }
+              }
+            }
+          });
+        }
+      }, [n, p]); // Effettua l’update ogni volta che n o p cambiano
+
+      return (
+        <div>
+          <div className="slider-container">
+            <label htmlFor="n-slider">Numero di prove <em>n</em> = {n}</label>
+            <input
+              id="n-slider"
+              type="range"
+              min="1"
+              max="10"
+              step="1"
+              value={n}
+              onChange={(e) => setN(parseInt(e.target.value))}
+            />
+          </div>
+          <div className="slider-container">
+            <label htmlFor="p-slider">Probabilità di successo <em>p</em> = {p.toFixed(2)}</label>
+            <input
+              id="p-slider"
+              type="range"
+              min="0"
+              max="0.99"
+              step="0.01"
+              value={p}
+              onChange={(e) => setP(parseFloat(e.target.value))}
+            />
+          </div>
+          <canvas ref={chartRef} width="600" height="400"></canvas>
+        </div>
+      );
+    }
+
+    // Renderizza l'applicazione nella div con id "root"
+    ReactDOM.render(<BinomialChart />, document.getElementById('root'));
+  </script>
+</body>
+</html>
