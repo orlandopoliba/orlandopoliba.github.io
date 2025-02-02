@@ -27,6 +27,7 @@ Elementi di statistica inferenziale. Campione casuale. Variabili aleatorie dipen
 - D. Montgomery, G.C. Runger, N.F. Hubele. *Statistica per l'ingegneria*, EGEA (copre gli argomenti del corso, un po' meno in dettaglio la parte di probabilità, più in dettaglio la parte di statistica inferenziale. La versione inglese è più completa)
 - M.R. Spiegel, J. Schiller, R. Alu Srinivasan, *Probability and Statistics*. Fourth Edition. McGraw Hill. (tanti esercizi di base sulle variabili aleatorie)
 - F. Mosteller, *Fifty Challenging Problems in Probability with solutions*, Dover Publications, Inc. (esercizi difficili di probabilità di base, solo per i più interessati)
+- Soch, Joram, et al. (2024). StatProofBook/StatProofBook.github.io: The Book of Statistical Proofs (Version 2023). Zenodo. https://doi.org/10.5281/ZENODO.4305949
 
 #### modalità d'esame
 
@@ -68,7 +69,13 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 - [legge binomiale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/binomial.html)
 - [legge di Poisson](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/poisson.html)
+- [legge geometrica](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/geometric.html)
+- [legge esponenziale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/exponential.html)
+- [legge Gamma](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/gamma.html)
+- [legge normale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/normal.html)
+- [legge chi-quadro](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/chi_squared.html)
+- [legge t-Student](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/t-student.html)
 
-#### gioco
+#### giochi
 
 - [Monty Hall Problem](https://orlandopoliba.github.io/pages/games/monty_hall/monty_hall.html) 

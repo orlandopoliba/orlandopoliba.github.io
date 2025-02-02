@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distribuzione Chi-Quadrato</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        displayAlign: 'center'
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .slider-container {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .slider-container label {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .slider-container input[type="range"] {
+      flex: 2;
+    }
+    canvas {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Legge Chi-Quadro</h1>
+    <p>
+      Una variabile aleatoria $X \sim \chi^2(n)$ è distribuita con legge chi-quadro con $n$ gradi di libertà se ha distribuzione $\mathrm{Gamma}(\frac{n}{2}, \frac{1}{2})$.
+      La funzione di densità di probabilità è quindi data da:
+      $$ f(x) = \begin{cases}
+        \frac{1}{2^{\frac{n}{2}} \Gamma\big(\frac{n}{2}\big)} x^{\frac{n}{2} - 1} e^{-\frac{x}{2}} & \text{per } x > 0, \\
+        0 & \text{altrimenti}.
+      \end{cases} $$
+      <br>
+      Nel seguente grafico è possibile modificare il numero di gradi di libertà $n$ per osservare come cambia la funzione di densità.
+    </p>
+    <div id="root"></div>
+  </div>
+  <script type="text/babel">
+    function ChiSquaredChart() {
+      const [nu, setNu] = React.useState(2);
+      const chartRef = React.useRef(null);
+      const chartInstanceRef = React.useRef(null);
+      
+      const gammaFunction = (x, k) => {
+        if (x <= 0) return 0;
+        return (Math.pow(x, k / 2 - 1) * Math.exp(-x / 2)) / (Math.pow(2, k / 2) * gamma(k / 2));
+      };
+      
+      function gamma(n) {
+        if (n === 1) return 1;
+        if (n === 0.5) return Math.sqrt(Math.PI);
+        return (n - 1) * gamma(n - 1);
+      }
+      
+      const calculateData = () => {
+        const labels = Array.from({ length: 200 }, (_, i) => (i / 10).toFixed(1));
+        const data = labels.map(x => gammaFunction(parseFloat(x), nu));
+        return { labels, data };
+      };
+      
+      React.useEffect(() => {
+        const ctx = chartRef.current.getContext('2d');
+        const { labels, data } = calculateData();
+        
+        if (chartInstanceRef.current) {
+          chartInstanceRef.current.data.labels = labels;
+          chartInstanceRef.current.data.datasets[0].data = data;
+          chartInstanceRef.current.update();
+        } else {
+          chartInstanceRef.current = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: labels,
+              datasets: [{
+                label: 'f(x)',
+                data: data,
+                borderColor: 'teal',
+                fill: true,
+                backgroundColor: 'teal',
+                pointRadius: 0
+              }]
+            },
+            options: {
+              scales: {
+                x: { title: { display: true, text: 'x' } },
+                y: { title: { display: true, text: 'f(x)' }, beginAtZero: true, max: 0.5 }
+              },
+              plugins: { title: { display: true, text: 'Distribuzione Chi-Quadro' } }
+            }
+          });
+        }
+      }, [nu]);
+      
+      return (
+        <div>
+          <div className="slider-container">
+            <label htmlFor="nu-slider">Gradi di libertà <em>n</em> = {nu.toFixed(0)}</label>
+            <input
+              id="nu-slider"
+              type="range"
+              min="1"
+              max="20"
+              step="1"
+              value={nu}
+              onChange={(e) => setNu(parseInt(e.target.value))}
+            />
+          </div>
+          <canvas ref={chartRef} width="600" height="400"></canvas>
+        </div>
+      );
+    }
+    
+    ReactDOM.render(<ChiSquaredChart />, document.getElementById('root'));
+  </script>
+</body>
+</html>

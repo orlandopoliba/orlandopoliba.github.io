@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distribuzione Gamma Interattiva</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        displayAlign: 'center'
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .slider-container {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .slider-container label {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .slider-container input[type="range"] {
+      flex: 2;
+    }
+    canvas {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Distribuzione Gamma</h1>
+    <p>
+      Una variabile aleatoria $X \sim \mathrm{Gamma}(\alpha, \lambda)$ è distribuita legge Gamma con parametri $\alpha$ e $\lambda$ se ha come funzione di densità di probabilità:
+      $$ f(x) = \begin{cases}
+      \displaystyle \frac{\lambda^{\alpha}}{\Gamma(\alpha)} x^{\alpha - 1} e^{-\lambda x}, \quad x > 0 , \\
+      0, \quad \text{altrimenti},
+      \end{cases} 
+      $$
+      Nel seguente grafico si possono modificare i valori di $\alpha$ e $\lambda$ per osservare il comportamento della distribuzione.
+    </p>
+    <div id="root"></div>
+  </div>
+  <script type="text/babel">
+    function gammaFunction(z) {
+      return Math.sqrt(2 * Math.PI / z) * Math.pow((1 / Math.E) * (z + 1 / (12 * z - 1 / (10 * z))), z);
+    }
+    
+    function GammaChart() {
+      const [alpha, setAlpha] = React.useState(2);
+      const [lambda, setLambda] = React.useState(1);
+      const chartRef = React.useRef(null);
+      const chartInstanceRef = React.useRef(null);
+      
+      const calculateData = () => {
+        const labels = Array.from({ length: 500 }, (_, i) => (i / 50).toFixed(2));
+        const data = labels.map(x => 
+          (Math.pow(lambda, alpha) * Math.pow(x, alpha - 1) * Math.exp(-lambda * x)) / gammaFunction(alpha)
+        );
+        return { labels, data };
+      };
+      
+      React.useEffect(() => {
+        const ctx = chartRef.current.getContext('2d');
+        const { labels, data } = calculateData();
+        
+        if (chartInstanceRef.current) {
+          chartInstanceRef.current.data.labels = labels;
+          chartInstanceRef.current.data.datasets[0].data = data;
+          chartInstanceRef.current.update();
+        } else {
+          chartInstanceRef.current = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: labels,
+              datasets: [{
+                label: 'f(x)',
+                data: data,
+                borderColor: 'teal',
+                fill: true,
+                backgroundColor: 'teal',
+                pointRadius: 0
+              }]
+            },
+            options: {
+              scales: {
+                x: { title: { display: true, text: 'x' } },
+                y: { title: { display: true, text: 'f(x)' }, beginAtZero: true, max: 2}
+              },
+              plugins: { title: { display: true, text: 'Distribuzione Gamma' } }
+            }
+          });
+        }
+      }, [alpha, lambda]);
+      
+      return (
+        <div>
+          <div className="slider-container">
+            <label htmlFor="alpha-slider">Parametro &alpha; = {alpha.toFixed(1)}</label>
+            <input
+              id="alpha-slider"
+              type="range"
+              min="0.2"
+              max="5"
+              step="0.2"
+              value={alpha}
+              onChange={(e) => setAlpha(parseFloat(e.target.value))}
+            />
+          </div>
+          <div className="slider-container">
+            <label htmlFor="lambda-slider">Parametro λ = {lambda.toFixed(1)}</label>
+            <input
+              id="lambda-slider"
+              type="range"
+              min="0.1"
+              max="5"
+              step="0.1"
+              value={lambda}
+              onChange={(e) => setLambda(parseFloat(e.target.value))}
+            />
+          </div>
+          <canvas ref={chartRef} width="600" height="400"></canvas>
+        </div>
+      );
+    }
+    
+    ReactDOM.render(<GammaChart />, document.getElementById('root'));
+  </script>
+</body>
+</html>
