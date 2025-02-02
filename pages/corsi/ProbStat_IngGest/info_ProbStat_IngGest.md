@@ -64,9 +64,10 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - legge dei grandi numeri \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/LLN/LLN.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/LLN)
 - legge di una media campionaria \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/CLT/CLT.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/CLT)
 
-#### notebook interattivi
+#### grafici interattivi
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/orlandopoliba/ProbStatPoliBA/HEAD) link alla sessione online per aprire i notebook interattivi. Attendere qualche secondo per l'apertura di JupyterLab, entrare nella cartella `notebook` e scegliere il file in formato `.ipynb` con cui si vuole interagire.
+- [legge binomiale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/binomial.html)
+- [legge di Poisson](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/poisson.html)
 
 #### gioco
 
