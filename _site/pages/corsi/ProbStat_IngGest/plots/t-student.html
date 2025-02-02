@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distribuzione t-Student Interattiva</title>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        displayAlign: 'center'
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .slider-container {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .slider-container label {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .slider-container input[type="range"] {
+      flex: 2;
+    }
+    canvas {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Legge t-Student</h1>
+    <p>
+      Una variabile aleatoria $T \sim t(n)$ è distribuita con legge t-Student con $n$ gradi di libertà se ha la seguente funzione di densità di probabilità:
+      $$ 
+      f(x) = \frac{\Gamma\big(\frac{n+1}{2}\big)}{\sqrt{n\pi} \Gamma\big(\frac{n}{2}\big)} \frac{1}{\big(1 + \frac{x^2}{n}\big)^{\frac{n+1}{2}}}, $$
+      dove $n$ è il numero di gradi di libertà. 
+      <br>
+      Nel seguente grafico è possibile modificare il numero di gradi di libertà e osservare come cambia la distribuzione. La distribuzione normale standard è mostrata per confronto.
+    </p>
+    <div id="root"></div>
+  </div>
+  <script type="text/babel">
+    function TStudentChart() {
+      const [nu, setNu] = React.useState(2);
+      const chartRef = React.useRef(null);
+      const chartInstanceRef = React.useRef(null);
+      
+      function gamma(n) {
+        if (n === 1) return 1;
+        if (n === 0.5) return Math.sqrt(Math.PI);
+        return (n - 1) * gamma(n - 1);
+      }
+      
+      function tStudentPDF(x, nu) {
+        const numerator = gamma((nu + 1) / 2);
+        const denominator = Math.sqrt(nu * Math.PI) * gamma(nu / 2);
+        return (numerator / denominator) * Math.pow(1 + (x * x) / nu, -(nu + 1) / 2);
+      }
+      
+      function normalPDF(x) {
+        return (1 / Math.sqrt(2 * Math.PI)) * Math.exp(-0.5 * x * x);
+      }
+      
+      const calculateData = () => {
+        const labels = Array.from({ length: 201 }, (_, i) => ((i - 100) / 10).toFixed(1));
+        const tStudentData = labels.map(x => tStudentPDF(parseFloat(x), nu));
+        const normalData = labels.map(x => normalPDF(parseFloat(x)));
+        return { labels, tStudentData, normalData };
+      };
+      
+      React.useEffect(() => {
+        const ctx = chartRef.current.getContext('2d');
+        const { labels, tStudentData, normalData } = calculateData();
+        
+        if (chartInstanceRef.current) {
+          chartInstanceRef.current.data.labels = labels;
+          chartInstanceRef.current.data.datasets[0].data = tStudentData;
+          chartInstanceRef.current.data.datasets[1].data = normalData;
+          chartInstanceRef.current.update();
+        } else {
+          chartInstanceRef.current = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: labels,
+              datasets: [
+                {
+                  label: 't-Student',
+                  data: tStudentData,
+                  borderColor: 'teal',
+                  backgroundColor: 'teal',
+                  fill: true,
+                  pointRadius: 0
+                },
+                {
+                  label: 'Normale Standard',
+                  data: normalData,
+                  borderColor: 'gray',
+                  backgroundColor: 'gray',
+                  fill: false,
+                  borderDash: [5, 5],
+                  pointRadius: 0
+                }
+              ]
+            },
+            options: {
+              scales: {
+                x: { title: { display: true, text: 'x' } },
+                y: { title: { display: true, text: 'f(x)' }, beginAtZero: true, max: 0.5 }
+              },
+              plugins: { title: { display: true, text: 'Distribuzione t-Student vs Normale' } }
+            }
+          });
+        }
+      }, [nu]);
+      
+      return (
+        <div>
+          <div className="slider-container">
+            <label htmlFor="nu-slider">Gradi di libertà <em>n</em> = {nu.toFixed(1)}</label>
+            <input
+              id="nu-slider"
+              type="range"
+              min="1"
+              max="30"
+              step="1"
+              value={nu}
+              onChange={(e) => setNu(parseFloat(e.target.value))}
+            />
+          </div>
+          <canvas ref={chartRef} width="600" height="400"></canvas>
+        </div>
+      );
+    }
+    
+    ReactDOM.render(<TStudentChart />, document.getElementById('root'));
+  </script>
+</body>
+</html>
