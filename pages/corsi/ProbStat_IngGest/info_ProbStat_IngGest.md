@@ -42,12 +42,12 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 
 #### appelli futuri
 
-- 13 febbraio 2025
 - 11 aprile 2025
 - 17 giugno 2025
 - 23 luglio 2025
 - 01 settembre 2025
 - 15 settembre 2025
+- 05 novembre 2025 (da confermare)
 
 #### appelli passati
 
