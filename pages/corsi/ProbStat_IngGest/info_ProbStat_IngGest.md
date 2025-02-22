@@ -55,6 +55,12 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023-240207.pdf)
 - a.a 2023/2024 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2023-2024-250213.pdf)
 
+#### materiale 
+
+- [appunti del corso](materiale/Appunti%20di%20Probabilità%20e%20Statistica.pdf)
+- [tavole numeriche](materiale/tabelleVA.pdf)
+- [file excel per statistica descrittiva](materiale/Statistica%20descrittiva%20(esercizi%20da%20svolgere%20e%20dati).xlsx)
+
 #### simulazioni 
 
 - legge di Bernoulli \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Bernoulli/Bernoulli.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Bernoulli) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
