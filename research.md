@@ -34,6 +34,7 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 15. M. Cicalese, M. Forster, G. Orlando. Variational analysis of the $$J_1$$-$$J_2$$-$$J_3$$ model: a non-linear lattice version of the Aviles-Giga functional. _Arch. Ration. Mech. Anal._ **245** (2022), 1059–1133.
 16. G. Orlando. Mean-field optimal control in a multi-agent interaction model for prevention of maritime crime. _Adv Cont Discr Mod_ **2023**, 24 (2023).
 17. G.M. Coclite, N. De Nitti, F. Maddalena, G. Orlando, E. Zuazua. Exponential convergence to steady-states for trajectories of a damped dynamical system modelling adhesive strings. _Math. Models Methods Appl. Sci._ **34** (2024), 1445-1482.
+18. F. Maddalena, G. Orlando. Frequency-dependent damping in the linear wave equation. _Networks and Heterogeneous Media_ **20** (2025), 406–427.
 
 ## preprints
 
