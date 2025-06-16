@@ -37,7 +37,7 @@ La prova scritta è costituita da **4 esercizi** (tutti da svolgere) e da **2 qu
 
 Gli argomenti degli esercizi spazieranno tutto il programma (probabilità in spazi discreti e continui, variabili aleatorie e vettori aleatori discreti e continui, statistica descrittiva, statistica inferenziale, ecc.) e saranno simili agli esercizi risolti durante le lezioni del corso. Per un confronto si possono consultare le tracce d'esame degli scorsi appelli e il materiale condiviso sul canale Team durante il corso.
 
-Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavole numeriche per le distribuzioni normale standard, chi-quadro e t-Student scaricabili scaricabili [qui](materiale/tabelleVA.pdf).
+Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavole numeriche per le distribuzioni normale standard, chi-quadro e t-Student scaricabili scaricabili [qui](materiale/Tavole.pdf).
 
 
 #### appelli futuri
