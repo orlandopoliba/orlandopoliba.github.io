@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Peridynamics</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <!-- <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="theme"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doto:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7304e27a9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        
+        <!-- Title Slide -->
+        <section>
+            <div class="presentation-title">
+                <h1>Some remarks on the peridynamics model</h1>
+            </div>
+            <div class="affiliation">
+                <h3>Gianluca Orlando</h3>
+                <img src="images/logo.png" alt="Department Logo" style="height: 120px">
+            </div>
+            <div style="margin-left: 40px; font-size: 18px;">
+            <p>Joint works with:</p>
+            <p>G. M. Coclite (Politecnico di Bari), S. Dipierro (UWA)</p>
+            <p>F. Maddalena (Politecnico di Bari), E. Valdinoci (UWA)</p>
+            <h3>Third Workshop on Mathematical Challenges in Ecology and Biology</h3>
+            <p>November 19-21, 2025</p>
+            </div>
+            <div style="margin-left: 40px; margin-right: 40px;">
+            <img src="images/logo_PRIN.png" alt="PRIN Logo" style="width: 100%;">
+            </div>
+        </section>
+
+        <section>
+            <header class="slide-header">
+                <h2>Classical mechanics</h2>
+            </header>
+            <main class="slide-body">
+            <div>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <img src="images/contact-forces.png" style="max-width: 50%; height: auto;">
+              </div>
+            </div>
+            <h3>Contact forces (Cauchy's hypothesis)</h3>
+            <p>force exerted by $\Omega_t \setminus U_t$ on $U_t$ $ = \displaystyle \int_{\partial U_t} s(t,y,\nu(y)) \, \mathrm{d} \mathcal{H}^{n-1}(y)$
+            </p>
+            <div style="margin-top: -20px;"></div>
+            <h3>Cauchy's theorem</h3>
+            <p>$s(t,y,\nu) = T(t,y) \nu$</p>
+
+            
+            </main>
+        </section>
+
+        <section>
+            <header class="slide-header">
+                <h2>Classical mechanics</h2>
+            </header>
+            <main class="slide-body">
+
+            <div style="margin-top: 20px;"></div>
+            
+            <div>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <img src="images/material-spatial.png" style="max-width: 80%; height: auto;">
+              </div>
+            </div>
+
+            <div style="margin-top: -20px;"></div>
+
+            <h3>Balance of linear momentum (no body forces)</h3>
+            <p>In spatial coordinates: $\hspace{0.2cm} \rho \dot v(t,y) - \mathrm{div}_y T(t,y) = 0$, $\hspace{0.2cm} t > 0$, $\hspace{0.2cm} y \in \Omega_t$</p>
+            <p>In material coordinates: $\hspace{0.2cm} \rho_0 \partial_{tt} y(t,x) - \mathrm{div}_x S(t,x) = 0$, $\hspace{0.2cm} t > 0$, $\hspace{0.2cm} x \in \Omega$</p>
+
+            <div style="margin-top: -20px;"></div>
+
+            <h3>Constitutive assumptions</h3>
+            <p>Hyperelasticity: $\hspace{0.2cm} \displaystyle S = \frac{\partial W}{\partial F}(F)$, $\hspace{0.2cm} F = \nabla y^\top$, $\hspace{0.2cm} \displaystyle \int_\Omega W(\nabla y) \, \mathrm{d} x$</p>
+            <p>Prototypical model: $\hspace{0.2cm} \partial_{tt} u(t,x) - \Delta u(t,x) = 0 \hspace{0.2cm}$ (linearization $y = x + \varepsilon u$)</p>
+            </main>
+        </section>
+
+        <section>
+            <header class="slide-header">
+                <h2>Caveats</h2>
+            </header>
+            <main class="slide-body">
+
+               <div style="margin-top: 100px;"></div>
+            <h3>Pros:</h3>
+            <ul>
+                <li>Works very well</li>
+            </ul>
+
+            <h3>Cons:</h3>
+            <ul>
+                <li>No nucleation of discontinuities (cracks)</li>
+                <li>No long-range forces</li>
+                <li>What if $\nabla u$ is undefined?</li>
+            </ul>
+            </main>
+        </section>
+
+        <section>
+            <header class="slide-header">
+                <h2><i>Peri</i> (= "near") + <i>dynamics</i> (= "force")</h2>
+            </header>
+            <main class="slide-body">
+
+            <div style="margin-top: 30px;"></div>
+
+            <p><i class="fa-solid fa-book"></i> S. Silling, <i>Journal of the Mechanics and Physics of Solids</i> <b>48</b>, 175-209 (2000)</p>
+
+            <div>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <img src="images/local-nonlocal.png" style="max-width: 60%; height: auto;">
+              </div>
+            </div>
+
+            <div style="margin-top: -40px;"></div>
+
+            <h3>Long-range forces</h3>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \mathrm{div}_x S(t,x) \leadsto \int_{B_{\delta}(x)} F(t, x, x', y(t,x),y(t,x')) \, \mathrm{d} x'
+            \]
+
+            <h3>Peridynamic equation of motion</h3>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \rho_0 \partial_{tt} y(t,x) - \int_{B_{\delta}(x)} F(t, x, x', y(t,x),y(t,x')) \, \mathrm{d} x' = 0
+            \]
+
+            <div>
+             
+            </div>
+            </main>
+        </section>
+
+        <section>
+        <header class="slide-header">
+          <h2><i>Peri</i> (= "near") + <i>dynamics</i> (= "force")</h2>
+        </header>
+
+        <main class="slide-body">
+          <h3>Constitutive assumptions</h3>
+          <p>$\delta > 0$, $\hspace{0.2cm} \alpha \in (0,1)$
+          </p>
+          <div style="margin-top: -30px;"></div>
+          <!-- Stack the two formulas on top of each other -->
+          <div class="r-stack">
+            <!-- First: visible at start, then fades out on click -->
+            <p class="fragment fade-out" data-fragment-index="1">
+              \[
+              \begin{split}
+              \hspace{-0.5cm} \int_{B_{\delta}(x)} F(t, x, x', y(t,x),y(t,x')) \, \mathrm{d} x' & = \int_{B_{\delta}(x)} f(x'-x, u(t,x')-u(t,x)) \, \mathrm{d} x' \\
+              & = \mathrm{p.v.} \!  \int_{B_{\delta}(x)} \! \chi_\delta(x'-x)\frac{u(t,x') - u(t,x)}{|x' - x|^{d + 2 \alpha}} \, \mathrm{d} x'
+              \end{split}
+              \]
+            </p>
+
+            <!-- Second: fades in on the same step, replacing the first -->
+            <p class="fragment fade-in" data-fragment-index="1">
+              \[
+                \begin{split}
+              \hspace{-0.5cm} \int_{B_{\delta}(x)} F(t, x, x', y(t,x),y(t,x')) \, \mathrm{d} x' & = \int_{B_{\delta}(x)} f(x'-x, u(t,x')-u(t,x)) \, \mathrm{d} x' \\
+              & = \mathrm{p.v.} \!  \int_{B_{\delta}(x)} \! \frac{u(t,x') - u(t,x)}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' \hphantom{\chi_\delta(x'-x)}
+              \end{split}
+              \]
+            </p>
+          </div>
+
+          <div class="fragment fade-in" data-fragment-index="2">  
+            Prototypical model: $\hspace{0.2cm} \displaystyle \partial_{tt} u(t,x) - \mathrm{p.v.}  \int_{B_{\delta}(x)} \frac{u(t,x') - u(t,x)}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' = 0$
+          </div>
+
+          <div class="fragment fade-in" data-fragment-index="3">
+          <h3>Remarks</h3>
+          <ul>
+            <li>$f(x'-x,u'-u) = - f(x-x',u-u')$</li>
+            <li>$\displaystyle f(x'-x, u'-u) = \partial_{u'-u} \Big( \frac{1}{2} \frac{|u'-u|^2}{|x'-x|^{1 + 2 \alpha}} \Big)$</li>
+          </ul>
+          </div>
+        </main>
+      </section>
+
+      <section>
+        <header class="slide-header">
+          <h2>Objectives</h2>
+        </header>
+
+        <main class="slide-body">
+          
+          <h3>Prototypical classical waves</h3>
+            \[
+            \partial_{tt} u(t,x) - \partial_{xx} u(t,x) = 0
+            \]
+
+          <h3>Prototypical peridynamic waves</h3>
+          <div style="margin-top: -25px;"></div>
+            \[
+            \partial_{tt} u(t,x) - \mathrm{p.v.}  \int_{B_{\delta}(x)} \frac{u(x') - u(x)}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' = 0
+            \]
+
+          <h3>Questions</h3>
+          <div style="margin-top: -25px;"></div>
+          <ol>
+            <li>Are they related?</li>
+            <li>Does peridynamics allow for discontinuity nucleation?</li>
+          </ol>
+        </main>
+      </section>
+
+      <section>
+      <section class="vertical">
+        <header class="slide-header">
+        <h2>Convergence of operators</h2>
+        </header>
+        <main class="slide-body">
+            <div style="margin-top: 25px;"></div>
+            <h3>Lemma</h3>
+            <p>For $u \in C^\infty_c(\mathbb{R})$, we have that</p>
+            \[
+            K_\delta[u](x) = \frac{1}{\delta^{2(1-\alpha)}} \mathrm{p.v.}  \int_{B_{\delta}(x)} \frac{u(x') - u(x)}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' \hspace{0.2cm} \stackrel{\delta \to 0}{\longrightarrow} \hspace{0.2cm} \gamma_\alpha^2 \partial_{xx} u(x)
+            \]
+
+        </main>
+      </section>
+
+        <section class="vertical">
+          <header class="slide-header">
+            <h2>Back-of-the-envelope computation</h2>
+          </header>
+
+          <main class="slide-body">
+          <div style="margin-top: 25px;"></div>
+          <p>For $u$ smooth, we have that</p>
+          <div style="margin-top: -25px;"></div>
+          \[
+          \begin{split}
+          & \mathrm{p.v.}  \int_{B_{\delta}(x)} \frac{u(x') - u(x)}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' = \mathrm{p.v.}  \int_{\{ |z| \leq \delta \}} \frac{u(x+z) - u(x)}{|z|^{1 + 2 \alpha}} \, \mathrm{d} z \\
+          & \quad = \mathrm{p.v.}  \int_{\{ |z| \leq \delta \}} \frac{\partial_{x} u(x) z + \frac{1}{2} \partial_{xx} u(x) z^2 + O(|z|^3)}{|z|^{1 + 2 \alpha}} \, \mathrm{d} z \\
+          & \quad = \delta^{2-2\alpha}  \int_{\{ |w| \leq 1 \}} \frac{\frac{1}{2} \partial_{xx} u(x) w^2}{|w|^{1 + 2 \alpha}} \, \mathrm{d} w + \delta^{3-2\alpha} \int_{\{ |w| \leq 1 \}} \frac{O(1)}{|w|^{1 + 2 \alpha - 3}} \, \mathrm{d} w \\
+          & \quad = \delta^{2-2\alpha} \frac{1}{2} \partial_{xx}u(x) \int_{\{ |w| \leq 1 \}} |w|^{1-2\alpha} \, \mathrm{d} w + \delta^{3-2\alpha} O(1) \\ 
+          & \quad = \delta^{2-2\alpha} \partial_{xx}u(x) \frac{1}{2(1-\alpha)}  + \delta^{3-2\alpha} O(1) \\ 
+          & \quad = \delta^{2(1-\alpha)} \gamma_\alpha^2 \partial_{xx}u(x) + \delta^{3-2\alpha} O(1)
+          \end{split}
+          \]
+          <div style="margin-top: -25px;"></div>
+          <p>hence</p>
+          <div style="margin-top: -25px;"></div>
+          \[
+          K_\delta[u](x) = \frac{1}{\delta^{2(1-\alpha)}} \mathrm{p.v.}  \int_{B_{\delta}(x)} \frac{u(x') - u(x)}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' = \gamma_\alpha^2 \partial_{xx}u(x) + \delta O(1)
+          \]
+        </main>
+        </section>
+        
+      </section>
+
+      <section>
+          <section class="vertical">
+          <header class="slide-header">
+              <h2>Solutions to peridynamic equation</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 25px;"></div>
+            For well-posedness in a more general setting, see:
+            <div style="margin-top: 15px;"></div>
+              <p><i class="fa-solid fa-book"></i> G. M. Coclite, S. Dipierro, F. Maddalena, E. Valdinoci, <i>Nonlinearity</i> <b>32</b>, 1 (2018)</p>
+
+            <div style="margin-top: 25px;"></div>
+            In the linear case,
+            \[
+            \begin{cases}
+            \partial_{tt} u(t,x) - K_\delta[u](t,x) = 0 & (t,x) \in (0,+\infty) \times \mathbb{T}^1 \\
+            u(0,x) = u_0(x) \, , \quad \partial_t u(0,x) = v_0(x) & x \in \mathbb{T}^1
+            \end{cases}
+            \]
+            reads, in Fourier coefficients,
+            \[
+            \begin{cases}
+            \partial_{tt} \hat u(t,k) + \omega_\delta^2(k) \hat u(t,k) = 0 & (t,k) \in (0,+\infty) \times \mathbb{Z} \\
+            \hat u(0,k) = \hat u_0(k) \, , \quad \partial_t \hat u(0,k) = \hat v_0(k) & k \in \mathbb{Z}
+            \end{cases}
+            \]
+            Solutions in Fourier space are given by
+            \[
+            \hat u(t,k) = \hat u_0(k) \cos(\omega_\delta(k) t) + \frac{\sin(\omega_\delta(k) t)}{\omega_\delta(k)} \hat v_0(k)
+            \]  
+          </main>
+        </section>
+
+
+        <section class="vertical">
+          <header class="slide-header">
+              <h2>Back-of-the-envelope computation</h2>
+          </header>
+          <main class="slide-body">
+            \[
+            \begin{split}
+            & \widehat{K_\delta[u]}(k) = \int_0^1 K_\delta[u](x) e^{-2 \pi i k x} \, \mathrm{d} x \\
+            & =  \int_0^1 \frac{1}{\delta^{2(1-\alpha)}} \frac{1}{2} \int_{\{|y| \leq \delta\}} \frac{u(x+y) + u(x-y) - 2 u(x)}{|y|^{1 + 2 \alpha}}  e^{-2 \pi i k x} \, \mathrm{d} y \, \mathrm{d} x \\
+            & = \frac{1}{\delta^{2(1-\alpha)}} \frac{1}{2} \int_{\{|y| \leq \delta\}} \frac{1}{|y|^{1 + 2 \alpha}} \int_0^1 \big( u(x+y) + u(x-y) - 2 u(x) \big) e^{-2 \pi i k x} \, \mathrm{d} x \, \mathrm{d} y \\
+            & = \frac{1}{\delta^{2(1-\alpha)}} \int_{\{|y| \leq \delta\}} \frac{1}{|y|^{1 + 2 \alpha}} \frac{e^{2 \pi i k y} + e^{-2 \pi i k y} - 2}{2} \hat u(k) \, \mathrm{d} y \\
+            & = -  \Big( \frac{1}{\delta^{2(1-\alpha)}} \int_{\{|y| \leq \delta\}} \frac{1 - \cos(2 \pi k y)}{|y|^{1 + 2 \alpha}} \, \mathrm{d} y \Big) \hat u(k) \\
+            & = - \omega_\delta^2(k) \hat u(k)
+            \end{split}
+            \]
+            hence 
+            \[
+            \omega_\delta(k) = \Big(\frac{1}{\delta^{2(1-\alpha)}} \int_{\{|y| \leq \delta\}} \frac{1 - \cos(2 \pi k y)}{|y|^{1 + 2 \alpha}} \, \mathrm{d} y \Big)^\frac{1}{2}
+            \]
+          </main>
+        </section>
+      </section>
+
+    <section>
+          <header class="slide-header">
+              <h2>Peridynamic waves</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 15px;"></div>
+              <canvas id="solutionCanvas" width="800" height="300"></canvas>
+              <div id="sliders"
+                style="display:flex; gap:40px; justify-content:center; align-items:flex-end; margin-top:10px;">
+            <div class="vslider">
+                <label class="label">$\hat u_0(1)$</label>
+                <input id="u1" type="range" min="0" max="1" step="0.01" value="1" orient="vertical">
+                <span id="u1Val" class="value">1.00</span>
+            </div>
+            <div class="vslider">
+                <label class="label">$\hat u_0(4)$</label>
+                <input id="u2" type="range" min="0" max="1" step="0.01" value="0.00" orient="vertical">
+                <span id="u2Val" class="value">0.00</span>
+            </div>
+            <div id="classicRow" style="display:flex; justify-content:center; margin-top:8px;">
+            <label style="font:22px system-ui,sans-serif; color:#444; margin-bottom: 100px;">
+                <input id="classical" type="checkbox"> classical wave
+            </label>
+            </div>
+            </div>
+            <div id="timeRow" style="display:flex; justify-content:center; margin-top:10px;">
+            <label style="font:24px system-ui,sans-serif; color:#444;">
+                $t$ 
+                <input id="time" type="range" min="0" max="4" step="0.01" value="0" style="width:320px; vertical-align:middle; margin-left:8px;"> <span id="tVal" class="slider-value">0.00</span>
+            </label>
+            </div>
+            
+          </main>
+    </section>
+
+
+      <section>
+        <header class="slide-header">
+              <h2>Energy and solution space</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 25px;"></div>
+            <h3>Lemma</h3>
+            <p>The quantity </p>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \frac{1}{2} \int_{\mathbb{T}^1} |\partial_t u_\delta(t,x)|^2 \, \mathrm{d} x + \frac{1}{2} \int_{\mathbb{T}^1} \int_{B_{\delta}(x)} \frac{|u_\delta(t,x') - u_\delta(t,x)|^2}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' \, \mathrm{d} x
+            \]
+            <p>is conserved along solutions.</p>
+
+            <h3>Remark</h3>
+            <p>We have that</p>
+            \[
+            \frac{1}{2} \int_{\mathbb{T}^1} \int_{B_{\delta}(x)} \frac{|u(x') - u(x)|^2}{|x' - x|^{1 + 2 \alpha}} \, \mathrm{d} x' \, \mathrm{d} x \sim [u]_{H^\alpha(\mathbb{T}^1)}^2
+            \]
+
+          </main>        
+      </section>
+
+
+      <section>
+        <header class="slide-header">
+              <h2>Solutions to peridynamic equation</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 25px;"></div>
+            <h3>Theorem</h3>
+            <p>Let $u_0 \in H^\alpha(\mathbb{T}^1)$, $v_0 \in L^2(\mathbb{T}^1)$.
+            There exists a unique distributional solution $u_\delta \in L^1_{\mathrm{loc}}((0,+\infty); H^\alpha(\mathbb{T}^1))$ to </p>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \begin{cases}
+            \partial_{tt} u_\delta(t,x) - K_\delta[u_\delta](t,x) = 0 & (t,x) \in (0,+\infty) \times \mathbb{T}^1 \\
+            u_\delta(0,x) = u_0(x) \, , \quad \partial_t u_\delta(0,x) = v_0(x) & x \in \mathbb{T}^1
+            \end{cases}
+            \]
+            Moreover, it is given by
+            <div style="margin-top: -15px;"></div>
+            \[
+            u_\delta(t,x) = \sum_{k \in \mathbb{Z}} \Big( \hat u_0(k) \cos(\omega_\delta(k) t) + \frac{\sin(\omega_\delta(k) t)}{\omega_\delta(k)} \hat v_0(k) \Big) e^{2 \pi i k x}
+            \]
+            <p>and satisfies $u_\delta \in C([0,+\infty); H^\alpha(\mathbb{T}^1)) \cap C^1([0,+\infty); L^2(\mathbb{T}^1))$.</p>
+          </main>    
+
+      </section>
+
+      <section>
+        <header class="slide-header">
+              <h2>Solutions to peridynamic equation</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 25px;"></div>
+            <h3>Theorem</h3>
+            <p>Let $s \in \mathbb{R}$. Let $u_0 \in $<span style="color: #A81C3A;">$\, H^s$</span>$(\mathbb{T}^1)$, $v_0 \in $<span style="color: #A81C3A;">$\, H^{s-\alpha}$</span>$(\mathbb{T}^1)$.
+            There exists a unique distributional solution $u_\delta \in L^1_{\mathrm{loc}}((0,+\infty); $<span style="color: #A81C3A;">$\, H^s$</span>$(\mathbb{T}^1))$ to </p>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \begin{cases}
+            \partial_{tt} u_\delta(t,x) - K_\delta[u_\delta](t,x) = 0 & (t,x) \in (0,+\infty) \times \mathbb{T}^1 \\
+            u_\delta(0,x) = u_0(x) \, , \quad \partial_t u_\delta(0,x) = v_0(x) & x \in \mathbb{T}^1
+            \end{cases}
+            \]
+            Moreover, it is given by
+            <div style="margin-top: -15px;"></div>
+            \[
+            u_\delta(t,x) = \sum_{k \in \mathbb{Z}} \Big( \hat u_0(k) \cos(\omega_\delta(k) t) + \frac{\sin(\omega_\delta(k) t)}{\omega_\delta(k)} \hat v_0(k) \Big) e^{2 \pi i k x}
+            \]
+            <p>and satisfies $u_\delta \in C([0,+\infty); $<span style="color: #A81C3A;">$\, H^s$</span>$(\mathbb{T}^1)) \cap C^1([0,+\infty); $<span style="color: #A81C3A;">$\, H^{s-\alpha}$</span>$(\mathbb{T}^1))$.</p>
+          </main>    
+        </section>
+
+      <section>
+
+        <header class="slide-header">
+        <h2>Vanishing horizon</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 15px;"></div>
+            <h3>Theorem <span style="font-weight: lighter;">[Coclite, Dipierro, Maddalena, O., Valdinoci]</span></h3>
+            <p>Let $s \in \mathbb{R}$. Let $u_0 \in$<span style="color: #A81C3A;">$\, H^s$</span>$(\mathbb{T}^1)$, $v_0 \in $<span style="color: #A81C3A;">$\, H^{s-\alpha}$</span>$(\mathbb{T}^1)$.</p>
+            <p>Let $u_\delta \in C([0,+\infty); $<span style="color: #A81C3A;">$\, H^s$</span>$(\mathbb{T}^1)) \cap C^1([0,+\infty); $<span style="color: #A81C3A;">$\, H^{s-\alpha}$</span>$(\mathbb{T}^1))$ solve </p>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \begin{cases}
+            \partial_{tt} u_\delta(t,x) - K_\delta[u_\delta](t,x) = 0 & (t,x) \in (0,+\infty) \times \mathbb{T}^1 \\
+            u_\delta(0,x) = u_0(x) \, , \quad \partial_t u_\delta(0,x) = v_0(x) & x \in \mathbb{T}^1
+            \end{cases}
+            \]
+            <p>Let $u \in \in C([0,+\infty); $<span style="color: #A81C3A;">$\, H^s$</span>$(\mathbb{T}^1)) \cap C^1([0,+\infty); $<span style="color: #A81C3A;">$\, H^{s-1}$</span>$(\mathbb{T}^1))$ solve</p>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \begin{cases}
+            \partial_{tt} u(t,x) - \gamma_\alpha^2 \Delta u(t,x) = 0 & (t,x) \in (0,+\infty) \times \mathbb{T}^1 \\
+            u(0,x) = u_0(x) \, , \quad \partial_t u(0,x) = v_0(x) & x \in \mathbb{T}^1
+            \end{cases}
+            \]
+            <p>Then, locally in time,</p>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \| u_\delta - u \|_{L^\infty_t H^s_x} + \|\partial_t u_\delta - \partial_t u \|_{L^\infty_t H^{s-1}_x} \to 0 \quad \text{as } \delta \to 0
+            \]
+          </main>        
+      </section>
+
+      <section>
+        <section class="vertical">
+            <header class="slide-header">
+                <h2>Dispersion relation</h2>
+            </header>
+            <main class="slide-body">
+                <div style="margin-top: 15px;"></div>
+                <p><i class="fa-solid fa-book"></i> G. M. Coclite, S. Dipierro, G. Fanizza, E. Valdinoci, <i>Nonlinearity</i> <b>35</b>, 11 (2022)</p>
+                <div style="margin-top: -15px;"></div>
+                \[
+                    \omega_\delta(\xi) = \Big( \frac{1}{\delta^{2(1-\alpha)}}\int_{\{|y| \leq \delta\}} \frac{1 - \cos(2 \pi \xi y)}{|y|^{1+2\alpha}} \, \mathrm{d} y \Big)^\frac{1}{2} \sim \min\{ \gamma_\alpha |\xi|, \lambda_\alpha |\xi|^\alpha \}
+                \]
+                <div style="margin-top: -15px;"></div>
+                <canvas id="dispersionCanvas" width="800" height="300"></canvas>
+                <div style="margin-top: -25px;"></div>
+                <p>$\alpha = 0.2$</p>
+                <div style="margin-top: -15px;"></div>
+                <label>$\delta = $ <input id="delta" type="range" min="0.01" max="0.99" step="0.01" value="0.99"> <span id="deltaValue">0.99</span></label>
+                <div style="margin-top: 10px;"></div>
+                <p><span style="font-weight: bold;">Lemma: </span> $\hspace{0.2cm}\big| \omega_\delta(\xi) - 2 \pi \gamma_\alpha |\xi| \big| \leq C \delta |\xi|^2$</p>
+            </main>
+        </section>
+
+        <section class="vertical">
+            <header class="slide-header">
+                <h2>Computation</h2>
+            </header>
+            <main class="slide-body">
+                <div style="margin-top: 80px;"></div>
+                <p>We have that</p>
+                \[
+                \begin{split}
+                & \big| \omega_\delta^2(\xi) - 4 \pi^2 \gamma_\alpha^2 |\xi|^2 \big| = \Big|\frac{1}{\delta^{2(1-\alpha)}} \int_{\{|y| \leq \delta\}} \frac{1-\cos(2\pi \xi y)}{|y|^{1+2\alpha}} \, \mathrm{d} y - \frac{4 \pi^2}{2(1-\alpha)} |\xi|^2\Big| \\ 
+                & = \Big|\frac{1}{\delta^{2(1-\alpha)}} \int_{\{|y| \leq \delta\}} \frac{2 \pi^2 |\xi|^2 |y|^2 + O(|\xi|^4|y|^4)}{|y|^{1+2\alpha}} \, \mathrm{d} y - 2 \pi^2|\xi|^2 \int_{\{|w|\leq 1\}} |w|^{1-2\alpha}  \, \mathrm{d} w \Big| \\
+                & = \Big|2 \pi^2 |\xi|^2  \int_{\{|w| \leq 1\}} \frac{|w|^2 + \delta^2 O(|\xi|^2|w|^4)}{|w|^{1+2\alpha}} \, \mathrm{d} w - 2 \pi^2|\xi|^2 \int_{\{|w|\leq 1\}} |w|^{1-2\alpha}  \, \mathrm{d} w \Big| \\ 
+                & \lesssim \delta^2 |\xi|^4 \int_{\{|w| \leq 1\}} |w|^{3-2\alpha} \, \mathrm{d} w \lesssim C \delta^2 |\xi|^4
+                \end{split}
+                \]
+            </main>
+        </section>
+
+        </section>
+
+    <section>
+          <header class="slide-header">
+              <h2>Nucleation of a discontinuity?</h2>
+          </header>
+          <main class="slide-body">
+             <div style="margin-top: 120px;"></div>
+              <p>In dimension $d=1$</p>
+              <div style="margin-top: -25px;"></div>
+              \[
+              H^\alpha(\mathbb{T}^1) \not\subset C(\mathbb{T}^1) \quad \text{for } \alpha < \frac{1}{2} \, .
+              \]
+              <p>In principle, solutions may become discontinuous.</p>
+              <h3>Question:</h3>
+              <p>Does there exist a solution with a continuous initial datum which evolves into a discontinuous one?</p>
+          </main>
+        </section>
+
+        <section>
+          <header class="slide-header">
+              <h2>Classical waves stay continuous</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 45px;"></div>
+            \[
+                \partial_{tt} u(t,x) - \Delta u(t,x) = 0 \quad (t,x) \in (0,+\infty) \times \mathbb{T}^1
+            \]
+            <div style="margin-top: 25px;"></div>
+            <canvas id="waveContinuousCanvas" width="800" height="300"></canvas>
+              
+            <div id="timeRow" style="display:flex; justify-content:center; margin-top:10px;">
+            <label style="font:24px system-ui,sans-serif; color:#444;">
+                $t$ 
+                <input id="time2" type="range" min="0" max="4" step="0.01" value="0" style="width:320px; vertical-align:middle; margin-left:8px;"> <span id="tVal2" class="slider-value">0.00</span>
+            </label>
+            </div>
+            <div style="margin-top: 25px;"></div>
+                \[
+                u_0 \in H^1(\mathbb{T}^1) \subset C(\mathbb{T}^1) \implies u(t,\cdot) \in H^1(\mathbb{T}^1) \subset C(\mathbb{T}^1) \quad \forall t \geq 0
+                \]
+          </main>
+        </section>
+
+        <section>
+          <header class="slide-header">
+              <h2>A travelling discontinuity</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 45px;"></div>
+            \[
+                \partial_{tt} u(t,x) - \Delta u(t,x) = 0 \quad (t,x) \in (0,+\infty) \times \mathbb{T}^1
+            \]
+            <div style="margin-top: 25px;"></div>
+            <canvas id="waveDiscontinuousCanvas" width="800" height="300"></canvas>
+              
+            <div id="timeRow" style="display:flex; justify-content:center; margin-top:10px;">
+            <label style="font:24px system-ui,sans-serif; color:#444;">
+                $t$ 
+                <input id="time3" type="range" min="0" max="4" step="0.01" value="0" style="width:320px; vertical-align:middle; margin-left:8px;"> <span id="tVal3" class="slider-value">0.00</span>
+            </label>
+            </div>
+          </main>
+        </section>
+
+
+        <section>
+          <header class="slide-header">
+              <h2>Numerical example of singularity dissolution in peridynamics</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 45px;"></div>
+            \[
+                \partial_{tt} u(t,x) - K_\delta[u](t,x) = 0 \quad (t,x) \in (0,+\infty) \times \mathbb{T}^1
+            \]
+            <div style="margin-top: 25px;"></div>
+            <canvas id="peridynamicDiscontinuousCanvas" width="800" height="300"></canvas>
+              
+            <div id="timeRow" style="display:flex; justify-content:center; margin-top:10px;">
+            <label style="font:24px system-ui,sans-serif; color:#444;">
+                $t$ 
+                <input id="time4" type="range" min="0" max="10" step="0.01" value="0" style="width:320px; vertical-align:middle; margin-left:8px;"> <span id="tVal4" class="slider-value">0.00</span>
+            </label>
+            </div>
+          </main>
+        </section>
+
+        <section>
+          <header class="slide-header">
+              <h2>Analytical example of singularity dissolution in peridynamics</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 100px;"></div>
+            <h3>Theorem <span style="font-weight: lighter;">[Coclite, Dipierro, Maddalena, O., Valdinoci]</span></h3>
+            <p>Let $\alpha \in (0,\frac{1}{2})$.</p>
+            <p>Consider the initial data</p>
+            <div style="margin-top: -25px;"></div>
+            \[
+            u_0(x) = \frac{1}{2} - x \, , \quad v_0(x) = 0 \quad x \in [0,1] \,.
+            \]
+            <p>Let $u \in C([0,+\infty); H^\alpha(\mathbb{T}^1)) \cap C^1([0,+\infty); L^2(\mathbb{T}^1))$ be the unique solution to the peridynamic problem.</p>
+            <p>Then $u(t,\cdot)$ is continuous for all $t > 0$.</p>
+          </main>
+        </section>
+
+        <section>
+        <section class="vertical">
+          <header class="slide-header">
+              <h2>Proof</h2>
+          </header>
+          <main class="slide-body">
+            <div style="margin-top: 60px;"></div>
+            <h3>Key fact</h3>
+            <p>For all $t > 0$, the trigonometric series</p>
+            <div style="margin-top: -30px;"></div>
+            \[
+            \sum_{k=1}^{+\infty} \frac{1}{k} e^{i 2 \pi k x + i \omega_\delta(k) t}
+            \]
+            <p>converges uniformly in $x \in \mathbb{T}^1$.</p>
+
+            <div style="margin-top: 60px;"></div>
+            <p>Proof in the spirit of Van der Corput estimates.</p>
+            <p><i class="fa-solid fa-book"></i> A. Zygmund, <i>Trigonometric series. Vol. I, II</i>. Cambridge University Press (1959)</p>
+          </main>
+        </section>
+          
+
+        <section class="vertical">
+          <header class="slide-header">
+              <h2>Main steps</h2>
+          </header>
+          <main class="slide-body">
+            <h3>Step 1: Summation by parts</h3>
+            <p>Set $\displaystyle s_k = \sum_{h=1}^{k} e^{i 2 \pi h x + i h^\alpha t}$ and sum by parts</p>
+            <div style="margin-top: -30px;"></div>
+            <div class="r-stack">
+            <!-- First: visible at start, then fades out on click -->
+            <p class="fragment fade-out" data-fragment-index="1">
+            \[
+            \sum_{k=1}^{N} \frac{1}{k} e^{i 2 \pi k x + i k^\alpha t} \approx \frac{1}{N} s_N - \sum_{k=1}^{N} \frac{1}{k^2} s_k \hphantom{ \hspace{0.1cm} \approx N^{-\alpha/2} + \sum_{k=1}^{N} \frac{1}{k^{1+\alpha/2}}}
+            \]
+            </p>
+            <p class="fragment fade-in" data-fragment-index="1">
+            \[
+            \sum_{k=1}^{N} \frac{1}{k} e^{i 2 \pi k x + i k^\alpha t} \approx \frac{1}{N} s_N - \sum_{k=1}^{N} \frac{1}{k^2} s_k \approx N^{-\alpha/2} + \sum_{k=1}^{N} \frac{1}{k^{1+\alpha/2}}
+            \]
+            </p>
+            </div>
+            <div style="margin-top: -20px;"></div>
+            <h3>Step 2: Compare sum and integral</h3>
+            <div style="margin-top: -20px;"></div>
+            \[
+            s_N \approx \int_1^N e^{i 2 \pi \xi x + i \xi^\alpha t} \, \mathrm{d} \xi
+            \]
+            <div style="margin-top: -20px;"></div>
+            <h3>Step 3: Study oscillatory integral</h3>
+            <div style="margin-top: -25px;"></div>
+            \[
+            \Big|\int_1^N e^{i 2 \pi \xi x + i \xi^\alpha t} \, \mathrm{d} \xi\Big| \lesssim N^{1-\alpha/2}
+            \]
+          </main>
+        </section>
+        </section> 
+
+         <section>
+          <div style="margin-top: 200px;"></div>
+            <div class="presentation-title">
+                <h1>Thank you for the attention</h1>
+            </div>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/math/math.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+
+
+    <script src="scripts/initReveal.js"></script>
+
+    <script src="scripts/solution.js"></script>
+    <script src="scripts/dispersion.js"></script>
+    <script src="scripts/waveContinuous.js"></script>
+    <script src="scripts/waveDiscontinuous.js"></script>
+    <script src="scripts/peridynamicDiscontinuous.js"></script>
+
+  </body>
+</html>
