@@ -1,7 +1,7 @@
 ---
 layout: default
 title: orlando | giochi
-permalink: /pages/games/
+permalink: /games/
 ---
 
 # giochi

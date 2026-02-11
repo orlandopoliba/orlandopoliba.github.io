@@ -1,7 +1,7 @@
 ---
 layout: default
 title: orlando | slides
-permalink: /pages/slides/
+permalink: /slides/
 ---
 
 # slides

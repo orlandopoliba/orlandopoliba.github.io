@@ -12,3 +12,9 @@ markdown: kramdown
 plugins:
   - jekyll-katex
   - jekyll-sitemap
+
+exclude:
+  - pages/slides/Riccione26/node_modules/**/*.md
+  - pages/slides/Riccione26/node_modules/**/*.markdown
+  - pages/slides/Napoli25/node_modules/**/*.md
+  - pages/slides/Napoli25/node_modules/**/*.markdown

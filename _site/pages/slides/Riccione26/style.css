@@ -1,0 +1,135 @@
+html, body, .reveal, .reveal .slides, .reveal .slides > section {
+  height: 100%;
+  width: 100%;
+}
+
+.reveal {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #222;
+    background-color: #fff;
+}
+
+.reveal .slides section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.reveal .slides .slide-body {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.reveal .slides p {
+    margin-top: 0px;
+}
+
+.reveal .slides section.vertical {
+  top: 0 !important;
+  transform: none !important;
+}
+
+.presentation-title {
+    color: white;
+    background-color: #A81C3A;
+    padding: 24px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+ 
+.author {
+    text-align: center;
+}
+
+.affiliation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.slide-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;                 /* adjust as you like */
+  background-color: #A81C3A;    /* header bar color */
+  color: white;
+  display: flex;
+  align-items: center;          /* vertically center text */
+  padding-left: 3em;            /* align with body text */
+  box-sizing: border-box;
+}
+
+
+.slide-header h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.slide-body {
+  margin-top: 100px;            /* space below the header */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+}
+
+.vslider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Chrome / Edge / Safari */
+.vslider input[type=range] {
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr; /* IE/Edge legacy */
+  width: 10px;
+  height: 140px;
+  padding: 0;
+}
+
+/* optional: make the labels smaller */
+.vslider .label, .vslider .value {
+  font: 22px system-ui, sans-serif;
+  color: #444;
+}
+
+.slider-value {
+  display: inline-block;
+  width: 50px;     /* fixed width → stops shifting */
+  text-align: right;
+}
+
+
+
+#waveCanvas { 
+    max-width: 100%; 
+    border: 1px solid #eee; 
+    background: #fff; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#time {
+    width: 25%; 
+}
+
+#dispersionCanvas {
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 0px solid #eee; 
+    background: #fff; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
