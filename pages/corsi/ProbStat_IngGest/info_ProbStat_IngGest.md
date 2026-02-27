@@ -55,7 +55,7 @@ Dopo la prova scritta il docente può convocare il candidato per un colloquio or
 - a.a. 2021/2022 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2021-2022-240704.pdf)
 - a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023-240207.pdf)
 - a.a 2023/2024 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2023-2024-250418.pdf)
-- a.a. 2024/2025 \| [tracce](tracce/Tracce_2024-2025-250418.pdf)
+- a.a. 2024/2025 \| [tracce](tracce/Tracce_2024-2025-260227.pdf) (soluzioni non disponibili)
 
 #### materiale 
 
@@ -65,7 +65,7 @@ Dopo la prova scritta il docente può convocare il candidato per un colloquio or
 
 #### slide interattive
 
-- [link alla pagina delle slide]
+- [link alla pagina delle slide](slides/)
 
 <!--
 #### simulazioni 
