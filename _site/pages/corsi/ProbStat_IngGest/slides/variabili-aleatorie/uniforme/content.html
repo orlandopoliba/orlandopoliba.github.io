@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <title>Legge uniforme</title>
+    <link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/css/main.css?1772210676510260000" rel="stylesheet">
+    <meta name="description"   content="This is the official webpage of Gianluca Orlando, Assistant Professor in Mathematical Analysis at the Department of Mechanics, Mathematics & Management of Polytechnic of Bari. Gianluca Orlando's research focuses on Calculus of Variations, Gamma-convergence, semicontinuity and relaxation problems, applications to Fracture Mechanics (evolution for fracture, damage, plasticity, fatigue models) and Materials Science. He is also interested in the variational discrete-to-continuum analysis of spin systems (XY model, N-clock model, frustrated systems). Currently funded by Research for innovation - REFIN of Regione Puglia. 
+
+    Questa è la pagina web ufficiale di Gianluca Orlando, Ricercatore a Tempo Determinato di tipo A in Analisi Matematica presso il Dipartimento di Meccanica, Matematica e Management (DMMM) del Politecnico di Bari (PoliBa). La ricerca di Gianluca Orlando è focalizzata sul calcolo delle variazioni, Gamma-convergenza, problemi di semicontinuità e rilassamento, applicazioni alla Meccanica delle Fratture (evoluzione per modelli di frattura, danno, plasticità, fatica) e Scienze dei Materiali. È anche interessato all'analisi variazionale dal discreto al continuo per sistemi di spin (modello XY, modello N-clock, sistemi frustrati). Al momento è finanziato dal programma Research for innovation - REFIN della Regione Puglia.">
+    <meta name="keywords" content="Orlando, Gianluca, Politecnico di Bari, PoliBa, Dipartimento di Meccanica, Matematica e Management, DMMM, Analisi Matematica, didattica, ingegneria gestional, calcolo delle probabilità e statistica">
+
+    <script src="/assets/js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8+w2LAIftJEULZABrF9PPFv+tVkH" crossorigin="anonymous"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js" integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB+w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="google-site-verification" content="44tr-41mamfaxMm3K5fG48-GcmYgZDDBqX3aKtogsps" />
+
+        
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    
+</head>
+  <body>
+    <div class="wrapper">
+        <div class="pageContainer">
+            <div class="nameContainer">
+                <div style="cursor: pointer;" onclick="window.location='/';">
+                    gianluca orlando
+                    </div>
+            </div>
+            <div class="navContainer">
+                <div id="menuButton" class="navElement-menu" style="cursor: pointer;" onclick="menu();">
+    menu
+</div>
+
+    <div style="cursor: pointer;" onclick="window.location='/cv.html';" class="navElement">
+        cv
+    </div>
+
+    <div style="cursor: pointer;" onclick="window.location='/research.html';" class="navElement">
+        research
+    </div>
+
+    <div style="cursor: pointer;" onclick="window.location='/didattica.html';" class="navElement">
+        didattica
+    </div>
+
+            </div>
+            <div class="defaultContainer">
+            <h1 id="legge-uniforme">Legge uniforme</h1>
+
+<div id="uniform-density" class="plot-narrow"></div>
+
+<div class="range-dual-row">
+  <div class="range-dual-track">
+    <div class="range-dual">
+      <input id="uniform-title-a-slider" type="range" min="0.0" max="8.0" step="0.01" value="1.0" />
+      <input id="uniform-title-b-slider" type="range" min="0.0" max="8.0" step="0.01" value="4.0" />
+    </div>
+  </div>
+  <div class="range-dual-values">
+    <div class="range-dual-value">
+      <label for="uniform-title-a-slider">$a = $</label>
+      <span id="uniform-title-a-value">$1.0$</span>
+    </div>
+    <div class="range-dual-value">
+      <label for="uniform-title-b-slider">$b = $</label>
+      <span id="uniform-title-b-value">$4.0$</span>
+    </div>
+  </div>
+</div>
+
+<div class="back-link-row">
+  <a class="back-link" href="../../">Torna alla pagina principale</a>
+</div>
+
+<hr />
+
+<h2 id="definizione-e-descrizione">Definizione e descrizione</h2>
+
+<div class="definition-box">
+
+**Definizione.** Una variabile aleatoria $X$ si dice distribuita con _legge uniforme_ su $[a,b]$ con $a &lt; b$ se ha funzione di densità di probabilità data da
+$$
+ f(x) = \frac{1}{b-a} \quad \text{per } x \in [a,b], \qquad f(x) = 0 \quad \text{per } x \notin [a,b].
+$$
+
+</div>
+
+<p><strong>Notazione.</strong> $X \sim \mathrm{U}(a,b)$.</p>
+
+<p><strong>Fenomeni modellati.</strong> La legge uniforme descrive situazioni in cui tutti i sottointervalli di uguale lunghezza in un intervallo sono equiprobabili. Alcuni esempi:</p>
+<ul>
+  <li>istante di arrivo casuale in un intervallo di tempo</li>
+  <li>posizione casuale lungo un segmento</li>
+  <li>errore di misura uniforme tra due estremi</li>
+  <li>…</li>
+</ul>
+
+<hr />
+
+<h2 id="simulazione">Simulazione</h2>
+
+<div id="uniform-sim"></div>
+
+<div class="range-dual-row">
+  <div class="range-dual-track">
+    <div class="range-dual">
+      <input id="uniform-sim-a-slider" type="range" min="0.0" max="8.0" step="0.01" value="1.0" />
+      <input id="uniform-sim-b-slider" type="range" min="0.0" max="8.0" step="0.01" value="4.0" />
+    </div>
+  </div>
+  <div class="range-dual-values">
+    <div class="range-dual-value">
+      <label for="uniform-sim-a-slider">$a = $</label>
+      <span id="uniform-sim-a-value">$1.0$</span>
+    </div>
+    <div class="range-dual-value">
+      <label for="uniform-sim-b-slider">$b = $</label>
+      <span id="uniform-sim-b-value">$4.0$</span>
+    </div>
+  </div>
+</div>
+
+<div class="button-row">
+  <button id="uniform-sample-btn" class="slide-btn">Campiona $X \sim \mathrm{U}(a,b)$</button>
+  <button id="uniform-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div id="uniform-result">Esito: -</div>
+
+<div id="uniform-total">Esperimenti eseguiti: 0</div>
+
+<div id="uniform-hist" class="plot-narrow"></div>
+
+<div class="toggle-row">
+  <label for="uniform-bin-slider">Ampiezza bin =</label>
+  <input id="uniform-bin-slider" type="range" min="0.01" max="2.00" step="0.01" value="0.50" />
+  <span id="uniform-bin-value" class="slider-value">$0.50$</span>
+  <label class="toggle">
+    <input id="uniform-theory-toggle" type="checkbox" />
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="toggle-label">Mostra densita della legge</span>
+</div>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/uniform-istruzioni"><i class="fa-solid fa-angle-down"></i><strong>Istruzioni</strong><i class="fa-solid fa-angle-down"></i></a></div>
+</div>
+
+<p>–</p>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/uniform-sim"><i class="fa-solid fa-angle-up"></i><strong>Indietro</strong><i class="fa-solid fa-angle-up"></i></a></div>
+</div>
+
+<div id="uniform-istruzioni"></div>
+
+<p><strong>Istruzioni</strong>:</p>
+<ul>
+  <li>Scegliere gli estremi $a$ e $b$ della distribuzione con lo slider doppio.</li>
+  <li>Campionare la variabile aleatoria $X \sim \mathrm{U}(a,b)$ con il pulsante.</li>
+  <li>Osservare i punti dei campioni sull’asse e l’istogramma delle densità delle frequenze relative.</li>
+  <li>Modificare l’ampiezza dei bin per cambiare la precisione dell’istogramma.</li>
+  <li>Premere il pulsante “Reset” per azzerare i risultati.</li>
+</ul>
+
+<hr />
+
+<h2 id="calcolatore-di-probabilità">Calcolatore di probabilità</h2>
+
+<div id="uniform-probability"></div>
+
+<div class="range-dual-row">
+  <div class="range-dual-track">
+    <div class="range-dual">
+      <input id="uniform-probability-a-slider" type="range" min="0.0" max="8.0" step="0.01" value="1.0" />
+      <input id="uniform-probability-b-slider" type="range" min="0.0" max="8.0" step="0.01" value="4.0" />
+    </div>
+  </div>
+  <div class="range-dual-values">
+    <div class="range-dual-value">
+      <label for="uniform-probability-a-slider">$a = $</label>
+      <span id="uniform-probability-a-value">$1.0$</span>
+    </div>
+    <div class="range-dual-value">
+      <label for="uniform-probability-b-slider">$b = $</label>
+      <span id="uniform-probability-b-value">$4.0$</span>
+    </div>
+  </div>
+</div>
+
+<div id="uniform-probability-plot" class="plot-narrow"></div>
+
+<div class="range-dual-row">
+  <div class="range-dual-track">
+    <div class="range-dual">
+      <input id="uniform-probability-x1-slider" type="range" min="0.0" max="8.0" step="0.01" value="1.5" />
+      <input id="uniform-probability-x2-slider" type="range" min="0.0" max="8.0" step="0.01" value="3.5" />
+    </div>
+  </div>
+  <div class="range-dual-values">
+    <div class="range-dual-value">
+      <label for="uniform-probability-x1-slider">$x_1 = $</label>
+      <span id="uniform-probability-x1-value">$1.50$</span>
+    </div>
+    <div class="range-dual-value">
+      <label for="uniform-probability-x2-slider">$x_2 = $</label>
+      <span id="uniform-probability-x2-value">$3.50$</span>
+    </div>
+  </div>
+</div>
+
+<div class="formula-box">
+  <span id="uniform-probability-result">
+    $\displaystyle \mathbb{P}(\{x_1 \leq X \leq x_2\}) = \displaystyle \int_{x_1}^{x_2} f(x) \, \mathrm{d} x =$
+  </span>
+</div>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/uniform-probability-istruzioni"><i class="fa-solid fa-angle-down"></i><strong>Istruzioni</strong><i class="fa-solid fa-angle-down"></i></a></div>
+</div>
+
+<p>–</p>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/uniform-probability"><i class="fa-solid fa-angle-up"></i><strong>Indietro</strong><i class="fa-solid fa-angle-up"></i></a></div>
+</div>
+
+<div id="uniform-probability-istruzioni"></div>
+
+<p><strong>Istruzioni</strong>:</p>
+<ul>
+  <li>Scegliere gli estremi $a$ e $b$ della distribuzione con lo slider doppio.</li>
+  <li>Impostare i valori di $x_1$ e $x_2$ con lo slider doppio (anche fuori da $[a,b]$).</li>
+  <li>Osservare l’area colorata e la probabilità calcolata.</li>
+</ul>
+
+<hr />
+
+<h2 id="valore-atteso-e-varianza">Valore atteso e varianza</h2>
+
+<div class="range-dual-row">
+  <div class="range-dual-track">
+    <div class="range-dual">
+      <input id="uniform-stats-a-slider" type="range" min="0.0" max="8.0" step="0.01" value="1.0" />
+      <input id="uniform-stats-b-slider" type="range" min="0.0" max="8.0" step="0.01" value="4.0" />
+    </div>
+  </div>
+  <div class="range-dual-values">
+    <div class="range-dual-value">
+      <label for="uniform-stats-a-slider">$a = $</label>
+      <span id="uniform-stats-a-value">$1.00$</span>
+    </div>
+    <div class="range-dual-value">
+      <label for="uniform-stats-b-slider">$b = $</label>
+      <span id="uniform-stats-b-value">$4.00$</span>
+    </div>
+  </div>
+</div>
+
+<div class="formula-box">
+  <div class="formula">$\mathbb{E}[X] = \frac{a + b}{2} = $ <span id="uniform-expected-value">$2.50$</span></div>
+  <div class="formula">$\mathrm{Var}(X) = \frac{(b - a)^2}{12} = $ <span id="uniform-variance-value">$0.75$</span></div>
+</div>
+
+<div id="uniform-plot-2" class="plot-narrow"></div>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

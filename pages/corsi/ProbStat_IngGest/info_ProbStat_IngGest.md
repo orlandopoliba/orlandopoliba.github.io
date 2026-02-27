@@ -29,22 +29,21 @@ Elementi di statistica inferenziale. Campione casuale. Variabili aleatorie dipen
 - F. Mosteller, *Fifty Challenging Problems in Probability with solutions*, Dover Publications, Inc. (esercizi difficili di probabilità di base, solo per i più interessati)
 - Soch, Joram, et al. (2024). StatProofBook/StatProofBook.github.io: The Book of Statistical Proofs (Version 2023). Zenodo. https://doi.org/10.5281/ZENODO.4305949
 
-#### modalità d'esame
+#### modalità d'esame (a partire da giugno 2026)
 
-L'esame consiste in una **prova scritta**. La durata della prova è 120 minuti (2h).
+L’esame consiste in una prova scritta articolata in tre sezioni.
 
-La prova scritta è costituita da **4 esercizi** (tutti da svolgere) e da **2 quesiti teorici**. Il voto massimo raggiungibile con i soli esercizi (senza rispondere ai quesiti teorici) è 28. Il punteggio di ogni esercizio sarà indicato sulla traccia (potrebbe variare di 1 punto in base alla difficoltà, oscillando intorno ai 7 punti). Per il 30L si devono svolgere correttamente i quesiti teorici.
-
-Gli argomenti degli esercizi spazieranno tutto il programma (probabilità in spazi discreti e continui, variabili aleatorie e vettori aleatori discreti e continui, statistica descrittiva, statistica inferenziale, ecc.) e saranno simili agli esercizi risolti durante le lezioni del corso. Per un confronto si possono consultare le tracce d'esame degli scorsi appelli e il materiale condiviso sul canale Team durante il corso.
-
-Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavole numeriche per le distribuzioni normale standard, chi-quadro e t-Student scaricabili scaricabili [qui](materiale/Tavole.pdf).
-
+- La sezione “Conoscenze imprescindibili” comprende 3 domande a scelta multipla (4 opzioni, 1 corretta), senza punteggio. Un errore o una risposta mancante comporta la valutazione “Insufficiente”, indipendentemente dalle risposte al resto del compito. Le domande, di bassa difficoltà, verificano il possesso dei concetti fondamentali di probabilità e statistica.
+- La sezione “Conoscenze di base” comprende 13 domande a scelta multipla (4 opzioni, 1 corretta): +2 punti per ogni risposta corretta, -0.5 per ogni risposta errata, 0 per ogni risposta non data. La difficoltà è media e l’obiettivo è accertare la padronanza delle conoscenze di base.
+- La sezione “Conoscenze avanzate” prevede 1 esercizio a risposta aperta con svolgimento: una soluzione corretta e completa vale 6 punti; sono possibili penalizzazioni per errori gravi. La difficoltà è medio-alta e la finalità è verificare la capacità di applicare le conoscenze a problemi complessi.
+  
+Il punteggio finale (massimo 32 punti) è dato dalla somma delle sezioni “Conoscenze di base” e “Conoscenze avanzate”. La sufficienza si ottiene con almeno 18 punti; con 32 punti si consegue 30 e lode.
+ 
+Dopo la prova scritta il docente può convocare il candidato per un colloquio orale, volto a chiarire aspetti dell’elaborato o ad approfondire la preparazione. L’orale non ha un punteggio prefissato e incide sulla valutazione finale.
 
 #### appelli futuri
 
-- 19 gennaio 2026
-- 16 febbraio 2026
-- 23 aprile 2026
+- 23 aprile 2026 (solo per anni accademici precedenti)
 - 23 giugno 2026
 - 21 luglio 2026
 - 03 settembre 2026
@@ -56,6 +55,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - a.a. 2021/2022 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2021-2022-240704.pdf)
 - a.a. 2022/2023 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2022-2023-240207.pdf)
 - a.a 2023/2024 \| [tracce e soluzioni](tracce/Tracce_Soluzioni_2023-2024-250418.pdf)
+- a.a. 2024/2025 \| [tracce](tracce/Tracce_2024-2025-250418.pdf)
 
 #### materiale 
 
@@ -63,16 +63,22 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - [tavole numeriche](materiale/tabelleVA.pdf)
 - [file excel per statistica descrittiva](materiale/Statistica%20descrittiva%20(esercizi%20da%20svolgere%20e%20dati).xlsx)
 
+#### slide interattive
+
+- [link alla pagina delle slide]
+
+<!--
 #### simulazioni 
 
 - legge di Bernoulli \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Bernoulli/Bernoulli.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Bernoulli) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
 - legge binomiale \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Binomial/Binomial.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Binomial) (adattato da [brianamedee](https://github.com/brianamedee/3B1B-Animated-Tutorials/blob/main/3b1bProbability.py))
 - legge di Poisson \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Poisson/Poisson.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Poisson)
 - legge geometrica \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Geometric/Geometric.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Geometric)
-- funzione di densità di probabilità \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Density/Density.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Density)
+- funzione di densità di probabilità \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/Density/Density.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/Density) 
 - legge dei grandi numeri \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/LLN/LLN.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/LLN)
 - legge di una media campionaria \| [slide](https://orlandopoliba.github.io/Manim-ProbStatPoliBA/CLT/CLT.html) \| [sorgente](https://github.com/orlandopoliba/Manim-ProbStatPoliBA/tree/main/CLT)
-
+-->
+<!-- 
 #### grafici interattivi
 
 - [legge binomiale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/binomial.html)
@@ -82,7 +88,7 @@ Durante la prova scritta è consentito l’uso di una calcolatrice e delle tavol
 - [legge Gamma](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/gamma.html)
 - [legge normale](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/normal.html)
 - [legge chi-quadro](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/chi-squared.html)
-- [legge t-Student](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/t-student.html)
+- [legge t-Student](https://orlandopoliba.github.io/pages/corsi/ProbStat_IngGest/plots/t-student.html) -->
 
 #### giochi
 

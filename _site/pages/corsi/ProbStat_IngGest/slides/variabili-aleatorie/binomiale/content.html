@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <title>Legge binomiale</title>
+    <link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/css/main.css?1772210676510260000" rel="stylesheet">
+    <meta name="description"   content="This is the official webpage of Gianluca Orlando, Assistant Professor in Mathematical Analysis at the Department of Mechanics, Mathematics & Management of Polytechnic of Bari. Gianluca Orlando's research focuses on Calculus of Variations, Gamma-convergence, semicontinuity and relaxation problems, applications to Fracture Mechanics (evolution for fracture, damage, plasticity, fatigue models) and Materials Science. He is also interested in the variational discrete-to-continuum analysis of spin systems (XY model, N-clock model, frustrated systems). Currently funded by Research for innovation - REFIN of Regione Puglia. 
+
+    Questa è la pagina web ufficiale di Gianluca Orlando, Ricercatore a Tempo Determinato di tipo A in Analisi Matematica presso il Dipartimento di Meccanica, Matematica e Management (DMMM) del Politecnico di Bari (PoliBa). La ricerca di Gianluca Orlando è focalizzata sul calcolo delle variazioni, Gamma-convergenza, problemi di semicontinuità e rilassamento, applicazioni alla Meccanica delle Fratture (evoluzione per modelli di frattura, danno, plasticità, fatica) e Scienze dei Materiali. È anche interessato all'analisi variazionale dal discreto al continuo per sistemi di spin (modello XY, modello N-clock, sistemi frustrati). Al momento è finanziato dal programma Research for innovation - REFIN della Regione Puglia.">
+    <meta name="keywords" content="Orlando, Gianluca, Politecnico di Bari, PoliBa, Dipartimento di Meccanica, Matematica e Management, DMMM, Analisi Matematica, didattica, ingegneria gestional, calcolo delle probabilità e statistica">
+
+    <script src="/assets/js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8+w2LAIftJEULZABrF9PPFv+tVkH" crossorigin="anonymous"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js" integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB+w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="google-site-verification" content="44tr-41mamfaxMm3K5fG48-GcmYgZDDBqX3aKtogsps" />
+
+        
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    
+</head>
+  <body>
+    <div class="wrapper">
+        <div class="pageContainer">
+            <div class="nameContainer">
+                <div style="cursor: pointer;" onclick="window.location='/';">
+                    gianluca orlando
+                    </div>
+            </div>
+            <div class="navContainer">
+                <div id="menuButton" class="navElement-menu" style="cursor: pointer;" onclick="menu();">
+    menu
+</div>
+
+    <div style="cursor: pointer;" onclick="window.location='/cv.html';" class="navElement">
+        cv
+    </div>
+
+    <div style="cursor: pointer;" onclick="window.location='/research.html';" class="navElement">
+        research
+    </div>
+
+    <div style="cursor: pointer;" onclick="window.location='/didattica.html';" class="navElement">
+        didattica
+    </div>
+
+            </div>
+            <div class="defaultContainer">
+            <h1 id="legge-binomiale">Legge binomiale</h1>
+
+<div id="binomial-bar" class="plot-narrow"></div>
+
+<div class="slider-grid">
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-title-n-slider">$n = $</label>
+    <input id="binomial-title-n-slider" type="range" min="1" max="10" step="1" value="6" />
+    <span id="binomial-title-n-value" class="slider-value">$6$</span>
+  </div>
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-title-p-slider">$p = $</label>
+    <input id="binomial-title-p-slider" type="range" min="0" max="1" step="0.01" value="0.5" />
+    <span id="binomial-title-p-value" class="slider-value">$0.50$</span>
+  </div>
+</div>
+
+<div class="back-link-row">
+  <a class="back-link" href="../../">Torna alla pagina principale</a>
+</div>
+
+<hr />
+
+<h2 id="definizione-e-descrizione">Definizione e descrizione</h2>
+
+<div class="definition-box">
+
+**Definizione.** Una variabile aleatoria $X$ si dice distribuita con _legge binomiale_ con parametri $n \\in \\mathbb{N}$ e $p \\in [0,1]$ se è identicamente distribuita a $X_1 + X_2 + \\ldots + X_n$ dove $X_i \sim \mathrm{Be}(p)$, con $i = 1, 2, \\ldots, n$, sono indipendenti.
+</div>
+
+<p><strong>Notazione.</strong> $X \sim \mathrm{B}(n, p)$.</p>
+
+<p><strong>Fenomeni modellati.</strong> La legge binomiale modella il numero di successi in $n$ tentativi indipendenti, ciascuno con probabilità di successo $p$. Alcuni esempi:</p>
+<ul>
+  <li>numero di teste in $n$ lanci di moneta</li>
+  <li>numero di risposte corrette in un quiz a scelta multipla con $n$ domande</li>
+  <li>numero di clienti che effettuano un acquisto in un gruppo di $n$ visitatori</li>
+  <li>numero di componenti difettosi in un campione di $n$ pezzi</li>
+  <li>…</li>
+</ul>
+
+<hr />
+
+<h2 id="formula-della-legge-binomiale">Formula della legge binomiale</h2>
+
+<p>La funzione di massa di probabilità della legge binomiale è data da</p>
+<div class="formula-box">
+    <div class="formula">$
+    \mathbb{P}(\{X = k\}) = \displaystyle \binom{n}{k} p^k (1 - p)^{n - k}, \quad k = 0, 1, 2, \ldots, n ,
+    $</div>
+</div>
+<p>dove</p>
+
+<ul>
+  <li>$\displaystyle\binom{n}{k} = \frac{n!}{k!(n - k)!}$ è il coefficiente binomiale, che conta il numero di modi in cui si possono scegliere $k$ successi in $n$ prove,</li>
+  <li>$p^k$ è la probabilità di ottenere $k$ successi,</li>
+  <li>$(1 - p)^{n - k}$ è la probabilità di ottenere $n - k$ insuccessi.</li>
+</ul>
+
+<hr />
+
+<h2 id="simulazione-lancio-di-4-monete">Simulazione (lancio di 4 monete)</h2>
+
+<div id="binomial-coins-sim"></div>
+
+<div class="button-row">
+  <button id="binomial-coins-btn" class="slide-btn">Lancia 4 monete</button>
+  <button id="binomial-coins-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div id="binomial-coins-result">Esito: -</div>
+
+<div id="binomial-coins-count">Numero di teste: -</div>
+
+<div id="binomial-coins-total">Esperimenti eseguiti: 0</div>
+
+<div id="binomial-coins-plot" class="plot-narrow"></div>
+
+<div class="toggle-row">
+  <label class="toggle">
+    <input id="binomial-coins-theory-toggle" type="checkbox" />
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="toggle-label">Mostra diagramma a barre della legge</span>
+</div>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/binomial-coins-istruzioni"><i class="fa-solid fa-angle-down"></i><strong>Istruzioni</strong><i class="fa-solid fa-angle-down"></i></a></div>
+</div>
+
+<p>–</p>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/binomial-coins-sim"><i class="fa-solid fa-angle-up"></i><strong>Indietro</strong><i class="fa-solid fa-angle-up"></i></a></div>
+</div>
+
+<div id="binomial-coins-istruzioni"></div>
+
+<p><strong>Istruzioni</strong>:</p>
+<ul>
+  <li>Premere il pulsante per lanciare 4 monete.</li>
+  <li>Viene mostrato l’esito dei 4 lanci (testa = 1 e croce = 0) e viene contato il numero di teste nei 4 lanci.</li>
+  <li>Il diagramma a barre delle frequenze relative del numero di teste in 4 lanci si aggiorna automaticamente.</li>
+  <li>Tenere premuto per effettuare l’esperimento ripetutamente.</li>
+  <li>Osservare come il diagramma a barre si allinea a quello della legge binomiale al crescere del numero di esperimenti.</li>
+  <li>Usare il pulsante “Reset” per azzerare i conteggi.</li>
+</ul>
+
+<hr />
+
+<h2 id="simulazione-parametri-n-e-p">Simulazione (parametri $n$ e $p$)</h2>
+
+<div id="binomial-param-sim"></div>
+
+<div class="slider-grid">
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-n-slider">$n = $</label>
+    <input id="binomial-n-slider" type="range" min="1" max="10" step="1" value="4" />
+    <span id="binomial-n-value" class="slider-value">$4$</span>
+  </div>
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-p-slider">$p = $</label>
+    <input id="binomial-p-slider" type="range" min="0" max="1" step="0.01" value="0.5" />
+    <span id="binomial-p-value" class="slider-value">$0.50$</span>
+  </div>
+</div>
+
+<div class="button-row">
+  <button id="binomial-btn" class="slide-btn">Campiona $X \sim \mathrm{B}(n, p)$</button>
+  <button id="binomial-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div id="binomial-result">Esito: -</div>
+
+<div id="binomial-total">Esperimenti eseguiti: 0</div>
+
+<div id="binomial-plot" class="plot-narrow"></div>
+
+<div class="toggle-row">
+  <label class="toggle">
+    <input id="binomial-theory-toggle" type="checkbox" />
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="toggle-label">Mostra diagramma a barre della legge</span>
+</div>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/binomial-param-istruzioni"><i class="fa-solid fa-angle-down"></i><strong>Istruzioni</strong><i class="fa-solid fa-angle-down"></i></a></div>
+</div>
+
+<p>–</p>
+
+<div class="instruction-link-row">
+  <div class="instruction-link"><a href="#/binomial-param-sim"><i class="fa-solid fa-angle-up"></i><strong>Indietro</strong><i class="fa-solid fa-angle-up"></i></a></div>
+</div>
+
+<div id="binomial-param-istruzioni"></div>
+
+<p><strong>Istruzioni</strong>:</p>
+<ul>
+  <li>Scegliere i valori dei parametri $n$ e $p$ tramite gli slider.</li>
+  <li>Campionare la variabile aleatoria $X \sim \mathrm{B}(n, p)$ per osservarne gli esiti.</li>
+  <li>Il diagramma a barre delle frequenze relative degli esiti si aggiorna automaticamente.</li>
+  <li>Tenere premuto il pulsante per effettuare l’esperimento ripetutamente.</li>
+  <li>Osservare come il diagramma a barre si allinea a quello della legge binomiale al crescere del numero di esperimenti.</li>
+  <li>Usare il pulsante “Reset” per azzerare i conteggi.</li>
+</ul>
+
+<hr />
+
+<h2 id="valore-atteso-e-varianza">Valore atteso e varianza</h2>
+
+<div class="slider-grid">
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-n-slider-2">$n = $</label>
+    <input id="binomial-n-slider-2" type="range" min="1" max="10" step="1" value="4" />
+    <span id="binomial-n-value-2" class="slider-value">$4$</span>
+  </div>
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-p-slider-2">$p = $</label>
+    <input id="binomial-p-slider-2" type="range" min="0" max="1" step="0.01" value="0.5" />
+    <span id="binomial-p-value-2" class="slider-value">$0.50$</span>
+  </div>
+</div>
+
+<div class="formula-box">
+    <div class="formula">$\mathbb{E}[X] = np = $ <span id="binomial-expected-value">$5.00$</span></div>
+    <div class="formula">$\mathrm{Var}(X) = np(1 - p) = $ <span id="binomial-variance-value">$2.50$</span></div>
+</div>
+
+<div id="binomial-plot-2" class="plot-narrow"></div>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
