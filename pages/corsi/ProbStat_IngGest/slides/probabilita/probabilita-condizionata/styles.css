@@ -1,0 +1,166 @@
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal .slides section h1,
+.reveal .slides section h2,
+.reveal .slides section h3 {
+  text-align: center;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.reveal input,
+.reveal button,
+.reveal select,
+.reveal textarea,
+.reveal label,
+.reveal summary {
+  touch-action: manipulation;
+}
+
+.reveal input[type="range"] {
+  touch-action: pan-x;
+}
+
+.reveal {
+  font-size: 24px;
+  color: #3f3f3f;
+  --total-probability-controls-offset-y: 20px;
+}
+
+.reveal,
+.reveal .slides,
+.reveal .slide-background,
+.reveal .slide-background-content {
+  background: rgb(247, 247, 247);
+}
+
+.reveal h1 {
+  font-size: 1.8em;
+}
+
+.reveal h2 {
+  font-size: 1.4em;
+}
+
+.reveal h3 {
+  font-size: 1.15em;
+}
+
+.back-link-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 6px auto 0;
+  font-size: 0.95em;
+  letter-spacing: 0.03em;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+.total-probability-demo {
+  margin-top: 18px;
+}
+
+.total-probability-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.sample-space-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.sample-space-grid {
+  display: block;
+  width: min(420px, 72vw);
+  max-width: 100%;
+  height: auto;
+}
+
+.sample-space-legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95em;
+}
+
+.legend-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #c7463d;
+  border: 2px solid #8e2e28;
+  box-sizing: border-box;
+}
+
+.total-probability-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: min(340px, 88vw);
+  margin-top: var(--total-probability-controls-offset-y);
+}
+
+.control-block {
+  padding: 14px 16px;
+  border: 1px solid #d2d2d2;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.formula-line {
+  min-height: 38px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.control-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.control-slider-row input[type="range"] {
+  flex: 1 1 auto;
+  accent-color: #2e6f8e;
+}
+
+.slider-value {
+  min-width: 56px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.total-formula-line {
+  margin: 18px auto 0;
+  padding: 4px 18px;
+  max-width: 980px;
+  border: 1px solid #d2d2d2;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
