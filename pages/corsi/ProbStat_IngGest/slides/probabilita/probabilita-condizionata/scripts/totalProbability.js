@@ -5,9 +5,11 @@ const SQUARE_SIZE = 360;
 const CELL_SIZE = SQUARE_SIZE / GRID_SIZE;
 const DOT_RADIUS = 11;
 const EVENT_LABEL_OFFSET_Y = 16;
-const EVENT_B_BACKGROUND_FILL = "#dff1fb";
+const EVENT_B_BACKGROUND_FILL = "#f0e7c0";
 const EVENT_B_COMPLEMENT_BACKGROUND_FILL = "#ffffff";
 const PROBABILITY_B_CARD_BACKGROUND_FILL = EVENT_B_BACKGROUND_FILL;
+const EVENT_A_DOT_FILL = "#f56111";
+const EVENT_NOT_A_DOT_FILL = "#80aabd";
 
 const createSvgNode = (tagName, attributes = {}) => {
   const node = document.createElementNS(SVG_NS, tagName);
@@ -110,8 +112,8 @@ const drawSampleSpace = (svg, state) => {
         cx: MARGIN + (col + 0.5) * CELL_SIZE,
         cy: MARGIN + (row + 0.5) * CELL_SIZE,
         r: DOT_RADIUS,
-        fill: isRed ? "#c7463d" : "#f7f7f7",
-        stroke: isRed ? "#8e2e28" : "#6a6a6a",
+        fill: isRed ? EVENT_A_DOT_FILL : EVENT_NOT_A_DOT_FILL,
+        stroke: isRed ? EVENT_A_DOT_FILL : EVENT_NOT_A_DOT_FILL,
         "stroke-width": 2
       }));
     }

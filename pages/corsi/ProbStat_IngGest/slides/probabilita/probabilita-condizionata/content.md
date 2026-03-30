@@ -15,8 +15,7 @@
     <div class="sample-space-panel">
       <svg class="sample-space-grid" data-role="grid" viewBox="0 0 420 420" role="img" aria-label="Rappresentazione dello spazio campionario con gli eventi A, B e non B"></svg>
       <div class="sample-space-legend">
-        <span class="legend-dot"></span>
-        <span>I pallini rossi rappresentano l'evento <em>A</em>.</span>
+        <span>I pallini arancioni rappresentano l'evento <em>A</em>.</span>
       </div>
     </div>
     <div class="total-probability-controls">
@@ -55,8 +54,7 @@
     <div class="sample-space-panel">
       <svg class="sample-space-grid" data-role="grid" viewBox="0 0 420 420" role="img" aria-label="Rappresentazione dello spazio campionario con gli eventi A, B e non B"></svg>
       <div class="sample-space-legend">
-        <span class="legend-dot"></span>
-        <span>I pallini rossi rappresentano l'evento <em>A</em>.</span>
+        <span>I pallini arancioni rappresentano l'evento <em>A</em>.</span>
       </div>
     </div>
     <div class="total-probability-controls">
