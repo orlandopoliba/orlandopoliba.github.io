@@ -160,6 +160,56 @@ dove
 
 ---
 
+## Somma di binomiali
+
+<div class="slider-grid slider-grid-two-rows">
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-sum-n-slider">$n = $</label>
+    <input id="binomial-sum-n-slider" type="range" min="1" max="10" step="1" value="4" />
+    <span id="binomial-sum-n-value" class="slider-value">$4$</span>
+  </div>
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-sum-p-slider-top">$p = $</label>
+    <input id="binomial-sum-p-slider-top" type="range" min="0" max="1" step="0.01" value="0.5" />
+    <span id="binomial-sum-p-value-top" class="slider-value">$0.50$</span>
+  </div>
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-sum-m-slider">$m = $</label>
+    <input id="binomial-sum-m-slider" type="range" min="1" max="10" step="1" value="3" />
+    <span id="binomial-sum-m-value" class="slider-value">$3$</span>
+  </div>
+  <div class="slider-row slider-row-inline">
+    <label for="binomial-sum-p-slider-bottom">$p = $</label>
+    <input id="binomial-sum-p-slider-bottom" type="range" min="0" max="1" step="0.01" value="0.5" />
+    <span id="binomial-sum-p-value-bottom" class="slider-value">$0.50$</span>
+  </div>
+</div>
+
+<div class="button-row">
+  <button id="binomial-sum-btn" class="slide-btn">Campiona $X_1 + X_2$</button>
+  <button id="binomial-sum-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div id="binomial-sum-x1" class="simulation-value-line">$X_1 = -$</div>
+
+<div id="binomial-sum-x2" class="simulation-value-line">$X_2 = -$</div>
+
+<div id="binomial-sum-result" class="simulation-value-line">$X_1 + X_2 = -$</div>
+
+<div id="binomial-sum-total">Esperimenti eseguiti: 0</div>
+
+<div id="binomial-sum-plot" class="plot-narrow"></div>
+
+<div class="toggle-row">
+  <label class="toggle">
+    <input id="binomial-sum-theory-toggle" type="checkbox" />
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="toggle-label">Mostra $\mathrm{B}(n+m,p)$</span>
+</div>
+
+---
+
 ## Valore atteso e varianza
 
 <div class="slider-grid">

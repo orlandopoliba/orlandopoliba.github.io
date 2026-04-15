@@ -214,9 +214,19 @@ body {
   margin: 10px auto 14px;
 }
 
+.slider-grid-two-rows {
+  max-width: 700px;
+}
+
 .slider-row.slider-row-inline {
   margin: 0;
   width: min(320px, 90%);
+}
+
+.simulation-value-line {
+  margin: 6px auto;
+  text-align: center;
+  min-height: 32px;
 }
 
 .formula-box {
