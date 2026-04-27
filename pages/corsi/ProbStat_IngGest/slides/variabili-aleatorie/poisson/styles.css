@@ -219,6 +219,12 @@ body {
   width: min(320px, 90%);
 }
 
+.simulation-value-line {
+  margin: 6px auto;
+  text-align: center;
+  min-height: 32px;
+}
+
 .formula-box {
   display: flex;
   flex-direction: row;
@@ -230,6 +236,23 @@ body {
   max-width: 90%;
   margin: 12px auto 18px;
   text-align: center;
+}
+
+.formula-card {
+  width: fit-content;
+  max-width: 90%;
+  margin: 14px auto 10px;
+  padding: 14px 18px;
+  border: 1px solid #d2d2d2;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.formula-card-wide {
+  max-width: min(840px, 94%);
 }
 
 .instruction-link-row {
