@@ -1,6 +1,8 @@
 import { initPoissonBar } from "./scripts/poissonBarDiagram.js";
 import { initPoissonLimit } from "./scripts/poissonBinomialLimit.js";
 import { initPoissonSimulation } from "./scripts/poissonSimulation.js";
+import { initPoissonSumSimulation } from "./scripts/poissonSumSimulation.js";
+import { initPoissonTaylorExponential } from "./scripts/poissonTaylorExponential.js";
 import { initPoissonStats } from "./scripts/poissonStats.js";
 
 import { applyRevealMobileGuards } from "../../common/mobileReveal.js";
@@ -17,8 +19,10 @@ Reveal.initialize({
 
 const runSlideInits = () => {
   initPoissonBar();
+  initPoissonTaylorExponential();
   initPoissonLimit();
   initPoissonSimulation();
+  initPoissonSumSimulation();
   initPoissonStats();
 };
 

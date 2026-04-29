@@ -1,6 +1,7 @@
 import { initBinomialBar } from "./scripts/binomialBarDiagram.js";
 import { initBinomialCoins } from "./scripts/binomialCoins.js";
 import { initBinomialSimulation } from "./scripts/binomialSimulation.js";
+import { initBinomialSumSimulation } from "./scripts/binomialSumSimulation.js";
 import { initBinomialStats } from "./scripts/binomialStats.js";
 
 import { applyRevealMobileGuards } from "../../common/mobileReveal.js";
@@ -19,6 +20,7 @@ const runSlideInits = () => {
   initBinomialBar();
   initBinomialCoins();
   initBinomialSimulation();
+  initBinomialSumSimulation();
   initBinomialStats();
 };
 

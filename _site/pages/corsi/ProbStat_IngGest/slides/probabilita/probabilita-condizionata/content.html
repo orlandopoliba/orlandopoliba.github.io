@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta lang="en">
-    <title>orlando | didattica</title>
+    <title>Probabilità condizionata</title>
     <link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/assets/css/main.css?1777459767548111000" rel="stylesheet">
     <meta name="description"   content="This is the official webpage of Gianluca Orlando, Assistant Professor in Mathematical Analysis at the Department of Mechanics, Mathematics & Management of Polytechnic of Bari. Gianluca Orlando's research focuses on Calculus of Variations, Gamma-convergence, semicontinuity and relaxation problems, applications to Fracture Mechanics (evolution for fracture, damage, plasticity, fatigue models) and Materials Science. He is also interested in the variational discrete-to-continuum analysis of spin systems (XY model, N-clock model, frustrated systems). Currently funded by Research for innovation - REFIN of Regione Puglia. 
@@ -56,26 +56,91 @@
 
             </div>
             <div class="defaultContainer">
-            <h2 id="introduction-to-the-theory-of-currents">Introduction to the theory of currents</h2>
-<h3 id="phd-course-for-università-di-roma-tor-vergata--2019">PhD course for Università di Roma “Tor Vergata” – 2019</h3>
+            <h1 id="probabilità-condizionata">Probabilità condizionata</h1>
+
+<h3 id="probabilità">Probabilità</h3>
+
+<div class="back-link-row">
+  <a class="back-link" href="../../">Torna alla pagina principale</a>
+</div>
 
 <hr />
 
-<h4 id="program">program</h4>
+<h2 id="teorema-della-probabilità-totale">Teorema della probabilità totale</h2>
 
-<p>Currents are the generalization of measures for geometrical problems and can be seen as representing integration on a submanifold. They are a fundamental tool in Geometric Measure Theory.</p>
+<div id="total-probability-demo" class="total-probability-demo probability-demo" data-formula-kind="total">
+  <div class="total-probability-layout">
+    <div class="sample-space-panel">
+      <svg class="sample-space-grid" data-role="grid" viewBox="0 0 420 420" role="img" aria-label="Rappresentazione dello spazio campionario con gli eventi A, B e non B"></svg>
+      <div class="sample-space-legend">
+        <span>I pallini arancioni rappresentano l'evento <em>A</em>.</span>
+      </div>
+    </div>
+    <div class="total-probability-controls">
+      <div class="control-block">
+        <div class="formula-line" data-role="prob-b-formula"></div>
+        <div class="control-slider-row">
+          <input data-role="prob-b-slider" type="range" min="1" max="9" step="1" value="5" />
+          <span data-role="prob-b-percent" class="slider-value"></span>
+        </div>
+      </div>
+      <div class="control-block">
+        <div class="formula-line" data-role="prob-a-given-b-formula"></div>
+        <div class="control-slider-row">
+          <input data-role="prob-a-given-b-slider" type="range" min="1" max="9" step="1" value="4" />
+          <span data-role="prob-a-given-b-percent" class="slider-value"></span>
+        </div>
+      </div>
+      <div class="control-block">
+        <div class="formula-line" data-role="prob-a-given-b-complement-formula"></div>
+        <div class="control-slider-row">
+          <input data-role="prob-a-given-b-complement-slider" type="range" min="1" max="9" step="1" value="7" />
+          <span data-role="prob-a-given-b-complement-percent" class="slider-value"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="total-formula-line" data-role="result-formula"></div>
+</div>
 
-<p>part 1: <em>An Introduction to the Theory of Currents</em></p>
+<hr />
 
-<p>Preliminaries of Linear Algebra. Definition and examples of currents. Currents with finite mass are measures. Compactness. Normal currents. Examples. Compactness. Existence for the Plateau problem for normal currents. Recalls: Hausdorff measure, rectifiable sets, existence of the approximate tangent space. Integer rectifiable currents. The closure theorem of Federer and Fleming (only the statement). Existence for the Plateau problem for integer rectifiable currents. Approximate differentiability, the Calderón-Zygmund Theorem, Lipschitz approximation of Sobolev functions and graphs of Sobolev functions. Concentration effects for maps with values in the unit circle, boundary of graphs, the problem of lifting \(W^{1,1}\) maps.</p>
+<h2 id="teorema-di-bayes">Teorema di Bayes</h2>
 
-<p>part 2: <em>Cartesian Currents and Applications</em></p>
-
-<p>Definition of Cartesian Current. Main properties of \(BV\) functions of several variables. Structure Theorem for Cartesian Currents. Cartesian Currents in codimension 1 are graphs of \(BV\) functions. The Area Functional for scalar-valued functions, the Area Functional for vector-valued maps, the Area Functional for maps with values in the unit circle. If time permits, we will study an application of Cartesian Currents to discrete spin systems.</p>
-
-<h4 id="material">material</h4>
-
-<p>lecture notes | <a href="materiale/Week%201.pdf">Week 1</a> | <a href="materiale/Week%202.pdf">Week 2</a> | <a href="materiale/Week%203.pdf">Week 3</a> | <a href="materiale/Week%204.pdf">Week 4</a></p>
+<div id="bayes-demo" class="total-probability-demo probability-demo" data-formula-kind="bayes">
+  <div class="total-probability-layout">
+    <div class="sample-space-panel">
+      <svg class="sample-space-grid" data-role="grid" viewBox="0 0 420 420" role="img" aria-label="Rappresentazione dello spazio campionario con gli eventi A, B e non B"></svg>
+      <div class="sample-space-legend">
+        <span>I pallini arancioni rappresentano l'evento <em>A</em>.</span>
+      </div>
+    </div>
+    <div class="total-probability-controls">
+      <div class="control-block">
+        <div class="formula-line" data-role="prob-b-formula"></div>
+        <div class="control-slider-row">
+          <input data-role="prob-b-slider" type="range" min="1" max="9" step="1" value="5" />
+          <span data-role="prob-b-percent" class="slider-value"></span>
+        </div>
+      </div>
+      <div class="control-block">
+        <div class="formula-line" data-role="prob-a-given-b-formula"></div>
+        <div class="control-slider-row">
+          <input data-role="prob-a-given-b-slider" type="range" min="1" max="9" step="1" value="4" />
+          <span data-role="prob-a-given-b-percent" class="slider-value"></span>
+        </div>
+      </div>
+      <div class="control-block">
+        <div class="formula-line" data-role="prob-a-given-b-complement-formula"></div>
+        <div class="control-slider-row">
+          <input data-role="prob-a-given-b-complement-slider" type="range" min="1" max="9" step="1" value="7" />
+          <span data-role="prob-a-given-b-complement-percent" class="slider-value"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="total-formula-line" data-role="result-formula"></div>
+</div>
 
             </div>
         </div>

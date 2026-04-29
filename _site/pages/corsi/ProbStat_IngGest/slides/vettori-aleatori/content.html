@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta lang="en">
-    <title>orlando | didattica</title>
+    <title>Vettori aleatori</title>
     <link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/assets/css/main.css?1777459767548111000" rel="stylesheet">
     <meta name="description"   content="This is the official webpage of Gianluca Orlando, Assistant Professor in Mathematical Analysis at the Department of Mechanics, Mathematics & Management of Polytechnic of Bari. Gianluca Orlando's research focuses on Calculus of Variations, Gamma-convergence, semicontinuity and relaxation problems, applications to Fracture Mechanics (evolution for fracture, damage, plasticity, fatigue models) and Materials Science. He is also interested in the variational discrete-to-continuum analysis of spin systems (XY model, N-clock model, frustrated systems). Currently funded by Research for innovation - REFIN of Regione Puglia. 
@@ -50,24 +50,48 @@
         research
     </div>
 
-    <div style="cursor: pointer;" onclick="window.location='/didattica.html';" class="navElement current">
+    <div style="cursor: pointer;" onclick="window.location='/didattica.html';" class="navElement">
         didattica
     </div>
 
             </div>
             <div class="defaultContainer">
-            <h2 id="corsi">corsi</h2>
+            <h1 id="vettori-aleatori">Vettori aleatori</h1>
 
-<ul>
-  <li><a href="/pages/corsi/ProbStat_IngGest/info_ProbStat_IngGest.html">Probabilità e Statistica | laurea triennale Ing. Gestionale</a> 
-<!-- - [Fondamenti di Matematica e Statistica \| corso di studi in Costruzioni e Gestione Ambientale e Territoriale](/pages/corsi/FondMatStat_CostrGestAmbTer/info_FondMatStat_CostrGestAmbTer.html)  --></li>
-  <li><a href="/pages/corsi/MMinDL_ScuDo/info_MMinDL_ScuDo.html">Mathematical Methods in Deep Learning | ScuDo</a></li>
-</ul>
+<h3 id="probabilità">Probabilità</h3>
 
-<h2 id="ricevimento">ricevimento</h2>
+<div class="back-link-row">
+  <a class="back-link" href="../">Torna alla pagina principale</a>
+</div>
 
-<p>Il ricevimento è effettuato in presenza o in modo telematico tramite il canale Teams del corso. 
-<!-- la piattaforma Microsoft Teams seguendo [questo  link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWIyODdmZGUtYTRmZS00NTNiLTgyNDAtZTU1YzljZTViMzVk%40thread.v2/0?context=%7b%22Tid%22%3a%225b406aab-a1f1-4f13-a7aa-dd573da3d332%22%2c%22Oid%22%3a%2274949032-5996-42ed-891e-5eb4822ea4a8%22%7d).--></p>
+<hr />
+
+<h2 id="vettori-aleatori-1">Vettori aleatori</h2>
+
+<div class="button-row">
+  <button id="random-vector-sample-btn" class="slide-btn">Campiona $(X_1, X_2, X_3)$</button>
+  <button id="random-vector-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div id="random-vector-plot" class="plot-wide"></div>
+
+<hr />
+
+<h2 id="legge-congiunta-e-leggi-marginali">Legge congiunta e leggi marginali</h2>
+
+<div class="button-row">
+  <button id="joint-marginals-sample-btn" class="slide-btn">Campiona</button>
+  <button id="joint-marginals-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div class="plot-grid-two">
+  <div class="plot-panel">
+    <div id="joint-marginals-plot-a" class="plot-half"></div>
+  </div>
+  <div class="plot-panel">
+    <div id="joint-marginals-plot-b" class="plot-half"></div>
+  </div>
+</div>
 
             </div>
         </div>

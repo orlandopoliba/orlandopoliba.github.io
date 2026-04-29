@@ -35,6 +35,28 @@ $$
 
 ---
 
+## Serie di Taylor dell'esponenziale
+
+<div class="slider-row">
+  <label for="poisson-taylor-order-slider">Ordine</label>
+  <input id="poisson-taylor-order-slider" type="range" min="0" max="5" step="1" value="2" />
+  <span id="poisson-taylor-order-value" class="slider-value">$2$</span>
+</div>
+
+<div id="poisson-taylor-plot" class="plot-narrow"></div>
+
+<div id="poisson-taylor-formula" class="formula-card formula-card-wide"></div>
+
+<div class="toggle-row">
+  <label class="toggle">
+    <input id="poisson-taylor-error-toggle" type="checkbox" />
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="toggle-label">Mostra errore</span>
+</div>
+
+---
+
 ## Limite di una binomiale
 
 <div id="poisson-limit-sim"></div>
@@ -135,6 +157,46 @@ $$
 - Tenere premuto il bottone per campionare ripetutamente.
 - Osservare come il diagramma a barre delle frequenze relative si avvicina a quello della legge di Poisson al crescere del numero di esperimenti.
 - Utilizzare il pulsante "Reset" per azzerare il conteggio degli esperimenti.
+
+---
+
+## Somma di leggi di Poisson
+
+<div class="slider-grid">
+  <div class="slider-row slider-row-inline">
+    <label for="poisson-sum-lambda-1-slider">$\lambda_1 = $</label>
+    <input id="poisson-sum-lambda-1-slider" type="range" min="0.5" max="9.9" step="0.1" value="3.0" />
+    <span id="poisson-sum-lambda-1-value" class="slider-value">$3.0$</span>
+  </div>
+  <div class="slider-row slider-row-inline">
+    <label for="poisson-sum-lambda-2-slider">$\lambda_2 = $</label>
+    <input id="poisson-sum-lambda-2-slider" type="range" min="0.5" max="9.9" step="0.1" value="2.0" />
+    <span id="poisson-sum-lambda-2-value" class="slider-value">$2.0$</span>
+  </div>
+</div>
+
+<div class="button-row">
+  <button id="poisson-sum-btn" class="slide-btn">Campiona $X_1 + X_2$</button>
+  <button id="poisson-sum-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div id="poisson-sum-x1" class="simulation-value-line">$X_1 = -$</div>
+
+<div id="poisson-sum-x2" class="simulation-value-line">$X_2 = -$</div>
+
+<div id="poisson-sum-result" class="simulation-value-line">$X_1 + X_2 = -$</div>
+
+<div id="poisson-sum-total">Esperimenti eseguiti: 0</div>
+
+<div id="poisson-sum-plot" class="plot-narrow"></div>
+
+<div class="toggle-row">
+  <label class="toggle">
+    <input id="poisson-sum-theory-toggle" type="checkbox" />
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="toggle-label">Mostra $\mathrm{P}(\lambda_1 + \lambda_2)$</span>
+</div>
 
 ---
 
