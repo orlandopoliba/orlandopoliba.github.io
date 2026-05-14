@@ -100,6 +100,63 @@ $$
 
 ---
 
+## Somma di leggi normali
+
+<div class="slider-grid slider-grid-two-columns">
+  <div class="parameter-column">
+    <div class="slider-row slider-row-inline">
+      <label for="normal-sum-mu-slider">$\mu = $</label>
+      <input id="normal-sum-mu-slider" type="range" min="-3.0" max="3.0" step="0.1" value="0.0" />
+      <span id="normal-sum-mu-value" class="slider-value">$0.0$</span>
+    </div>
+    <div class="slider-row slider-row-inline">
+      <label for="normal-sum-sigma2-slider">$\sigma^2 = $</label>
+      <input id="normal-sum-sigma2-slider" type="range" min="0.2" max="4.0" step="0.1" value="1.0" />
+      <span id="normal-sum-sigma2-value" class="slider-value">$1.0$</span>
+    </div>
+  </div>
+  <div class="parameter-column">
+    <div class="slider-row slider-row-inline">
+      <label for="normal-sum-nu-slider">$\nu = $</label>
+      <input id="normal-sum-nu-slider" type="range" min="-3.0" max="3.0" step="0.1" value="0.0" />
+      <span id="normal-sum-nu-value" class="slider-value">$0.0$</span>
+    </div>
+    <div class="slider-row slider-row-inline">
+      <label for="normal-sum-tau2-slider">$\tau^2 = $</label>
+      <input id="normal-sum-tau2-slider" type="range" min="0.2" max="4.0" step="0.1" value="1.0" />
+      <span id="normal-sum-tau2-value" class="slider-value">$1.0$</span>
+    </div>
+  </div>
+</div>
+
+<div class="button-row">
+  <button id="normal-sum-btn" class="slide-btn">Campiona $X + Y$</button>
+  <button id="normal-sum-reset-btn" class="slide-btn">Reset</button>
+</div>
+
+<div id="normal-sum-x" class="simulation-value-line">$X = -$</div>
+
+<div id="normal-sum-y" class="simulation-value-line">$Y = -$</div>
+
+<div id="normal-sum-result" class="simulation-value-line">$X + Y = -$</div>
+
+<div id="normal-sum-total">Esperimenti eseguiti: 0</div>
+
+<div id="normal-sum-hist" class="plot-narrow"></div>
+
+<div class="toggle-row">
+  <label for="normal-sum-bin-slider">Ampiezza bin =</label>
+  <input id="normal-sum-bin-slider" type="range" min="0.05" max="1.00" step="0.05" value="0.25" />
+  <span id="normal-sum-bin-value" class="slider-value">$0.25$</span>
+  <label class="toggle">
+    <input id="normal-sum-theory-toggle" type="checkbox" />
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="toggle-label">Mostra $\mathcal{N}(\mu+\nu, \sigma^2+\tau^2)$</span>
+</div>
+
+---
+
 ## Calcolatore di probabilità
 
 <div id="normal-probability"></div>

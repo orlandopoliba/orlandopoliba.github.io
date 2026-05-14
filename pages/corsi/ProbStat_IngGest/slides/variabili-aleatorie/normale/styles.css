@@ -252,9 +252,31 @@ body {
   margin: 10px auto 14px;
 }
 
+.slider-grid-two-columns {
+  align-items: flex-start;
+  max-width: 720px;
+}
+
+.parameter-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(320px, 90vw);
+}
+
+.parameter-column .slider-row.slider-row-inline {
+  width: 100%;
+}
+
 .slider-row.slider-row-inline {
   margin: 0;
   width: min(320px, 90%);
+}
+
+.simulation-value-line {
+  margin: 6px auto;
+  text-align: center;
+  min-height: 32px;
 }
 
 .range-dual-row {

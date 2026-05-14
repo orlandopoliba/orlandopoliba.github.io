@@ -1,5 +1,6 @@
 import { initNormalTitleDensity } from "./scripts/normalTitleDensity.js";
 import { initNormalSimulation } from "./scripts/normalSimulation.js";
+import { initNormalSumSimulation } from "./scripts/normalSumSimulation.js";
 import { initNormalProbability } from "./scripts/normalProbability.js";
 import { initNormalStats } from "./scripts/normalStats.js";
 
@@ -18,6 +19,7 @@ Reveal.initialize({
 const runSlideInits = () => {
   initNormalTitleDensity();
   initNormalSimulation();
+  initNormalSumSimulation();
   initNormalProbability();
   initNormalStats();
 };
