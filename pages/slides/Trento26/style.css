@@ -1,0 +1,1054 @@
+html, body, .reveal, .reveal .slides, .reveal .slides > section {
+  height: 100%;
+  width: 100%;
+}
+
+.reveal {
+    --slide-line-height: 1.4;
+    --slide-body-gap: 0.2em;
+    --slide-paragraph-spacing: 0.45em;
+    --slide-heading-spacing-top: 0.35em;
+    --slide-heading-spacing-bottom: 0.1em;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    line-height: var(--slide-line-height);
+    color: #222;
+    background-color: #fff;
+}
+
+.reveal .slides section {
+    text-align: left;
+}
+
+.reveal .slides section.deck-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.reveal .slides section.deck-slide.present {
+    display: flex !important;
+}
+
+.reveal .slides .slide-body {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    margin-left: 65px;
+    margin-right: 65px;
+    width: calc(100% - 130px);
+    box-sizing: border-box;
+}
+
+.reveal .slides p {
+    margin-top: 0px;
+    margin-bottom: var(--slide-paragraph-spacing);
+}
+
+.reveal .slides section.vertical {
+  top: 0 !important;
+  transform: none !important;
+}
+
+.presentation-title {
+    color: white;
+    background-color: #A81C3A;
+    padding: 24px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.author {
+    text-align: center;
+}
+
+.affiliation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.slide-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;                 /* adjust as you like */
+  background-color: #A81C3A;    /* header bar color */
+  color: white;
+  display: flex;
+  align-items: center;          /* vertically center text */
+  padding-left: 3em;            /* align with body text */
+  box-sizing: border-box;
+}
+
+
+.slide-header h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.slide-body {
+  margin-top: 100px;            /* space below the header */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--slide-body-gap);
+}
+
+.slide-body h3 {
+  margin: var(--slide-heading-spacing-top) 0 var(--slide-heading-spacing-bottom);
+  font-size: 1.05em;
+}
+
+.slide-body ul,
+.slide-body ol {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.slide-body > p,
+.slide-body > div,
+.slide-body > canvas,
+.slide-body > label {
+  width: 100%;
+}
+
+.slide-body p:has(> img) {
+  text-align: center;
+  margin: 0.25em 0 0.6em;
+}
+
+.slide-body img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.slide-body .image-small img,
+.slide-body img.image-small {
+  max-width: 50%;
+}
+
+.slide-body .image-medium img,
+.slide-body img.image-medium {
+  max-width: 60%;
+}
+
+.slide-body .image-large img,
+.slide-body img.image-large {
+  max-width: 80%;
+}
+
+.slide-body .r-stack {
+  min-height: 190px;
+}
+
+.slide-body .r-stack p {
+  width: 100%;
+}
+
+.spacer-small {
+  height: 0.5em;
+}
+
+.spacer {
+  height: 1em;
+}
+
+.spacer-large {
+  height: 2em;
+}
+
+.reveal .katex-display {
+  margin: 0.35em 0;
+}
+
+.reveal canvas {
+  display: block;
+  max-width: 100%;
+  margin: 0.25em auto;
+}
+.reveal .slides section.title-slide {
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.reveal .slides section.title-slide h1 {
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  background-color: #A81C3A;
+  padding: 24px;
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.reveal .slides section.title-slide h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin: 0.35em 0;
+  font-size: 1em;
+}
+
+.reveal .slides section.title-slide h3 img {
+  height: 120px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+}
+
+.reveal .slides section.title-slide p {
+  width: min(920px, 100%);
+  margin: 0.2em auto;
+  text-align: left;
+  font-size: 18px;
+}
+
+.reveal .slides section.closing-slide {
+  justify-content: center;
+}
+
+.vslider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Chrome / Edge / Safari */
+.vslider input[type=range] {
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr; /* IE/Edge legacy */
+  width: 10px;
+  height: 140px;
+  padding: 0;
+}
+
+/* optional: make the labels smaller */
+.vslider .label, .vslider .value {
+  font: 22px system-ui, sans-serif;
+  color: #444;
+}
+
+.slider-value {
+  display: inline-block;
+  width: 50px;     /* fixed width → stops shifting */
+  text-align: right;
+}
+
+.sliders {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.two-formulae-row {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0em;
+}
+
+.left-formula {
+  text-align: left;
+}
+
+.right-formula {
+  margin-left: auto;
+  text-align: right;
+}
+
+.slide-body img.nobel-medal {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  max-width: none;
+  margin: 0 0.2em;
+  vertical-align: -0.2em;
+}
+
+.lattice-plot,
+.vortex-plot,
+.no-interfaces-plot,
+.puncturingPlot,
+.compactnessVorticesPlot,
+.liminfVorticesPlot {
+  width: 100%;
+  text-align: center;
+  margin-top: 0em;
+}
+
+.gap-plot-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.gap-plot-row > div { flex: 1; min-width: 0; text-align: center; }
+.gap-plot-label { margin-top: 0.35rem; text-align: center; }
+.gap-plot-row canvas { width: 100%; cursor: grab; }
+.gap-plot-3d canvas { background: #fff; opacity: 1; }
+.gap-plot-row canvas:active { cursor: grabbing; }
+
+.structure-theorem-plot { width: 100%; margin-top: .25rem; text-align: center; }
+.structure-plot-row { display:flex; gap:1rem; align-items:center; justify-content:center; }
+.structure-plot-row > div { flex:0 1 240px; min-width:0; }
+.structure-plot-row canvas { width:100%; max-width:240px; cursor:default; }
+.structure-plot-row > div:last-child canvas { cursor:grab; transform:scale(1.12); transform-origin:center; background:#fff; opacity:1; }
+.structure-plot-row > div:last-child canvas:active { cursor:grabbing; }
+.structure-toggles { display:flex; justify-content:center; gap:1.4rem; margin-top:.35rem; margin-bottom:.25rem; }
+.structure-toggle { cursor:pointer; }
+.structure-toggle input { display:none; }
+.structure-toggle span { display:inline-flex; align-items:center; justify-content:center; width:1.65em; height:1.65em; border:2px solid #555; border-radius:50%; font-weight:700; font-style:italic; color:#555; transition:.15s; }
+.structure-toggle input:checked + span { background:#A81C3A; border-color:#A81C3A; color:white; }
+
+.piecewiseGraphRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  margin-top: .75rem;
+}
+.piecewiseGraphRow > div {
+  flex: 0 1 370px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+.piecewiseGraphRow canvas {
+  display: block;
+  max-width: 100%;
+  background: #fff;
+  opacity: 1;
+  touch-action: none;
+}
+.piecewiseGraphControl canvas { cursor: crosshair; }
+.piecewiseGraph3d canvas { cursor: grab; }
+.piecewiseGraph3d canvas:active { cursor: grabbing; }
+
+.vortex-plot-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5em;
+}
+
+.vortex-plot-row .vortex-plot,
+.vortex-plot-row .limit-plot {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vortex-plot-row canvas {
+  max-width: 100%;
+}
+
+.limit-label {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+}
+
+/* retain the shared plot defaults */
+.vortex-plot-row + .spacer { margin-top: 0; }
+
+.puncturing-plot-layout,
+.compactness-vortices-plot-layout,
+.liminf-vortices-plot-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  margin-top: -2rem;
+}
+.puncturingPlot canvas,
+.compactnessVorticesPlot canvas,
+.liminfVorticesPlot canvas {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  cursor: crosshair;
+}
+.puncturing-degree-toggle,
+.compactness-vortices-degree-toggle,
+.liminf-vortices-degree-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  align-items: flex-start;
+  white-space: nowrap;
+  transform: translateX(-150px);
+}
+.puncturing-degree-toggle label,
+.compactness-vortices-degree-toggle label,
+.liminf-vortices-degree-toggle label {
+  cursor: pointer;
+  color: #666;
+}
+.puncturing-degree-toggle input,
+.compactness-vortices-degree-toggle input,
+.liminf-vortices-degree-toggle input { accent-color: currentColor; }
+.puncturing-degree-toggle label:first-child:has(input:checked),
+.compactness-vortices-degree-toggle label:first-child:has(input:checked),
+.liminf-vortices-degree-toggle label:first-child:has(input:checked) {
+  color: #d7191c;
+  font-weight: 700;
+}
+.puncturing-degree-toggle label:last-child:has(input:checked),
+.compactness-vortices-degree-toggle label:last-child:has(input:checked),
+.liminf-vortices-degree-toggle label:last-child:has(input:checked) {
+  color: #2166ac;
+  font-weight: 700;
+}
+
+.ballConstructionPlot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35em;
+  margin-top: -.25em;
+}
+
+.ballConstructionPlot canvas {
+  display: block;
+  width: min(760px, 100%);
+  max-width: 100%;
+  border: 2px solid #222;
+  box-sizing: border-box;
+}
+
+.ballConstructionPlot input[type="range"] {
+  display: block;
+  width: min(680px, 88%);
+  margin: 0;
+  accent-color: #A81C3A;
+}
+
+.dyadicPlot,
+.limsupPlot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25em;
+  margin-top: -.15em;
+}
+
+.dyadic-plot-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7em;
+  width: 100%;
+}
+
+.dyadicPlot canvas {
+  display: block;
+  width: min(280px, calc(100% - 42px));
+  max-width: 100%;
+  margin: 0;
+  background: #fff;
+  opacity: 1;
+}
+
+.dyadicPlot input[type="range"] {
+  width: 18px;
+  height: 240px;
+  margin: 0;
+  padding: 0;
+  writing-mode: vertical-lr;
+  direction: rtl;
+  accent-color: #A81C3A;
+}
+
+.limsupPlot canvas {
+  display: block;
+  width: min(720px, 100%);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.limsup-slider {
+  position: relative;
+  width: min(680px, 86%);
+  height: 48px;
+  margin: 0 auto;
+}
+
+.limsup-slider-rail {
+  position: absolute;
+  z-index: 0;
+  top: 9px;
+  left: 10px;
+  right: 10px;
+  height: 4px;
+  border-radius: 2px;
+  background: #b9b9b9;
+  pointer-events: none;
+}
+
+.limsup-slider-stops {
+  position: absolute;
+  z-index: 1;
+  top: 3px;
+  left: 4px;
+  right: 4px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.limsup-slider-stops span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #444;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.limsup-slider-stops i {
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border: 2px solid #777;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.limsup-slider-stops b {
+  font-weight: 700;
+}
+
+.limsup-slider input[type="range"] {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.limsup-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: transparent;
+}
+
+.limsup-slider input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: transparent;
+}
+
+.limsup-slider input[type="range"]::-webkit-slider-thumb {
+  width: 22px;
+  height: 22px;
+  margin-top: -9px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #A81C3A;
+  box-shadow: 0 0 0 2px #A81C3A;
+}
+
+.limsup-slider input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #A81C3A;
+  box-shadow: 0 0 0 2px #A81C3A;
+}
+
+.limsup-slider input[type="range"]:focus-visible {
+  outline: 2px solid #A81C3A;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.notSubadditivePlot {
+  width: 100%;
+  margin-top: -0.7em;
+  text-align: center;
+}
+
+.notSubadditivePlot canvas {
+  display: block;
+  width: min(310px, 100%);
+  margin: 0 auto;
+}
+
+.not-subadditive-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin: -0.2em auto 0.35em;
+}
+
+.no-interfaces-plot {
+  width: 100%;
+  text-align: center;
+  margin-top: 0em;
+}
+
+.no-interfaces-plot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.no-interfaces-plot .interface-label {
+  flex: 0 0 auto;
+  font-size: 1.15em;
+}
+
+.no-interfaces-plot canvas {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.transition-angle-control {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  margin-top: -1em;
+  margin-bottom: -4em;
+}
+
+.transition-angle-control canvas {
+  cursor: grab;
+}
+
+.transition-angle-control canvas:active {
+  cursor: grabbing;
+}
+
+.transition-angle-control .angle-label {
+  position: absolute;
+  pointer-events: none;
+  font-size: 1.1em;
+}
+
+.lattice-controls {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.color-toggle,
+.ground-state-toggle {
+  color: #222;
+  white-space: nowrap;
+}
+
+.color-toggle,
+.ground-state-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.color-toggle input,
+.ground-state-toggle input {
+  appearance: none;
+  width: 2.35em;
+  height: 1.25em;
+  margin: 0;
+  border-radius: 999px;
+  background: #787878;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.color-toggle input::after,
+.ground-state-toggle input::after {
+  content: "";
+  position: absolute;
+  top: 0.15em;
+  left: 0.15em;
+  width: 0.95em;
+  height: 0.95em;
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.2s ease;
+}
+
+.color-toggle input:checked,
+.ground-state-toggle input:checked {
+  background: #A81C3A;
+}
+
+.color-toggle input:checked::after,
+.ground-state-toggle input:checked::after {
+  transform: translateX(1.1em);
+}
+
+.color-toggle input:focus-visible,
+.ground-state-toggle input:focus-visible {
+  outline: 2px solid #A81C3A;
+  outline-offset: 2px;
+}
+
+.MHIsing-plot,
+.MHXY-plot {
+  width: 100%;
+  margin-top: 1em; /* controls the gap below the Energy paragraph */
+  text-align: center;
+}
+
+.ising-plot-formula-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0em;
+  width: 100%;
+}
+
+.Ising-interface-plot {
+  width: min(520px, 60%);
+  text-align: center;
+  margin-top: 0em;
+}
+
+#IsingInterfaceCanvas {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.ising-limit-formula {
+  max-width: 38%;
+  text-align: center;
+}
+
+.ising-paint-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  margin-top: 0.25em;
+}
+
+.ising-swatch {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  border: 1px solid #222;
+}
+.ising-swatch.down { background: hsl(90 75% 68%); }
+.ising-swatch.up { background: hsl(270 75% 68%); }
+.ising-swatch::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 1.1em;
+  background: #222;
+  transform: translate(-50%, -50%);
+}
+.ising-swatch::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 0.18em solid transparent;
+  border-right: 0.18em solid transparent;
+}
+.ising-swatch.down::before { bottom: 0.25em; border-top: 0.22em solid #222; transform: translateX(-50%); }
+.ising-swatch.up::before { top: 0.25em; border-bottom: 0.22em solid #222; transform: translateX(-50%); }
+.ising-toggle input { display: none; }
+.ising-toggle span {
+  display: block; width: 1.7em; height: 0.85em; border-radius: 1em;
+  background: #787878; position: relative; cursor: pointer;
+}
+.ising-toggle span::after {
+  content: ""; position: absolute; width: 0.7em; height: 0.7em;
+  top: 0.075em; left: 0.075em; border-radius: 50%; background: white;
+  transition: transform 0.2s ease;
+}
+.ising-toggle input:checked + span { background: #A81C3A; }
+.ising-toggle input:checked + span::after { transform: translateX(0.85em); }
+
+.ising-interface-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: #555;
+  font-size: 0.55em;
+}
+
+.N-fixed-proof-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  margin-top: -1.5em;
+  margin-bottom: 0.5em;
+}
+
+.N-fixed-proof-plot {
+  position: relative;
+  flex: 1 1 52%;
+  width: auto;
+  text-align: center;
+  margin: -1em 0;
+}
+
+.N-fixed-proof-sinus-plot {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.N-fixed-proof-sinus-plot { position: relative; }
+.sinus-label { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; pointer-events: none; }
+.sinus-label-2 { transform: translate(0, -50%); }
+
+.N-fixed-proof-sinus-plot canvas {
+  display: block;
+  width: min(100%, 360px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.N-fixed-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.n-fixed-label-i { color: #222; }
+.n-fixed-label-j { color: #222; }
+
+.N-fixed-proof-plot canvas {
+  display: block;
+  width: min(100%, 560px) !important;
+  height: auto !important;
+  aspect-ratio: 1.3889;
+  margin: 0 auto;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.SN-plot {
+  width: 100%;
+  margin-top: -2em; /* controls the gap below the Energy paragraph */
+  text-align: center;
+}
+
+.SN-plot canvas {
+  display: block; /* removes the inline-canvas baseline gap */
+  margin: 0 auto;
+}
+
+#SNCanvas {
+  cursor: grab;
+  touch-action: none;
+}
+
+#SNCanvas:active {
+  cursor: grabbing;
+}
+
+.SN-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  width: min(560px, 100%);
+  margin: -2em auto;
+}
+
+.SN-slider-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.SN-controls input[type="range"] {
+  width: 100%;
+  accent-color: #A81C3A;
+}
+
+.SN-control {
+  font-weight: 700;
+}
+
+.SN-controls output {
+  min-width: 1.5em;
+  font-weight: 700;
+  text-align: right;
+}
+
+.MHIsing-controls,
+.MHXY-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  width: 100%;
+  margin-top: 0.4em;
+}
+
+.beta-slider-wrap {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.MHIsing-controls input[type="range"],
+.MHXY-controls input[type="range"] {
+  width: 100%;
+  accent-color: #A81C3A;
+}
+
+.beta-transition-marker {
+  position: absolute;
+  left: 13.25%;
+  bottom: -5px;
+  width: 3px;
+  height: 14px;
+  background: #222;
+  pointer-events: none;
+}
+
+.beta-control {
+  font-weight: 700;
+}
+
+.generate-button {
+  display: block;
+  margin: 0.4em 0 0;
+  padding: 0.45em 1.2em;
+  border: none;
+  border-radius: 8px;
+  background: #A81C3A;
+  box-shadow: 0px 8px #787878;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+    background: #b8546a;
+}
+
+.generate-button:active {
+   box-shadow: 0px 4px #383838;
+   transform: translateY(4px);
+}
+
+.N-eps-row { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; margin-bottom: 2em;}
+.lattice-to-zero-plot, .N-to-infty-plot { display: flex; align-items: center; justify-content: center; min-height: 270px; }
+.N-eps-row canvas { margin: 0; max-width: 100%; }
+.eps-to-zero-controls-row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: flex-end; margin-top: 8px; }
+.eps-to-zero-slider, .rate-slider { justify-self: center; }
+.eps-to-zero-slider, .rate-slider { display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 22px; }
+.eps-to-zero-slider input { width: 220px; }
+.rate-endpoints { display: flex; align-items: center; gap: 10px; font-size: 17px; }
+.rate-endpoints input { width: 180px; }
+
+/* Spectrum of possible rates, from the fast to the slow regime. */
+.spectrum-incomplete-plot {
+  width: min(760px, 82%);
+  margin: 1.4em auto 0;
+  color: #222;
+  margin-top: 0em;
+}
+.spectrum-labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  font-size: 1.05em;
+}
+.spectrum-labels-top { margin-bottom: 0.28em; }
+.spectrum-labels-bottom { margin-top: 0.35em; }
+.spectrum-labels-bottom span:first-child { text-align: left; }
+.spectrum-labels-bottom span:last-child { text-align: right; }
+.spectrum-line {
+  display: flex;
+  width: 100%;
+  height: 4px;
+  align-items: center;
+  position: relative;
+}
+.spectrum-incomplete-BV .spectrum-threshold-label {
+  position: absolute;
+  left: 66.6667%;
+  top: 0.55em;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+.spectrum-almost-complete .spectrum-left-threshold-label {
+  left: 33.3333%;
+}
+.spectrum-incomplete-BV .spectrum-threshold-label::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #222;
+  transform: translateX(-50%);
+}
+.spectrum-segment {
+  display: block;
+  height: 2px;
+  flex: 1;
+}
+.spectrum-segment.solid { background: #222; }
+.spectrum-segment.dashed {
+  background: repeating-linear-gradient(
+    to right, #222 0, #222 10px, transparent 10px, transparent 18px
+  );
+}
