@@ -16,3 +16,4 @@ plugins:
 exclude:
   - pages/slides/Riccione26/node_modules
   - pages/slides/Napoli25/node_modules
+  - pages/slides/Trento26/node_modules

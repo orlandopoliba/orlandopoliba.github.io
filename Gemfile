@@ -6,9 +6,8 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "jekyll"
-
-gem "github-pages", "~> 219", group: :jekyll_plugins
+# Keep this aligned with the version used by GitHub Pages.
+gem "github-pages", "~> 232", group: :jekyll_plugins
 
 # gem "kramdown-math-katex"
 
