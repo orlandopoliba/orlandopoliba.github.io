@@ -1,0 +1,1025 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <title></title>
+    <link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/css/main.css?1789799503894591000" rel="stylesheet">
+    <meta name="description"   content="This is the official webpage of Gianluca Orlando, Assistant Professor in Mathematical Analysis at the Department of Mechanics, Mathematics & Management of Polytechnic of Bari. Gianluca Orlando's research focuses on Calculus of Variations, Gamma-convergence, semicontinuity and relaxation problems, applications to Fracture Mechanics (evolution for fracture, damage, plasticity, fatigue models) and Materials Science. He is also interested in the variational discrete-to-continuum analysis of spin systems (XY model, N-clock model, frustrated systems). Currently funded by Research for innovation - REFIN of Regione Puglia. 
+
+    Questa è la pagina web ufficiale di Gianluca Orlando, Ricercatore a Tempo Determinato di tipo A in Analisi Matematica presso il Dipartimento di Meccanica, Matematica e Management (DMMM) del Politecnico di Bari (PoliBa). La ricerca di Gianluca Orlando è focalizzata sul calcolo delle variazioni, Gamma-convergenza, problemi di semicontinuità e rilassamento, applicazioni alla Meccanica delle Fratture (evoluzione per modelli di frattura, danno, plasticità, fatica) e Scienze dei Materiali. È anche interessato all'analisi variazionale dal discreto al continuo per sistemi di spin (modello XY, modello N-clock, sistemi frustrati). Al momento è finanziato dal programma Research for innovation - REFIN della Regione Puglia.">
+    <meta name="keywords" content="Orlando, Gianluca, Politecnico di Bari, PoliBa, Dipartimento di Meccanica, Matematica e Management, DMMM, Analisi Matematica, didattica, ingegneria gestional, calcolo delle probabilità e statistica">
+
+    <script src="/assets/js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8+w2LAIftJEULZABrF9PPFv+tVkH" crossorigin="anonymous"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js" integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB+w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="google-site-verification" content="44tr-41mamfaxMm3K5fG48-GcmYgZDDBqX3aKtogsps" />
+
+        
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    
+</head>
+  <body>
+    <div class="wrapper">
+        <div class="pageContainer">
+            <div class="nameContainer">
+                <div style="cursor: pointer;" onclick="window.location='/';">
+                    gianluca orlando
+                    </div>
+            </div>
+            <div class="navContainer">
+                <div id="menuButton" class="navElement-menu" style="cursor: pointer;" onclick="menu();">
+    menu
+</div>
+
+    <div style="cursor: pointer;" onclick="window.location='/cv.html';" class="navElement">
+        cv
+    </div>
+
+    <div style="cursor: pointer;" onclick="window.location='/research.html';" class="navElement">
+        research
+    </div>
+
+    <div style="cursor: pointer;" onclick="window.location='/didattica.html';" class="navElement">
+        didattica
+    </div>
+
+            </div>
+            <div class="defaultContainer">
+            <!--
+Placeholder content for:
+Does the $N$-clock model approximate the $XY$ model?
+
+Horizontal slides are separated by: ---
+Vertical slides are separated by: --
+-->
+
+<!-- Horizontal slide -->
+<!-- .slide: class="title-slide" -->
+
+<h1 id="variational-analyisis-of-the-n-clock-model">Variational analyisis of the $N$-clock model</h1>
+
+<h3 id="gianluca-orlando-">Gianluca Orlando <img src="/pages/slides/Trento26/images/logo.png" alt="Department Logo" /></h3>
+
+<div class="spacer"></div>
+
+<p>Joint works with:</p>
+
+<p>M. Cicalese (TU München), M. Ruf (JLU Gießen)</p>
+
+<div class="spacer"></div>
+
+<h3 id="on-the-bridge-geometric-measure-theory-and-calculus-of-variations">On the Bridge: Geometric Measure Theory and Calculus of Variations</h3>
+<h3 id="trento-8-september-2026">Trento, 8 September 2026</h3>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="ising-model">Ising model</h2>
+
+<div class="two-formulae-row">
+    <div class="left-formula">
+        <strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \{+ e_2, - e_2\}$
+    </div>
+    <div class="right-formula">
+        <strong>Energy:</strong> $\displaystyle H_\varepsilon(u) = \sum_{i,j \text{ n.n.}} - \varepsilon^2 u(\varepsilon i) \cdot u(\varepsilon j)$
+    </div>
+</div>
+
+<div class="lattice-plot">
+  <canvas id="latticeWithConstraintsCanvas" aria-label="Square lattice of N by N sites with constraints"></canvas>
+  <div class="lattice-controls">
+    <button id="generateLatticeWithConstraints" class="generate-button" type="button">Generate</button>
+    <label class="color-toggle"><input id="colorLatticeWithConstraints" type="checkbox" /> Color</label>
+    <label class="ground-state-toggle"><input id="groundStateLatticeWithConstraints" type="checkbox" /> Ground state</label>
+  </div>
+</div>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="xy-model">XY model</h2>
+
+<div class="two-formulae-row">
+    <div class="left-formula">
+        <strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathbb{S}^1$
+    </div>
+    <div class="right-formula">
+        <strong>Energy:</strong> $\displaystyle H_\varepsilon(u) = \sum_{i,j \text{ n.n.}} - \varepsilon^2 u(\varepsilon i) \cdot u(\varepsilon j)$
+    </div>
+</div>
+
+<div class="lattice-plot">
+  <canvas id="latticeCanvas" aria-label="Square lattice of N by N sites"></canvas>
+  <div class="lattice-controls">
+    <button id="generateLattice" class="generate-button" type="button">Generate</button>
+    <label class="color-toggle"><input id="colorLattice" type="checkbox" /> Color</label>
+    <label class="ground-state-toggle"><input id="groundStateLattice" type="checkbox" /> Ground state</label>
+  </div>
+</div>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="ising-model-in-statistical-mechanics">Ising model in Statistical Mechanics</h2>
+
+<div class="two-formulae-row">
+  <div class="left-formula"><strong>Sampling:</strong> $\mathbb{P}(u) \propto e^{-\beta H_\varepsilon(u)}$</div>
+  <div class="right-formula"><strong>Energy:</strong> $\displaystyle H_\varepsilon(u) = \sum_{i,j \text{ n.n.}} - \varepsilon^2 u(\varepsilon i) \cdot u(\varepsilon j)$</div>
+</div>
+
+<div class="MHIsing-plot">
+    <canvas id="MHIsingSimulationCanvas" aria-label="Metropolis-Hastings simulation for Ising"></canvas>
+    <div class="MHIsing-controls">
+        <label class="beta-control" for="temperatureIsing">$\beta$</label>
+        <span class="beta-slider-wrap">
+          <input id="temperatureIsing" type="range" min="0.05" max="3" value="3" step="0.05" />
+        </span>
+    </div>
+</div>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="xy-model-in-statistical-mechanics">$XY$ model in Statistical Mechanics</h2>
+
+<div class="two-formulae-row">
+  <div class="left-formula"><strong>Sampling:</strong> $\mathbb{P}(u) \propto e^{-\beta H_\varepsilon(u)}$</div>
+  <div class="right-formula"><strong>Energy:</strong> $\displaystyle H_\varepsilon(u) = \sum_{i,j \text{ n.n.}} - \varepsilon^2 u(\varepsilon i) \cdot u(\varepsilon j)$</div>
+</div>
+
+<div class="MHXY-plot">
+    <canvas id="MHXYSimulationCanvas" aria-label="Metropolis-Hastings simulation for XY"></canvas>
+    <div class="MHXY-controls">
+        <label class="beta-control" for="temperatureXY">$\beta$</label>
+        <span class="beta-slider-wrap">
+          <input id="temperatureXY" type="range" min="0.05" max="20" value="20" step="0.05" />
+        </span>
+    </div>
+</div>
+
+<p>–
+<!-- Vertical slide --></p>
+
+<h2 id="physics-literature">Physics literature</h2>
+
+<ul>
+  <li><i class="fa-solid fa-book"></i> Berezinskii. <em>Sov. Phys. JETP</em> (1971)</li>
+  <li><i class="fa-solid fa-book"></i> Kosterlitz<img class="nobel-medal" src="images/Nobel_prize_medal.svg" alt="Nobel Prize medal" />. <em>J. Phys. C</em>, (1973)</li>
+  <li>
+    <h2 id="-kosterlitz-thouless-j-phys-c-1973"><i class="fa-solid fa-book"></i> Kosterlitz<img class="nobel-medal" src="images/Nobel_prize_medal.svg" alt="Nobel Prize medal" />, Thouless<img class="nobel-medal" src="images/Nobel_prize_medal.svg" alt="Nobel Prize medal" />. <em>J. Phys. C</em> (1973)</h2>
+    <!-- Horizontal slide -->
+  </li>
+</ul>
+
+<h2 id="n-clock-model">$N$-clock model</h2>
+
+<div class="two-formulae-row">
+    <div class="left-formula">
+        <strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}_N$
+    </div>
+    <div class="right-formula">
+        <strong>Energy:</strong> $\displaystyle H_\varepsilon(u) = \sum_{i,j \text{ n.n.}} - \varepsilon^2 u(\varepsilon i) \cdot u(\varepsilon j)$ 
+    </div>
+</div>
+
+<div class="SN-plot">
+  <canvas id="SNCanvas" aria-label="Unit circle with N equispaced points"></canvas>
+  <div class="SN-controls">
+    <label class="SN-control" for="SNSize">$N$</label>
+    <span class="SN-slider-wrap">
+      <input id="SNSize" type="range" min="2" max="64" value="2" step="1" />
+    </span>
+    <output id="SNValue" for="SNSize">2</output>
+  </div>
+</div>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="discrete-to-continuum-variational-analysis-ising">Discrete-to-continuum variational analysis (Ising)</h2>
+
+<p><strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \{+ e_2, - e_2\}$</p>
+
+<p><strong>Energy:</strong> 
+$
+\displaystyle
+\sum_{i,j \text{ n.n.}} - \varepsilon^2 \big( u(\varepsilon i) \cdot u(\varepsilon j) - 1 \big) = 
+\frac{1}{2} \sum_{i,j \text{ n.n.}} \varepsilon^2 | u(\varepsilon i) - u(\varepsilon j) |^2 =:
+E_\varepsilon(u)
+$</p>
+
+<p><strong>Low-energy configurations:</strong> $E_\varepsilon(u_\varepsilon) \lesssim \varepsilon \to 0$ as $\varepsilon \to 0$</p>
+
+<div class="ising-plot-formula-row">
+  <div class="Ising-interface-plot">
+    <canvas id="IsingInterfaceCanvas" aria-label="Interactive Ising lattice"></canvas>
+    <div class="ising-paint-controls">
+      <div class="ising-swatch down" aria-label="Paint down spin"></div>
+      <label class="ising-toggle"><input id="isingPaintDirection" type="checkbox" /><span></span></label>
+      <div class="ising-swatch up" aria-label="Paint up spin"></div>
+    </div>
+  </div>
+  <div class="ising-limit-formula">
+    <strong>$\Gamma$-limit</strong>
+    \[
+        \displaystyle \frac{1}{\varepsilon} E_\varepsilon(u_\varepsilon) \stackrel{\Gamma}{\to} c \int_{\partial^* \{u=\uparrow \}} |\nu_u|_1 \, \mathrm{d} \mathcal{H}^1
+        \]
+    <div class="AliBraCic">
+    <div class="spacer"></div>
+       <span style="white-space: nowrap;"><i class="fa-solid fa-book"></i>Alicandro, Braides, Cicalese.</span> &nbsp;  &nbsp; <em>Netw. Heterog. Media</em> (2006)
+    </div>
+  </div>
+</div>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="the-xy-model-does-not-see-interfaces">The $XY$ model does not see interfaces</h2>
+
+<p><strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathbb{S}^1$</p>
+
+<div class="no-interfaces-plot">
+  <span class="interface-label interface-label-left">$u^-$</span>
+  <canvas id="noInterfacesCanvas" aria-label="Lattice of 20 by 5 XY spins"></canvas>
+  <span class="interface-label interface-label-right">$u^+$</span>
+</div>
+
+<div class="transition-angle-control">
+  <canvas id="transitionAngleCanvas" aria-label="Interactive minimum transition angle"></canvas>
+  <span class="angle-label">$\theta$</span>
+</div>
+
+<p>\[
+\hspace{-1.3em} E_\varepsilon(u_\varepsilon) = \frac{1}{2} \sum_{i,j \text{ n.n.}} \varepsilon^2 | u(\varepsilon i) - u(\varepsilon j) |^2 \approx \underbrace{\frac{1}{\varepsilon}\frac{\mathrm{d}_{\mathbb{S}^1}(u^-,u^+)}{\theta}}_{\text{\# \text{interactions}}} \varepsilon^2 \underbrace{\theta^2}_{\text{unit cost}} \approx \mathrm{d}_{\mathbb{S}^1}(u^-,u^+) \varepsilon \theta
+\]</p>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="the-n-clock-model-sees-interfaces">The $N$-clock model sees interfaces</h2>
+
+<p><strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}_N$</p>
+
+<div class="no-interfaces-plot">
+  <span class="interface-label">$u^-$</span>
+  <canvas id="nClockInterfacesCanvas" aria-label="Lattice of 20 by 5 N-clock spins"></canvas>
+  <span class="interface-label">$u^+$</span>
+</div>
+<div class="transition-angle-control">
+  <canvas id="nClockAngleCanvas" aria-label="Discrete minimum transition angle"></canvas>
+  <span class="angle-label">$\theta$</span>
+</div>
+
+<p>\[
+\hspace{-1.3em} E_\varepsilon(u_\varepsilon) = \frac{1}{2} \sum_{i,j \text{ n.n.}} \varepsilon^2 | u(\varepsilon i) - u(\varepsilon j) |^2 \approx \underbrace{\frac{1}{\varepsilon}\frac{\mathrm{d}_{\mathbb{S}^1}(u^-,u^+)}{\theta}}_{\text{\# \text{interazioni}}} \varepsilon^2 \underbrace{\theta^2}_{\text{interaction}} \approx \mathrm{d}_{\mathbb{S}^1}(u^-,u^+) \varepsilon \theta
+\]</p>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="gamma-limit-as-varepsilon-to-0-n-fixed">$\Gamma$-limit as $\varepsilon \to 0$, $N$ fixed</h2>
+
+<p><strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}_N$, with $N$ fixed and minimal angle $\theta$</p>
+
+<h3 id="theorem-cicalese-o-ruf---interfaces-and-free-boundaries-2021">Theorem [Cicalese, O., Ruf - <em>Interfaces and Free Boundaries</em> (2021)]</h3>
+
+<p>\[
+\frac{1}{\varepsilon \theta} E_\varepsilon(u_\varepsilon) \stackrel{\Gamma}{\to} \frac{\sin^2\big(\frac{\theta}{2}\big)}{\big(\frac{\theta}{2}\big)^2} \int_{J_u} \mathrm{d}_{\mathbb{S}^1}(u^-,u^+) |\nu_u|_1 \, \mathrm{d} \mathcal{H}^1
+\]</p>
+
+<p><em>Proof.</em></p>
+
+<div class="N-fixed-proof-row">
+<div class="N-fixed-proof-plot">
+  <canvas id="NFixedProofCanvas" aria-label="Nine-clock unit circle with two spin arrows"></canvas>
+</div>
+<div class="N-fixed-proof-sinus-plot">
+  <canvas id="NFixedSinusCanvas" aria-label="Plot of four sine squared of x over two"></canvas>
+</div>
+</div>
+
+<p>\[
+|u(\varepsilon i) - u(\varepsilon j) |^2 
+= 4 \sin^2\Big( \frac{k \theta}{2} \Big) 
+\geq 4 k \sin^2\Big(\frac{\theta}{2}\Big) 
+= 4 \frac{\mathrm{d}_{\mathbb{S}^1}\big(u(\varepsilon i), u(\varepsilon j) \big)}{\theta} 
+\sin^2\Big(\frac{\theta}{2}\Big)
+\]</p>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="gamma-limit-as-n-to-infty">$\Gamma$-limit as $N \to +\infty$</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Set $</td>
+      <td>A</td>
+      <td>_{2,1} = $ sum of Euclidean norms of the columns of $A$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="spacer"></div>
+
+<h3 id="theorem-cicalese-o-ruf---interfaces-and-free-boundaries-2021-1">Theorem [Cicalese, O., Ruf - <em>Interfaces and Free Boundaries</em> (2021)]</h3>
+
+<p>As $N \to +\infty$, <em>i.e.</em>, $\theta \to 0$,</p>
+
+<p>\[
+\begin{split}
+&amp; \frac{\sin^2\big(\frac{\theta}{2}\big)}{\big(\frac{\theta}{2}\big)^2} \int_{J_{u_N}} \mathrm{d}<em>{\mathbb{S}^1}(u^-_N,u^+_N) |\nu</em>{u_N}|<em>1 \, \mathrm{d} \mathcal{H}^1 \stackrel{\Gamma}{\to}  \<br />
+&amp; \hspace{4em} \stackrel{\Gamma}{\to} \int</em>{\Omega} |\nabla u|<em>{2,1} \, \mathrm{d} x +  |\mathrm{D}^{(c)} u|</em>{2,1}(\Omega) + \int_{J_u} \mathrm{d}_{\mathbb{S}^1}(u^-,u^+) |\nu_u|_1\, \mathrm{d} \mathcal{H}^1,
+\end{split}
+\]
+finite for $u \in BV(\Omega;\mathbb{S}^1)$.</p>
+
+<div class="spacer-large"></div>
+
+<div class="fragment fade-in" data-fragment-index="1">
+<strong>Educated guess:</strong> The same $\Gamma$-limit is obtained if $N_\varepsilon \to +\infty$ "slowly", <em>i.e.</em>, $\theta_\varepsilon \to 0$ "slowly" as $\varepsilon \to 0$.
+
+<strong>Question:</strong> Can we quantify the threshold rate $\text{?} \ll \theta_\varepsilon \ll 1$ as $\varepsilon \to 0$? 
+</div>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="n_varepsilon-to-infty-ie-theta_varepsilon-to-0-as-varepsilon-to-0">$N_\varepsilon \to +\infty$, <em>i.e.</em>, $\theta_\varepsilon \to 0$, as $\varepsilon \to 0$</h2>
+
+<div class="N-eps-row">
+    <div class="lattice-to-zero-plot"></div>
+    <div class="N-to-infty-plot"></div>
+    <div class="eps-to-zero-controls-row">
+        <div class="eps-to-zero-slider">
+            <label for="eps-to-zero-slider">$\varepsilon$</label>
+            <input id="eps-to-zero-slider" type="range" min="0.01" max="1" step="0.01" value="1" />
+        </div>
+        <div class="rate-slider">
+            <label for="rate-slider">rate of $\theta_\varepsilon$</label>
+            <span class="rate-endpoints"><span>fast</span><input id="rate-slider" type="range" min="0" max="1" step="0.01" value="0.5" /><span>slow</span></span>
+        </div>
+    </div>
+</div>
+
+<p><strong>Educated guess:</strong> The limit depends on the rate of convergence $\theta_\varepsilon \to 0$</p>
+
+<div class="spectrum-incomplete-plot" aria-label="Spectrum from fast to slow with XY, unknown, and BV regions">
+    <div class="spectrum-labels spectrum-labels-top">
+        <span>$XY \text{?}$</span>
+        <span>$\text{?}$</span>
+        <span>$BV \text{?}$</span>
+    </div>
+    <div class="spectrum-line" aria-hidden="true">
+        <span class="spectrum-segment solid"></span>
+        <span class="spectrum-segment dashed"></span>
+        <span class="spectrum-segment solid"></span>
+    </div>
+    <div class="spectrum-labels spectrum-labels-bottom">
+        <span>fast</span>
+        <span></span>
+        <span>slow</span>
+    </div>
+</div>
+
+<hr />
+<!-- Horizontal slide -->
+
+<h2 id="theta_varepsilon-to-0-slowly">$\theta_\varepsilon \to 0$ “slowly”</h2>
+
+<p><strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}<em>{N</em>\varepsilon}$, with $N_\varepsilon \to +\infty$, <em>i.e.</em>, $\theta_\varepsilon \to 0$</p>
+
+<div class="spacer-large"></div>
+<div class="spacer-large"></div>
+<div class="spacer-large"></div>
+
+<h3 id="theorem-cicalese-o-ruf---arma-2022">Theorem [Cicalese, O., Ruf - <em>ARMA</em> (2022)]</h3>
+
+<p>Assume $\text{\color{red}?} \ll \theta_\varepsilon \ll 1$. Then 
+\[
+\frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) \stackrel{\Gamma}{\to} \int_{\Omega} |\nabla u|<em>{2,1} \, \mathrm{d} x +  |\mathrm{D}^{(c)} u|</em>{2,1}(\Omega) + \int_{J_u} \mathrm{d}_{\mathbb{S}^1}(u^-,u^+) |\nu_u|_1 \, \mathrm{d} \mathcal{H}^1
+\]</p>
+
+<hr />
+<!-- Horizontal slide -->
+<!-- .slide: id="vortex-cost" -->
+
+<h2 id="xy-vortices">$XY$ vortices</h2>
+
+<p><strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathbb{S}^1$</p>
+
+<div class="vortex-plot-row">
+    <div class="vortex-plot">
+      <canvas id="vortexCanvas" aria-label="Vortex-like singularity on a square lattice"></canvas>
+    </div>
+    <div class="limit-plot">
+      <canvas id="limitCanvas" aria-label="Potato-shaped domain Omega"></canvas>
+      <span class="limit-label">\(\Omega\)</span>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<p>\[
+E_\varepsilon(\text{vortex}) = \frac{1}{2} \sum_{i.j. \text{n.n.}} \varepsilon^2 |u(\varepsilon i) - u(\varepsilon j)|^2 \approx \varepsilon^2 \int_{B \setminus B_\varepsilon} \Big| \nabla \Big( \frac{x}{|x|} \Big) \Big|^2 \approx 2 \pi \varepsilon^2 |\log \varepsilon|
+\]</p>
+
+<p>\[
+\frac{1}{\varepsilon^2 |\log \varepsilon|} E_\varepsilon(u_\varepsilon) \stackrel{\Gamma}{\to} 2 \pi |\mu|(\Omega) 
+\]</p>
+
+<p>–
+<!-- Vertical slide --></p>
+
+<h2 id="literature-on-ginzburg-landau-and-xy">Literature on Ginzburg-Landau and $XY$</h2>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<ul>
+  <li><i class="fa-solid fa-book"></i> Bethuel, Brezis, Hélein. (1994)</li>
+  <li><i class="fa-solid fa-book"></i> Sandier, Serfaty. <em>J. Funct. Anal.</em> (1998)</li>
+  <li><i class="fa-solid fa-book"></i> Jerrard, Soner. <em>Calc. Var. PDEs</em> (2002)</li>
+  <li><i class="fa-solid fa-book"></i> Alberti, Baldo, Orlandi. <em>Indiana Univ. Math. J.</em> (2005)</li>
+  <li><i class="fa-solid fa-book"></i> Alicandro, Cicalese. <em>ARMA</em> (2009)</li>
+  <li><i class="fa-solid fa-book"></i> Alicandro, Cicalese, Ponsiglione. <em>Indiana Univ. Math. J.</em> (2011)</li>
+  <li><i class="fa-solid fa-book"></i> Alicandro, Ponsiglione. <em>J. Funct. Anal.</em> (2014)</li>
+  <li><i class="fa-solid fa-book"></i> Alicandro, De Luca, Garroni, Ponsiglione. <em>ARMA</em> (2014)</li>
+</ul>
+
+<div class="fragment fade-in" data-fragment-index="1">
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+[Jump forward](#/theorem-with-vortices)
+
+---
+<!-- Horizontal slide -->
+
+## $N$-clock vortices
+
+<strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}_{N_\varepsilon}$, with $N_\varepsilon \to +\infty$, <em>i.e.</em>, $\theta_\varepsilon \to 0$
+
+\\[
+\frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) \leq C \implies \frac{1}{\varepsilon^2 |\log \varepsilon|} E_\varepsilon(u_\varepsilon) \leq C \frac{\theta_\varepsilon}{\varepsilon |\log \varepsilon|}
+\\]
+
+<div class="fragment fade-in" data-fragment-index="1">
+
+<div class="spacer"></div>
+
+- $\displaystyle \frac{\theta_\varepsilon}{\varepsilon |\log \varepsilon|} \to +\infty \implies$ no information on $\displaystyle \frac{1}{\varepsilon^2 |\log \varepsilon|} E_\varepsilon(u_\varepsilon)$ 
+- $\displaystyle \frac{\theta_\varepsilon}{\varepsilon |\log \varepsilon|} \to 0 \implies \frac{1}{\varepsilon^2 |\log \varepsilon|} E_\varepsilon(u_\varepsilon) \to 0 \implies $ no vortices 
+
+<div class="fragment fade-in" data-fragment-index="2">
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<strong>Conclusion:</strong> The $BV$-limit occurs if $\varepsilon |\log \varepsilon| \ll \theta_\varepsilon \ll 1$
+
+<div class="spectrum-incomplete-plot spectrum-incomplete-BV" aria-label="Spectrum from fast to slow with threshold epsilon times absolute log epsilon">
+    <div class="spectrum-labels spectrum-labels-top">
+        <span>$XY \text{?}$</span>
+        <span>$\text{vortices?}$</span>
+        <span>$BV$</span>
+    </div>
+    <div class="spectrum-line" aria-hidden="true">
+        <span class="spectrum-segment solid"></span>
+        <span class="spectrum-segment dashed"></span>
+        <span class="spectrum-segment solid"></span>
+        <span class="spectrum-threshold-label">$\varepsilon |\log \varepsilon|$</span>
+    </div>
+    <div class="spectrum-labels spectrum-labels-bottom">
+        <span>fast</span>
+        <span></span>
+        <span>slow</span>
+    </div>
+</div>
+
+---
+<!-- Horizontal slide -->
+<!-- .slide: id="no-vortices-regime" -->
+
+## No vortices regime
+
+<strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}_{N_\varepsilon}$, with $N_\varepsilon \to +\infty$, <em>i.e.</em>, $\theta_\varepsilon \to 0$
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<strong>Constraint:</strong> $\displaystyle \theta_\varepsilon \ll \varepsilon |\log \varepsilon| \implies \frac{1}{\varepsilon^2 |\log \varepsilon|} E_\varepsilon(u_\varepsilon) \to 0 \implies $ no vortices 
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<strong>A Lavrentiev gap?</strong>
+For $u_\varepsilon \to u$ in $L^1(\Omega;\mathbb{S}^1)$, do we expect this strict inequality?
+\\[
+\liminf_{\varepsilon \to 0} \frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) &gt; \int_\{\Omega\} |\nabla u|_\{2,1\} \\, \mathrm{d} x +  |\mathrm{D}^\{(c)\} u|_\{2,1\}(\Omega) + \int_\{J_u\} \mathrm{d}_\{\mathbb{S}^1\}(u^-,u^+) |\nu_u|_1 \\, \mathrm{d} \mathcal{H}^1
+\\]
+
+
+--
+<!-- Vertical slide -->
+
+## Back to the original problem
+
+<strong>Spoiler alert:</strong> [Yes](#/back-to-original-problem)
+
+---
+<!-- Horizontal slide -->
+
+## An analogous problem in the smooth setting 
+
+<strong>Problem:</strong> Relax 
+\\[
+\int_{\Omega} |\nabla u| \\, \mathrm{d} x \\, , \quad u \in C^\infty(\Omega;\mathbb{S}^1)
+\\]
+
+<div class="spacer"></div>
+
+- <i class="fa-solid fa-book"></i> Giaquinta, Modica, Souček. <em>Calc. Var. PDEs</em> (1993)
+</div>
+
+
+<div class="fragment fade-in" data-fragment-index="1">
+
+<div class="spacer"></div>
+
+<strong>Facts:</strong> 
+
+- The relaxation domain is $BV(\Omega;\mathbb{S}^1)$
+- $\displaystyle \frac{x}{|x|} \in W^{1,p}(B_1;\mathbb{S}^1)$ for $p \in [1,2)$, hence it is in the relaxation domain
+- $\displaystyle \mathrm{deg}\Big( \frac{x}{|x|}, \partial B_\rho \Big) = 1$, for every $\rho \in (0,1)$ 
+- $u \in C^\infty(B_1;\mathbb{S}^1) \implies \mathrm{deg}\big( u, \partial B_\rho \big) = 0$, for every $\rho \in (0,1)$  
+- <strong>Topological obstruction</strong>: $\nexists \\, u_\varepsilon \in C^{\infty}(B_1;\mathbb{S}^1)$ such that $u_\varepsilon \stackrel{\text{stricly-}BV}{\longrightarrow} \frac{x}{|x|}$ 
+        
+</div>
+
+---
+<!-- Horizontal slide -->
+
+## Approximating singularities with smooth maps
+
+<strong>Aim:</strong> Approximate $\displaystyle \frac{x}{|x|}$ via $C^{\infty}(\Omega;\mathbb{S}^1)$ maps and minimal energy $\displaystyle \int_\Omega |\nabla u| \mathrm{d}x$
+
+<div class="gap-plot-row">
+    <div class="gap-plot-top">
+      <canvas id="singularityCanvas" aria-label="Continuous radial map x over absolute value of x"></canvas>
+      <div class="gap-plot-label">$u = e^{\iota 2 \pi \varphi}$</div>
+    </div>
+    <div class="gap-plot-3d">
+      <canvas id="singularity3dCanvas" aria-label="Draggable three-dimensional plot placeholder"></canvas>
+      <div class="gap-plot-label">$\varphi$</div>
+    </div>
+</div>
+
+<div class="fragment fade-in" data-fragment-index="1">
+
+<div class="spacer"></div>
+
+<strong>Fact 1:</strong> If $u \in C^\infty(\Omega;\mathbb{S}^1)$, then $G_u$ has no boundary
+
+<strong>Fact 2:</strong> The graph $G_{\frac{x}{|x|}}$ has boundary $-\delta_0 \times \llbracket \mathbb{S}^1 \rrbracket$
+
+</div>
+
+---
+<!-- Horizontal slide -->
+
+## Currents induced by graphs 
+
+<strong>Graph current:</strong> $u \in C^\infty(\Omega;\mathbb{S}^1) \leadsto G_u := (\mathrm{id}, u)_\\# \llbracket \Omega \rrbracket \in \mathcal{D}_2(\Omega \times \mathbb{R}^2)$
+
+<strong>Duality:</strong> $\displaystyle \langle G_u, \omega \rangle := \int_{\Omega \times \mathbb{R}^2} \langle \omega , \vec G_\{u_\varepsilon\} \rangle \\, \mathrm{d} \mathcal{H}^2 {\LARGE \llcorner} \text{graph}(u)$ 
+
+$\hphantom{\text{Duality:}\langle G_u, \omega \rangle} \displaystyle = \int_{\Omega} \langle \omega(x,u(x)), M(\nabla u(x)) \rangle \\, \mathrm{d} x \\,, \quad \omega \in \mathcal{D}^2(\Omega \times \mathbb{R}^2)$
+
+<strong>Properties:</strong>
+
+- $G_u$ is integer multiplicity rectifiable
+- $\partial G_u |_{\Omega \times \mathbb{R}^2} = 0$ in $\mathcal{D}_1(\Omega \times \mathbb{R}^2)$
+- $\pi^\Omega_\\# G_u = \llbracket \Omega \rrbracket$
+- $\langle G_u, \phi(x,y) \mathrm{d} x \rangle \geq 0$ for every $\phi \in \mathcal{D}(\Omega \times \mathbb{R}^2)$
+- $\mathbb{M}(G_u) &lt; +\infty$
+- $\displaystyle \\| G_u \\|_1 = \sup\_{\phi \in C^\infty_c(\Omega \times \mathbb{R}^2)} \langle G_u, \phi(x,y)|y| \mathrm{d} x \rangle &lt; + \infty$
+- $\text{supp}(G_u) \subset \overline \Omega \times \mathbb{S}^1$
+
+
+---
+<!-- Horizontal slide -->
+
+## Cartesian currents 
+
+<strong>Cartesian current:</strong> $T \in \mathrm{cart}(\Omega \times \mathbb{S}^1)$ if $T \in \mathcal{D}_2(\Omega \times \mathbb{R}^2)$ and satisfies the following properties
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer-large"></div>
+
+<strong>Properties:</strong>
+
+- $T$ is integer multiplicity rectifiable
+- $\partial T |_{\Omega \times \mathbb{R}^2} = 0$ in $\mathcal{D}_1(\Omega \times \mathbb{R}^2)$
+- $\pi^\Omega_\\# T = \llbracket \Omega \rrbracket$
+- $\langle T, \phi(x,y) \mathrm{d} x \rangle \geq 0$ for every $\phi \in \mathcal{D}(\Omega \times \mathbb{R}^2)$
+- $\mathbb{M}(T) &lt; +\infty$
+- $\displaystyle \\| T \\|_1 = \sup\_{\phi \in C^\infty_c(\Omega \times \mathbb{R}^2)} \langle T, \phi(x,y)|y| \mathrm{d} x \rangle &lt; + \infty$
+- $\text{supp}(T) \subset \overline \Omega \times \mathbb{S}^1$
+
+---
+<!-- Horizontal slide -->
+
+## Limits of smooth functions 
+
+<strong>Fact:</strong> Let $u_\varepsilon \in C^{\infty}(\Omega;\mathbb{S}^1)$ and assume that $\displaystyle \int_\Omega |\nabla u_\varepsilon| \\, \mathrm{d} x \leq C$ 
+
+
+Then $\displaystyle \mathbb{M}(G_{u_\varepsilon}) = \mathcal{H}^2(\text{graph}(u_\varepsilon)) = \int_\Omega \sqrt{\mathrm{det}( \mathrm{Id} + (\nabla u_\varepsilon)^T \nabla u_\varepsilon)} \\, \mathrm{d} x$ 
+
+$\displaystyle \hphantom{\text{Then} \mathbb{M}(G_{u_\varepsilon})} \hspace{-2px} = \int_\Omega \sqrt{1 + |\nabla u_\varepsilon|^2 + \mathrm{det}(\nabla u_\varepsilon)^2} \\, \mathrm{d} x = \int_\Omega \sqrt{ 1 + |\nabla u_\varepsilon|^2} \\, \mathrm{d} x$
+
+
+<div class="fragment fade-in" data-fragment-index="1">
+
+<div class="spacer"></div>
+
+(Compactness): $\hspace{2em} G_{u_\varepsilon} \rightharpoonup T$ and $T \in \mathrm{cart}(\Omega \times \mathbb{S}^1)$
+
+
+($\Gamma$-liminf): $\hspace{4.2em} \displaystyle \liminf_{\varepsilon \to 0}\int_\Omega |\nabla u_\varepsilon| \\, \mathrm{d} x \geq \int_\{\Omega \times \mathbb{R}^2\} \Phi(\vec T)\\, \mathrm{d} |T|$
+
+
+($\Gamma$-limsup): $\hspace{3.5em}$ Given $T \in \mathrm{cart}(\Omega \times \mathbb{S}^1)$, $\exists \\, u_\varepsilon$ such that $G_{u_\varepsilon} \rightharpoonup T$ and $\hspace{8.3em} \displaystyle \lim_{\varepsilon \to 0}\int_\Omega |\nabla u_\varepsilon| \\, \mathrm{d} x = \int_\{\Omega \times \mathbb{R}^2\} \Phi(\vec T)\\, \mathrm{d} |T|$
+
+$\hspace{8em}$ <i class="fa-solid fa-book"></i> Giaquinta, Modica, Souček. <em>Calc. Var. PDEs</em> (1993)
+
+<div class="spacer"></div>
+
+<strong>Note:</strong> If $u_\varepsilon \stackrel{\*}{\rightharpoonup} u$, then, in general, $T \neq G_u$
+
+---
+<!-- Horizontal slide -->
+
+## Structure theorem
+
+<strong>Theorem [Giaquinta, Modica, Souček - <em>Calc. Var. PDEs</em> (1993)]</strong> 
+
+1. Let $T \in \mathrm{cart}(\Omega \times \mathbb{S}^1)$. Then there exist:
+
+- a unique $u_T \in BV(\Omega;\mathbb{S}^1)$;
+- an i.m. rectifiable 1-current $L \in \mathcal{D}_1(\Omega)$ such that $T = G_\{u_T\} + L \times \llbracket \mathbb{S}^1 \rrbracket$.
+
+2. Given $u \in BV(\Omega;\mathbb{S}^1)$, there exists $T \in \mathrm{cart}(\Omega \times \mathbb{S}^1)$ such that $u = u_T$.
+
+<div class="structure-theorem-plot">
+  <div class="structure-plot-row">
+    <div><canvas id="structure2dCanvas" aria-label="Two-dimensional vector field"></canvas></div>
+    <div><canvas id="structure3dCanvas" aria-label="Draggable graph of the angular variable"></canvas></div>
+  </div>
+  <div class="structure-toggles" aria-label="Structure theorem components">
+    <label class="color-toggle"><input id="structureA" type="checkbox" /> $a$</label>
+    <label class="color-toggle"><input id="structureS" type="checkbox" /> $j$</label>
+    <label class="color-toggle"><input id="structureC" type="checkbox" /> $c$</label>
+  </div>
+</div> 
+
+--
+<!-- Vertical slide -->
+
+## Lifting in $BV$
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+Strictly related to the problem of lifting $BV$ functions with values in $\mathbb{S}^1$ 
+
+- <i class="fa-solid fa-book"></i> Dávila, Ignat. <em>C. R. Acad. Sci. Paris, Ser. I</em> (2003)
+- <i class="fa-solid fa-book"></i> Ignat. <em>Ann. Inst. H. Poincaré Anal. Non Linéaire</em> (2005)
+- <i class="fa-solid fa-book"></i> Canevari, Orlandi. <em>J. Funct. Anal.</em> (2020)
+
+---
+<!-- Horizontal slide -->
+
+## An analogous problem in the smooth setting 
+
+<strong>Theorem [Giaquinta, Modica, Souček - <em>Calc. Var. PDEs</em> (1993)]</strong>
+
+$\displaystyle \hspace{1.5em} \int_\Omega |\nabla u| \\, \mathrm{d} x \hspace{0em} \stackrel{\Gamma}{\rightarrow} \hspace{0em} \int_{\Omega \times \mathbb{R}^2} \Phi(\vec T) \\, \mathrm{d} |T| = \int_\Omega |\nabla u| \\, \mathrm{d} x + |\mathrm{D}^{\text{(c)}}u|(\Omega) + \mathcal{J}(u;\Omega)$
+
+$\displaystyle \hspace{0em} \big(u \in C^\infty(\Omega;\mathbb{S}^1)\big) \hspace{12.5em} \big( u \in BV(\Omega;\mathbb{S}^1)\big)$
+
+where $\displaystyle \mathcal{J}(u;\Omega) = \inf_{T \in \mathrm{cart}(\Omega \times \mathbb{S}^1)} \Big\\{ \int_{J_T} \ell_T(x) \mathrm{d} \mathcal{H}^1(x) : T = G_u + L \times \llbracket \mathbb{S}^1 \rrbracket \Big\\}$. 
+
+<div class="puncturingPlot">
+  <div class="puncturing-plot-layout">
+    <canvas id="puncturingCanvas" aria-label="Domain Omega with a constant vector field"></canvas>
+    <div class="puncturing-degree-toggle" role="radiogroup" aria-label="Vortex degree">
+      <label><input type="radio" name="puncturing-degree" value="1" checked="" /> $+1$</label>
+      <label><input type="radio" name="puncturing-degree" value="-1" /> $-1$</label>
+    </div>
+  </div>
+</div>
+
+--
+<!-- Vertical slide -->
+
+## Not subadditive 
+
+<div class="notSubadditivePlot motSubadditivePlot">
+  <canvas id="notSubadditiveCanvas" aria-label="The map x over absolute value of x on nested disks"></canvas>
+  <div class="not-subadditive-controls" aria-label="Visible subsets">
+    <label class="color-toggle"><input id="notSubadditiveBR" type="checkbox" /> $B_{R}$</label>
+    <label class="color-toggle"><input id="notSubadditiveAnnulus" type="checkbox" /> $B_1 \setminus \overline B_{r}$</label>
+  </div>
+</div>
+
+<div class="formula-BR">
+$\displaystyle E\Big(\frac{x}{|x|};B_{R}\Big) = \int_{B_{R}} \Big| \nabla \frac{x}{|x|} \Big| \, \mathrm{d} x + 2 \pi R = 2 \pi R + 2 \pi R = 4 \pi R$
+</div>
+
+<div class="formula-Br">
+$\displaystyle E\Big(\frac{x}{|x|};B_1 \setminus \overline B_{r}\Big) = \int_{B_1 \setminus \overline B_{r}} \Big| \nabla \frac{x}{|x|} \Big| \, \mathrm{d} x = 2 \pi (1 - r)$
+</div>
+
+<div class="formula-union">
+$\displaystyle E\Big(\frac{x}{|x|};B_1\Big) - E\Big(\frac{x}{|x|};B_{R}\Big) - E\Big(\frac{x}{|x|};B_1 \setminus \overline B_{r}\Big) = 4 \pi - 4 \pi R - 2 \pi (1 - r)$ 
+</div>
+
+---
+<!-- Horizontal slide -->
+<!-- .slide: id="back-to-original-problem" -->
+
+## Back to the original problem 
+
+Let us recall the [**discrete setting**](#/no-vortices-regime)
+
+<div class="piecewiseGraphRow">
+  <div class="piecewiseGraphControl">
+    <canvas id="piecewiseGraphControlCanvas" aria-label="Four draggable arrows, one in each quadrant"></canvas>
+  </div>
+  <div class="piecewiseGraph3d">
+    <canvas id="piecewiseGraph3dCanvas" aria-label="Draggable three-dimensional graph of the piecewise constant angular lifting"></canvas>
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+$\displaystyle u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}_{N_\varepsilon} \quad \leadsto \quad G_\{u_\varepsilon\} \in \mathcal{D}_2(\Omega \times \mathbb{R}^2)$ with $\partial G_\{u_\varepsilon\} = - \mu_\{u_\varepsilon} \times \llbracket \mathbb{S}^1 \rrbracket$
+
+---
+<!-- Horizontal slide -->
+<!-- .slide: id="main-thm" -->
+
+## Theorem for $\varepsilon \ll \theta_\varepsilon \ll \varepsilon |\log \varepsilon|$ with no vortices
+
+<strong>Recall:</strong> 
+
+- $\displaystyle \frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) \leq C \hspace{-0.3em} \implies \hspace{-0.3em} \frac{1}{\varepsilon^2 |\log \varepsilon|} E_\varepsilon(u_\varepsilon) \to 0 \hspace{-0.3em} \implies \hspace{-0.3em} \mu_{u_\varepsilon} \stackrel{\mathrm{f}}{\to} 0 \hspace{-0.3em} \implies \hspace{-0.3em} \partial G_{u_\varepsilon} \rightharpoonup 0$ 
+
+- $\displaystyle \frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) \approx \int_{J_{u_\varepsilon}} \mathrm{d}_{\mathbb{S}^1}(u_\varepsilon^-, u_\varepsilon^+) |\nu_\{u_\varepsilon\}|_1 \mathrm{d} \mathcal{H}^1 = \int_\{\Omega \times \mathbb{R}^2\} \Phi_\{2,1\}(\vec G_\{u_\varepsilon\}) \mathrm{d}| G_\{u_\varepsilon\}|$
+
+<strong>Theorem [Cicalese, O., Ruf - *CPAM* (2022)]</strong> 
+
+([Compactness](#/compactness)): $\hspace{0em} G_\{u_\varepsilon\} \rightharpoonup T = G_u + L \times \llbracket \mathbb{S}^1 \rrbracket \in \mathrm{cart}(\Omega \times \mathbb{S}^1)$
+
+($\Gamma$-liminf): $\hspace{2.4em} \displaystyle \liminf_{\varepsilon \to 0} \frac{1}{\varepsilon \theta_{\varepsilon}} E_\varepsilon(u_\varepsilon) \geq \int_\{\Omega \times \mathbb{R}^2\} \Phi_\{2,1\}(\vec T) \mathrm{d}|T|$ 
+
+$\hspace{12.8em} \displaystyle = \int_{\Omega} |\nabla u|_\{2,1\} \\, \mathrm{d} x + |\mathrm{D}^{(c)} u|_\{2,1\}(\Omega) + \mathcal{J}_\{2,1\}(u;\Omega)$ 
+
+([$\Gamma$-limsup](#/limsup)): $\hspace{1.7em}$ Given $u \in BV(\Omega;\mathbb{S}^1)$ there exists $u_\varepsilon \to u$ such that
+$\hspace{6.5em} \displaystyle \lim_{\varepsilon \to 0} \frac{1}{\varepsilon \theta_{\varepsilon}} E_\varepsilon(u_\varepsilon) = \int_{\Omega} |\nabla u|_\{2,1\} \\, \mathrm{d} x + |\mathrm{D}^{(c)} u|_\{2,1\}(\Omega) + \mathcal{J}_\{2,1\}(u;\Omega)$
+
+--
+<!-- Vertical slide -->
+<!-- .slide: id="compactness" -->
+
+## Compactness
+
+[Back to Theorem](#/main-thm)
+
+<strong>Note:</strong> $\quad \partial G_\{u_\varepsilon\} = - \mu_\{u_\varepsilon\} \times \llbracket \mathbb{S}^1 \rrbracket \quad$ and $\quad \mu_\{u_\varepsilon\} \stackrel{\text{flat}}{\to} 0 \quad \nRightarrow \quad \mathbb{M}(\partial G_{u_\varepsilon}) \leq C$ 
+
+<strong>Solution:</strong> Modification lemma based on <em>ball construction</em>
+
+<div class="ballConstructionPlot">
+  <canvas id="ballConstructionCanvas" aria-label="Vortex field with expanding and merging balls"></canvas>
+  <input id="ballConstructionSlider" type="range" min="0" max="1000" value="0" step="1" aria-label="Ball construction evolution" />
+</div>
+
+--
+<!-- Vertical slide -->
+<!-- .slide: id="limsup" -->
+
+## $\Gamma$-limsup
+
+[Back to Theorem](#/main-thm)
+
+<strong>Recipe:</strong>
+
+1. Start with $u \in BV(\Omega;\mathbb{S}^1)$
+2. Build the energy-optimal $T = G_u + L \times \llbracket \mathbb{S}^1 \rrbracket$
+3. Approximate $G_{u_j} \rightharpoonup T$ with $u_j \in C^{\infty}(\Omega;\mathbb{S}^1)$ 
+4. Discretize $u_j$ with piecewise constant function (with "close" values)
+5. Build recovery sequence for piecewise constant function
+6. [?](#/limsup-vortices)
+
+<div class="limsupPlot">
+  <canvas id="limsupCanvas" aria-label="Five-step construction of a recovery sequence"></canvas>
+  <div class="limsup-slider">
+    <div class="limsup-slider-rail"></div>
+    <div class="limsup-slider-stops" aria-hidden="true">
+      <span><i></i><b>1</b></span>
+      <span><i></i><b>2</b></span>
+      <span><i></i><b>3</b></span>
+      <span><i></i><b>4</b></span>
+      <span><i></i><b>5</b></span>
+    </div>
+    <input id="limsupSlider" type="range" min="1" max="5" value="1" step="1" aria-label="Recovery sequence construction step" />
+  </div>
+</div>
+
+---
+<!-- Horizontal slide -->
+<!-- .slide: id="theorem-with-vortices" -->
+
+## Theorem for $\varepsilon \ll \theta_\varepsilon \ll \varepsilon |\log \varepsilon|$ with vortices
+
+<strong>Recall:</strong> [Cost of one vortex](#/vortex-cost)
+
+$\displaystyle \frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) \approx \frac{1}{\varepsilon \theta_\varepsilon} 2 \pi \varepsilon^2 |\log \varepsilon| = 2 \pi \frac{\varepsilon |\log \varepsilon|}{\theta_\varepsilon} \to +\infty$
+
+<strong>Theorem [Cicalese, O., Ruf - *CPAM* (2022)]</strong> 
+
+Let $\varepsilon \ll \theta_\varepsilon \ll \varepsilon |\log \varepsilon|$
+
+Assume that $\displaystyle \frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) - 2 \pi M \frac{\varepsilon |\log \varepsilon|}{\theta_\varepsilon} \leq C$
+
+$\displaystyle \hspace{6em} \Big( \implies \frac{1}{\varepsilon^2 |\log \varepsilon|} E_\varepsilon(u_\varepsilon) \leq 2\pi M + C\frac{\theta_\varepsilon}{\varepsilon |\log \varepsilon|}\Big)$
+
+Then we have that: 
+
+$\hspace{2em}$ ([Compactness](#/compactness-vortices)): $\hspace{1em} \ldots$
+
+$\hspace{2em}$ ([$\Gamma$-liminf](#/liminf-vortices)): $\hspace{3.1em} \ldots$
+
+$\hspace{2em}$ ([$\Gamma$-limsup](#/limsup-vortices)): $\hspace{2.7em} \ldots$
+
+--
+<!-- Vertical slide -->
+<!-- .slide: id="compactness-vortices" -->
+
+[Back to Theorem](#/theorem-with-vortices)
+
+## Compactness
+
+(Compactness): $\hspace{0.5em} \mu_\{u_\varepsilon\} \stackrel{\text{flat}}{\to} \mu = \sum_{i=1}^N d_i \delta_{x_i}$ with $|\mu|(\Omega) \leq M$
+
+$\hspace{6.5em}$ Moreover, if $|\mu|(\Omega)=M$, then $G_\{u_\varepsilon\} \rightharpoonup T$ in $\mathcal{D}_2(\Omega \times \mathbb{R}^2)$ 
+
+$\hspace{6.5em}$ with $T \in \mathrm{cart}\big((\Omega \setminus \mathrm{supp}\\, \mu ) \times \mathbb{S}^1\big)$ 
+
+$\hspace{6.5em}$ and $\partial T = - \mu \times \llbracket \mathbb{S}^1 \rrbracket$ in $\Omega \times \mathbb{R}^2$
+
+<div class="compactnessVorticesPlot">
+  <div class="compactness-vortices-plot-layout">
+    <canvas id="compactnessVorticesCanvas" aria-label="Domain punctured at the prescribed vortices, with optimal anisotropic cuts for added vortices"></canvas>
+    <div class="compactness-vortices-degree-toggle" role="radiogroup" aria-label="Degree of a new vortex">
+      <label><input type="radio" name="compactness-vortices-degree" value="1" checked="" /> $+1$</label>
+      <label><input type="radio" name="compactness-vortices-degree" value="-1" /> $-1$</label>
+    </div>
+  </div>
+</div>
+
+--
+<!-- Vertical slide -->
+<!-- .slide: id="liminf-vortices" -->
+
+## $\Gamma$-liminf 
+
+[Back to Theorem](#/theorem-with-vortices)
+
+($\Gamma$-liminf): $\hspace{1em}$ If $u_\varepsilon \to u$ and $\mu_\{u_\varepsilon\} \stackrel{\text{flat}}{\to} \mu$ with $|\mu|(\Omega) = M$, then  
+
+$\displaystyle \hspace{5.35em}  \liminf_{\varepsilon \to 0} \Big(  \frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) - 2 \pi M \frac{\varepsilon |\log \varepsilon|}{\theta_\varepsilon} \Big)$
+
+$\displaystyle \hspace{11em} \geq \int_{\Omega} |\nabla u|_\{2,1\} \\, \mathrm{d} x + |\mathrm{D}^{(c)}u|_\{2,1\}(\Omega) + \mathcal{J}_\{2,1\}(u,\mu;\Omega)$
+
+$\hspace{5.35em}$ where $\displaystyle \mathcal{J}_\{2,1\}(u,\mu;\Omega) = \inf_\{ \stackrel{ T \in \mathrm{cart}((\Omega \setminus \mathrm{supp} \\, \mu) \times \mathbb{S}^1 ) }{\partial T = - \mu \times \llbracket \mathbb{S}^1 \rrbracket} \} \Big\\{ \int_\{J_T\} \ell_T |\nu_T|_1 \\, \mathrm{d} \mathcal{H}^1  \Big\\}$
+
+<div class="liminfVorticesPlot">
+  <div class="liminf-vortices-plot-layout">
+    <canvas id="liminfVorticesCanvas" aria-label="Domain punctured at the prescribed vortices, with optimal anisotropic cuts for added vortices"></canvas>
+    <div class="liminf-vortices-degree-toggle" role="radiogroup" aria-label="Degree of a new vortex">
+      <label><input type="radio" name="liminf-vortices-degree" value="1" checked="" /> $+1$</label>
+      <label><input type="radio" name="liminf-vortices-degree" value="-1" /> $-1$</label>
+    </div>
+  </div>
+</div>
+
+--
+<!-- Vertical slide -->
+<!-- .slide: id="limsup-vortices" -->
+
+## $\Gamma$-limsup 
+
+($\Gamma$-limsup): $\hspace{1em}$ Given $\mu = \sum_{i=1}^N d_i \delta_\{x_i\}$ with $|\mu|(\Omega) = M$ and $u \in BV(\Omega;\mathbb{S}^1)$ 
+
+$\hspace{5.8em}$ there exists $u_\varepsilon \to u$ such that $\mu_{u_\varepsilon} \stackrel{\text{flat}}{\to} \mu$ and 
+
+$\hspace{5.8em} \displaystyle \lim_{\varepsilon \to 0} \Big(  \frac{1}{\varepsilon \theta_\varepsilon} E_\varepsilon(u_\varepsilon) - 2 \pi M \frac{\varepsilon |\log \varepsilon|}{\theta_\varepsilon} \Big)$ 
+
+$\displaystyle \hspace{8em} = \int_{\Omega} |\nabla u|_\{2,1\} \\, \mathrm{d} x + |\mathrm{D}^{(c)} u|_\{2,1\}(\Omega) + \mathcal{J}_\{2,1\}(u,\mu;\Omega)$
+
+Follow the previous [**recipe**](#/limsup) far from vortices + dyadic interpolation 
+
+<div class="dyadicPlot">
+  <div class="dyadic-plot-layout">
+    <canvas id="dyadicCanvas" aria-label="Dyadic recovery construction around a vortex"></canvas>
+    <input id="dyadicSlider" type="range" min="0" max="3" value="0" step="1" aria-label="Number of visible dyadic layers" />
+  </div>
+</div>
+
+---
+<!-- Horizontal slide -->
+
+## A formal expansion (and Theorem for $\theta_\varepsilon \ll \varepsilon$)
+
+<strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathcal{S}_{N_\varepsilon}$, with $N_\varepsilon \to +\infty$, <em>i.e.</em>, $\theta_\varepsilon \to 0$
+
+$\hspace{2em} \displaystyle \frac{1}{\varepsilon^2} E_\varepsilon(u_\varepsilon) \approx 2 \pi |\mu|(\Omega) |\log \varepsilon|$
+
+$\hspace{8em} \displaystyle + \frac{\theta_\varepsilon}{\varepsilon} \Big( \int_{\Omega} |\nabla u|_\{2,1\} \\, \mathrm{d} x + |\mathrm{D}^{(c)} u|_\{2,1\}(\Omega) + \mathcal{J}_\{2,1\}(u,\mu;\Omega) \Big)$
+
+<div class="spacer"></div>
+
+<div class="fragment fade-in" data-fragment-index="1">
+
+<div class="spectrum-incomplete-plot spectrum-incomplete-BV spectrum-almost-complete" aria-label="Spectrum from fast to slow with thresholds epsilon and epsilon times absolute log epsilon">
+    <div class="spectrum-labels spectrum-labels-top">
+        <span>$XY$ <span class="fragment fade-out" data-fragment-index="2">$\text{?}$</span></span>
+        <span>$\text{vortices + cart}$</span>
+        <span>$BV$</span>
+    </div>
+    <div class="spectrum-line" aria-hidden="true">
+        <span class="spectrum-segment solid"></span>
+        <span class="spectrum-segment solid"></span>
+        <span class="spectrum-segment solid"></span>
+        <span class="spectrum-threshold-label spectrum-left-threshold-label">$\varepsilon$</span>
+        <span class="spectrum-threshold-label">$\varepsilon |\log \varepsilon|$</span>
+    </div>
+    <div class="spectrum-labels spectrum-labels-bottom">
+        <span>fast</span>
+        <span></span>
+        <span>slow</span>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<strong>Recall</strong>, in particular, <i class="fa-solid fa-book"></i> Alicandro, De Luca, Garroni, Ponsiglione. *ARMA* (2014)
+
+<strong>Spin field:</strong> $u \colon \varepsilon \mathbb{Z}^2 \to \mathbb{S}^1$
+
+$\hspace{2em} \displaystyle \frac{1}{\varepsilon^2} E_\varepsilon(u_\varepsilon) \approx 2 \pi |\mu|(\Omega) |\log \varepsilon|$
+
+$\hspace{8em} + \mathbb{W}(\mu) + \gamma |\mu|(\Omega)$
+
+</div> 
+---
+<!-- Horizontal slide -->
+<!-- .slide: class="title-slide closing-slide" -->
+
+# Thank you for the attention
+</div></div></div>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

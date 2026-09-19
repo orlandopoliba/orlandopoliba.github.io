@@ -37,10 +37,7 @@ All the preprint versions of my publications are available on my [cvgmt](http://
 18. F. Maddalena, G. Orlando. Frequency-dependent damping in the linear wave equation. _Networks and Heterogeneous Media_ **20** (2025), 406–427.
 19. A. Bach, M. Cicalese, A. Garroni, G. Orlando. Stacking faults in the limit of a discrete model for partial edge dislocations. _Arch. Ration. Mech. Anal._ **249** (2025), 47.
 20. M. Morandotti, G. Orlando. Replicator dynamics as the large population limit of a discrete Moran process in the weak selection regime: A proof via Eulerian specification. _ESAIM: COCV_ (2025) **31**:72.
-
-## preprints
-
-1. G.M. Coclite, S. Dipierro, F. Maddalena, G. Orlando, E. Valdinoci. Comparison between solutions to the linear peridynamics model and solutions to the classical wave equation. _Preprint_ (2024).
+21. G.M. Coclite, S. Dipierro, F. Maddalena, G. Orlando, E. Valdinoci. Comparison between solutions to the linear peridynamics model and solutions to the classical wave equation. _SIAM J. Math. Anal._ **58** (2026), 3048-3081.
 
 
 All the preprints are available on my [cvgmt](http://cvgmt.sns.it/person/1531/) or [arXiv](https://arxiv.org/a/orlando_g_1.html) profiles.
